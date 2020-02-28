@@ -1,0 +1,1 @@
+<import src="/pages/contract/checkInNotice/index.vue.wxml" /><template is="2607a03e" data="{{ ...$root['0'], $root }}"/>

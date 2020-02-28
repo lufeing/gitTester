@@ -1,0 +1,27 @@
+<import src="/components/null.vue.wxml" /><template name="4906fcba">
+  <view class="_div data-v-348677ca">
+    <view class="_div data-v-348677ca contract-list-content" wx:if="{{showNormalPage}}">
+      <view class="_div data-v-348677ca contract-list-area" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-348677ca">
+          <view class="_div data-v-348677ca header">
+            <view class="_p data-v-348677ca label-title">申请状态</view>
+            <view class="_p data-v-348677ca contract-status">{{contractStatusObj[item.status]}}</view>
+          </view>
+          <view class="_div data-v-348677ca body">
+            <view class="_p data-v-348677ca">
+              <image class="_image data-v-348677ca imgClass" src="{{item.communityImage}}"></image>
+            </view>
+            <view class="_div data-v-348677ca contract-column">
+              <view class="_p data-v-348677ca title">{{item.communityName}}</view>
+              <view class="_p data-v-348677ca rentRelateName">房间号：{{item.rentRelateName}}</view>
+              <view class="_div data-v-348677ca detail-message">
+                <view class="_p data-v-348677ca">申请日期：{{item.applyDate}}</view>
+                <view wx:if="{{item.status == 70 || item.status == 80 && item.isReview == false}}" class="_p data-v-348677ca"><button plain class="_button data-v-348677ca button-warn" catchtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">点评</button></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

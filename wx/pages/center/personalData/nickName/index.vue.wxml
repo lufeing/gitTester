@@ -1,0 +1,15 @@
+<template name="06bea1ff">
+  <view class="_div data-v-5e55d4e4 transactioin-detail-content flex-box-content">
+    <view class="_div data-v-5e55d4e4 wallet-body-cell">
+      <view class="_div data-v-5e55d4e4 box">
+        <view class="_div data-v-5e55d4e4 box-left">
+          <view class="_p data-v-5e55d4e4 title"><input type="text" value="{{nickName}}" bindinput="handleProxy" placeholder="请输入昵称" focus data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-5e55d4e4" /></view>
+        </view>
+        <view class="_div data-v-5e55d4e4 box-right">
+          <image wx:if="{{nickName.length > 0}}" class="_image data-v-5e55d4e4 clear" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/clear.png" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-5e55d4e4 flex-box-footer mt_20"><button class="_button data-v-5e55d4e4 allow-button" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">确定</button></view>
+  </view>
+</template>

@@ -1,0 +1,11 @@
+<template name="48578ac7">
+  <view class="_div data-v-17cdeaf6 flex-box-content">
+    <view class="_div data-v-17cdeaf6 flex-box-body">
+      <view class="_div data-v-17cdeaf6 space-box"><input type="text" class="_input data-v-17cdeaf6 inputClass" value="{{paramsObj.name}}" bindinput="handleProxy" disabled="{{isDisabeld}}" placeholder="点击右边按钮上传身份证" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_p data-v-17cdeaf6">拍摄身份证</view>
+      </view>
+      <view class="_div data-v-17cdeaf6 space-box"><input type="idcard" class="_input data-v-17cdeaf6 inputClass" disabled="{{isDisabeld}}" value="{{paramsObj.cardNo}}" bindinput="handleProxy" placeholder="点击右边按钮上传身份证" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></view>
+    </view>
+    <view class="_div data-v-17cdeaf6 flex-box-footer"><button class="_button data-v-17cdeaf6 allow-button {{isDisabeld ? 'disabeld' : ''}}" disabled="{{isDisabeld}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">{{mpvuePlatform === 'wx' ? '开始实名' : '下一步'}}</button></view>
+  </view>
+</template>

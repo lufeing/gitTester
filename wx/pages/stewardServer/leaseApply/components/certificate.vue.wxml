@@ -1,0 +1,13 @@
+<template name="0e760cc0">
+  <picker bindchange="handleProxy" value="{{certificateTypeValue}}" range="{{certificateTypeRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-3a1e30aa">
+    <view class="_div data-v-3a1e30aa space-box">
+      <view class="_div data-v-3a1e30aa box-left">
+        <view class="_p data-v-3a1e30aa title">请选择证件类型：</view>
+      </view>
+      <view class="_div data-v-3a1e30aa box-right">
+        <view class="_p data-v-3a1e30aa state">{{certificateTypeRange[certificateTypeValue]}}</view>
+        <view class="_b data-v-3a1e30aa arrow-right"></view>
+      </view>
+    </view>
+  </picker>
+</template>

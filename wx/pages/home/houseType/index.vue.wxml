@@ -1,0 +1,70 @@
+<import src="/components/home/swiper/activeImage.vue.wxml" />
+<import src="/components/home/trafficmap/map.vue.wxml" />
+<import src="/components/home/room-type/list.vue.wxml" /><template name="e2768e3a">
+  <view class="_div data-v-15adab42">
+    <view class="_div data-v-15adab42 apartment-header"><template wx:if="{{houseStyleParam.images}}" data="{{...$root[$kk+'0'], $root}}" is="7c874580"></template>
+      <view class="_div data-v-15adab42 detail-content">
+        <view class="_p data-v-15adab42 title">{{houseStyleParam.houseStyleName}}</view>
+        <view class="_div data-v-15adab42 type-detail">
+          <view class="_div data-v-15adab42 type-detail-left">
+            <view class="_div data-v-15adab42">
+              <view wx:key="index" key="{{index}}" wx:for="{{houseStyleParam.features}}" wx:for-index="index" wx:for-item="item" class="_p data-v-15adab42">{{item}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-15adab42 type-detail-right">
+            <view class="_p data-v-15adab42 normal-price">挂牌价：￥{{houseStyleParam.minRentPrice}}/月起</view>
+            <view class="_p data-v-15adab42 member-price"> 会员价： <label class="_span data-v-15adab42 red">￥{{houseStyleParam.minMemberPrice}}-{{houseStyleParam.maxMemberPrice}}</label></view>
+          </view>
+        </view>
+        <view class="_div data-v-15adab42 type-item">
+          <view class="_p data-v-15adab42 title mb_10">房型详情</view>
+          <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-15adab42">
+            <view class="_p data-v-15adab42 introduce {{isExpand ? 'spread' : 'packUp'}}">{{houseStyleParam.communityHouseStyleDescription}}</view>
+            <view class="_p data-v-15adab42 downUp">{{isExpand ? '收起' : '展开'}}</view>
+          </view>
+        </view>
+        <view bindtap="handleProxy" wx:if="{{mpvuePlatform === 'wx'}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-15adab42">
+          <view class="_div data-v-15adab42 city-traffic-content">
+            <view class="_p data-v-15adab42 title mb_10">周边配套和交通</view>
+            <view class="_p data-v-15adab42 more"> 查看介绍 <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/more.png" class="_img data-v-15adab42 more-img"></image>
+            </view>
+          </view> <template data="{{...$root[$kk+'1'], $root}}" is="3b95e124"></template>
+        </view>
+        <view class="_div data-v-15adab42 commmuncity-server-content">
+          <view class="_p data-v-15adab42 title mb_10">房型配置</view>
+          <view class="_div data-v-15adab42 communcity-server">
+            <view class="_div data-v-15adab42 server-item" wx:key="index" key="{{index}}" wx:for="{{serverList}}" wx:for-index="index" wx:for-item="item">
+              <image class="_img data-v-15adab42 server-img" src="{{item.imgUrl}}"></image>
+              <view class="_p data-v-15adab42 server-state">{{item.title}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-15adab42">
+          <view class="_div data-v-15adab42 space-box mg_0" wx:key="index" key="{{index}}" wx:for="{{houseStyleParam.feeTypes}}" wx:for-index="index" wx:for-item="item">
+            <view class="_p data-v-15adab42">{{item.feeTypeName}}</view>
+            <view class="_p data-v-15adab42 right-box">{{item.price}}{{item.unit}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-15adab42 rent-message-content">
+          <view class="_p data-v-15adab42 title mb_10">租房信息</view>
+          <view class="_p data-v-15adab42"><label wx:key="index" key="{{index}}" wx:for="{{houseStyleParam.limits}}" wx:for-index="index" wx:for-item="item" class="_label data-v-15adab42">{{item}}</label></view>
+        </view>
+        <view class="_div data-v-15adab42 community-roomType">
+          <view class="_p data-v-15adab42 title mb_10">社区房型</view> <template data="{{...$root[$kk+'2'], $root}}" is="d7140186"></template>
+        </view>
+      </view>
+      <view class="_div data-v-15adab42 padding60"></view>
+    </view>
+    <view class="_div data-v-15adab42 apartment-footer">
+      <view class="_div data-v-15adab42 refer">
+        <view class="_div data-v-15adab42 phone-area" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view class="_p data-v-15adab42">
+            <image class="_img data-v-15adab42 phone-img" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/apartment/phone2x.png"></image>
+          </view>
+          <view class="_p data-v-15adab42">电话咨询</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-15adab42"><button class="_button data-v-15adab42 order-watch">预约看房</button></view>
+      </view>
+    </view>
+  </view>
+</template>

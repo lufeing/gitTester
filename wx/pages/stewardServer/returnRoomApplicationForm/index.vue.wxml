@@ -1,0 +1,114 @@
+<template name="dae86eb4">
+  <view class="_div data-v-19f2d51e flex-box-content">
+    <view class="_div data-v-19f2d51e flex-box-body">
+      <view class="_div data-v-19f2d51e payment-plan-content">
+        <view class="_div data-v-19f2d51e">
+          <view class="_div data-v-19f2d51e payment-plan-main">
+            <view class="_p data-v-19f2d51e leftB-title">退款计划</view>
+            <view class="_div data-v-19f2d51e detail-message">
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">合同编号</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.contractCode}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">社区名称</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.communityName}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e thin">房屋</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.houseName}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box" wx:if="{{detailObj.imprestAmount}}">
+                <view class="_p data-v-19f2d51e thin">预付款</view>
+                <view class="_p data-v-19f2d51e importance">{{detailObj.imprestAmount}}元</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e thin">押金</view>
+                <view class="_p data-v-19f2d51e importance">{{detailObj.depositAmount}}元</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e thin">计划退房日期</view>
+                <view class="_p data-v-19f2d51e importance">{{detailObj.planReturnDate}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-19f2d51e payment-plan-main">
+            <view class="_p data-v-19f2d51e leftB-title">结余信息</view>
+            <view class="_div data-v-19f2d51e detail-message">
+              <view class="_div data-v-19f2d51e message-box" wx:if="{{detailObj.refundImprestAmount}}">
+                <view class="_p data-v-19f2d51e time">应退预付款</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundImprestAmount}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box" wx:if="{{detailObj.refundRentalAmount}}">
+                <view class="_p data-v-19f2d51e time">应退租金</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundRentalAmount}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">应退押金</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundDepositAmount}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">退款总金额</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundTotalAmount}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">退款总金额大写</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundTotalAmountWord}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">退款方式</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.refundWay == 0 ? '原路退款' : '银行卡退款'}}</view>
+              </view>
+              <view wx:if="{{detailObj.refundWay == 1}}" class="_div data-v-19f2d51e">
+                <view class="_div data-v-19f2d51e message-box">
+                  <view class="_p data-v-19f2d51e time">开户行卡号</view>
+                  <view class="_p data-v-19f2d51e">{{detailObj.cardNo}}</view>
+                </view>
+                <view class="_div data-v-19f2d51e message-box">
+                  <view class="_p data-v-19f2d51e time">开户人</view>
+                  <view class="_p data-v-19f2d51e">{{detailObj.accountPrincipalName}}</view>
+                </view>
+                <view class="_div data-v-19f2d51e message-box">
+                  <view class="_p data-v-19f2d51e time">开户行</view>
+                  <view class="_p data-v-19f2d51e">{{detailObj.bankName}}</view>
+                </view>
+                <view class="_div data-v-19f2d51e message-box">
+                  <view class="_p data-v-19f2d51e time">开户行信息</view>
+                  <view class="_p data-v-19f2d51e">{{detailObj.bankInfo}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-19f2d51e payment-plan-main">
+            <view class="_p data-v-19f2d51e leftB-title">签约人信息</view>
+            <view class="_div data-v-19f2d51e detail-message">
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">租用人</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.renterName}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">证件类型</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.certificateTypeName}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">证件号码</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.certificateNo}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">性别</view>
+                <view class="_p data-v-19f2d51e">{{sexObject[detailObj.renterSex]}}</view>
+              </view>
+              <view class="_div data-v-19f2d51e message-box">
+                <view class="_p data-v-19f2d51e time">电话号码</view>
+                <view class="_p data-v-19f2d51e">{{detailObj.renterPhone}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-19f2d51e flex-box-footer" wx:if="{{!isMemberConfirm}}">
+      <view class="_div data-v-19f2d51e btn-content"><button plain class="_button data-v-19f2d51e sure-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">确认</button> <button plain class="_button data-v-19f2d51e refuse-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">拒绝</button></view>
+    </view>
+  </view>
+</template>

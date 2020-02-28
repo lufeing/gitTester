@@ -1,0 +1,68 @@
+<import src="/components/center/chooseDate/index.vue.wxml" /><template name="4224c76c">
+  <form bindsubmit="handleProxy" class="_form data-v-76b6d63d order-content" data-eventid="{{'6'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-76b6d63d order-body">
+      <view class="_div data-v-76b6d63d header-content">
+        <image src="{{dataObj.imageUrl}}" class="_image data-v-76b6d63d room-img"></image>
+        <view class="_div data-v-76b6d63d state-box">
+          <view class="_div data-v-76b6d63d title">{{dataObj.communityName}}</view>
+          <view class="_div data-v-76b6d63d">
+            <view class="_p data-v-76b6d63d normal-price">挂牌价：￥{{dataObj.minRentPrice}}/月起</view>
+            <view class="_p data-v-76b6d63d mebmber-price">会员价：<label class="_span data-v-76b6d63d red">￥{{dataObj.minMemberPrice}}-{{dataObj.maxMemberPrice}}</label>/月</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-76b6d63d message-content">
+        <view class="_p data-v-76b6d63d label-title">基本信息</view>
+        <view class="_div data-v-76b6d63d">
+          <view class="_div data-v-76b6d63d space-box">
+            <view class="_p data-v-76b6d63d">您的姓名</view>
+            <view class="_p data-v-76b6d63d right-box"><input type="text" value="{{paramsObj.name}}" bindinput="handleProxy" bindblur="handleProxy" class="_input data-v-76b6d63d inputClass" name="name" placeholder="请输入您的姓名" placeholder-class="plClass" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+          </view>
+          <view class="_div data-v-76b6d63d space-box">
+            <view class="_p data-v-76b6d63d">联系电话</view>
+            <view class="_p data-v-76b6d63d right-box"><input type="text" value="{{paramsObj.phone}}" bindinput="handleProxy" bindblur="handleProxy" class="_input data-v-76b6d63d inputClass" name="phone" placeholder="请输入您的联系电话" placeholder-class="plClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+          </view> <template bindgetDateChange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="ff97bc58"></template>
+        </view>
+        <view class="_p data-v-76b6d63d label-title">更多信息<label class="_span data-v-76b6d63d small-font">非必须</label></view>
+        <view class="_div data-v-76b6d63d">
+          <picker mode="date" bindchange="handleProxy" start="{{dataObj.date}}" end="2022-01-01" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_picker data-v-76b6d63d">
+            <view class="_div data-v-76b6d63d box">
+              <view class="_div data-v-76b6d63d box-left">
+                <view class="_p data-v-76b6d63d title">期望入住时间</view>
+              </view>
+              <view class="_div data-v-76b6d63d box-right">
+                <view wx:if="{{!paramsObj.arrivalDate}}" class="_p data-v-76b6d63d plState mr_10">请选择期望入住时间</view>
+                <view class="_p data-v-76b6d63d state mr_10">{{paramsObj.arrivalDate}}</view>
+              </view>
+            </view>
+          </picker>
+          <picker bindchange="handleProxy" value="{{priceValue}}" range="{{priceRange}}" range-key="{{'listTitle'}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_picker data-v-76b6d63d">
+            <view class="_div data-v-76b6d63d box">
+              <view class="_div data-v-76b6d63d box-left">
+                <view class="_p data-v-76b6d63d title">租金预算</view>
+              </view>
+              <view class="_div data-v-76b6d63d box-right">
+                <view wx:if="{{!priceValue}}" class="_p data-v-76b6d63d plState mr_10">请选择租金预算</view>
+                <view class="_p data-v-76b6d63d state mr_10">{{priceRange[priceValue].listTitle}}</view>
+              </view>
+            </view>
+          </picker>
+          <picker bindchange="handleProxy" value="{{roomType}}" range="{{roomTypeRange}}" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_picker data-v-76b6d63d">
+            <view class="_div data-v-76b6d63d box">
+              <view class="_div data-v-76b6d63d box-left">
+                <view class="_p data-v-76b6d63d title">意向房型</view>
+              </view>
+              <view class="_div data-v-76b6d63d box-right">
+                <view wx:if="{{!roomType}}" class="_p data-v-76b6d63d plState mr_10">请选择意向房型</view>
+                <view wx:else class="_p data-v-76b6d63d state mr_10">{{roomTypeRange[roomType]}}</view>
+              </view>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-76b6d63d order-footer">
+      <view class="_p data-v-76b6d63d"><button class="_button data-v-76b6d63d sure-submit-button {{isDisabled ? 'garyBack' : ''}}" formType="submit">立即预约</button></view>
+    </view>
+  </form>
+</template>

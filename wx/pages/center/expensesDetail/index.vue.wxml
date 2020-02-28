@@ -1,0 +1,32 @@
+<template name="bc0aa6ae">
+  <view class="_div data-v-66a737b2 transactioin-detail-content">
+    <view class="_div data-v-66a737b2 transactioin-detail-main">
+      <view class="_div data-v-66a737b2 wallet-body-cell">
+        <view class="_div data-v-66a737b2 box">
+          <view class="_div data-v-66a737b2 box-left">
+            <view class="_p data-v-66a737b2 title">test</view>
+          </view>
+          <view class="_div data-v-66a737b2 box-right">
+            <view class="_p data-v-66a737b2 state">充值/提现/消费</view>
+          </view>
+        </view>
+        <view class="_div data-v-66a737b2 box">
+          <view class="_div data-v-66a737b2 box-left">
+            <view class="_p data-v-66a737b2 title">test</view>
+          </view>
+          <view class="_div data-v-66a737b2 box-right">
+            <view class="_p data-v-66a737b2 state red">充值/提现/消费</view>
+          </view>
+        </view>
+        <view class="_div data-v-66a737b2 box">
+          <view class="_div data-v-66a737b2 box-left">
+            <view class="_p data-v-66a737b2 title">test</view>
+          </view>
+          <view class="_div data-v-66a737b2 box-right">
+            <view class="_p data-v-66a737b2 state">充值/提现/消费</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

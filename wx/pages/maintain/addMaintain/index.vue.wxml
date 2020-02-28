@@ -1,0 +1,35 @@
+<import src="/components/center/communityPickerByContract/index.vue.wxml" />
+<import src="/components/center/chooseDate/index.vue.wxml" /><template name="b069bbbe">
+  <view class="_div data-v-564872dd flex-box-content clean-content">
+    <view class="_div data-v-564872dd flex-box-body normalBg">
+      <view class="_div data-v-564872dd project-title">基本信息</view>
+      <view class="_div data-v-564872dd base-message"><template bindgetContractChecked="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3ae6c1e6"></template> <template bindgetDateChange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="ff97bc58"></template></view>
+      <view class="_div data-v-564872dd project-title">维修类型</view>
+      <view class="_div data-v-564872dd problem-main">
+        <view class="_div data-v-564872dd problem-content">
+          <radio-group class="_radio-group data-v-564872dd radio-group" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            <view class="_div data-v-564872dd complaint-box" wx:key="index" key="{{index}}" wx:for="{{cleanItemList}}" wx:for-index="index" wx:for-item="item"><label class="_label data-v-564872dd radio-box">
+                <view class="_div data-v-564872dd question-cells">
+                  <view class="_div data-v-564872dd">
+                    <radio class="_radio data-v-564872dd radio" color="#BC171C" value="{{item.repairItemId}}" checked="{{item.checked}}" /> <label class="_span data-v-564872dd title">{{item.repairItemName}}</label></view>
+                  <view class="_b data-v-564872dd standard {{contractObj.checkedValue == item.repairItemId ? 'arrow-top' : 'arrow-bottom'}}"></view>
+                </view>
+                <view class="_div data-v-564872dd answer-cells" wx:if="{{contractObj.checkedValue == item.repairItemId}}">
+                  {{item.repairItemDescribe}}
+                </view>
+              </label></view>
+          </radio-group>
+        </view>
+      </view>
+      <view class="_div data-v-564872dd project-title">备注</view>
+      <view class="_div data-v-564872dd problem-main">
+        <view class="_div data-v-564872dd problem-content">
+          <radio-group class="_radio-group data-v-564872dd radio-group" bindchange="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+            <view class="_div data-v-564872dd complaint-box" wx:key="index" key="{{index}}" wx:for="{{remarkList}}" wx:for-index="index" wx:for-item="item"><label class="_label data-v-564872dd radio-box">
+                <view class="_div data-v-564872dd question-cells">
+                  <view class="_div data-v-564872dd">
+                    <radio class="_radio data-v-564872dd radio" color="#BC171C" value="{{item.id}}" checked="{{item.checked}}" /> <label class="_span data-v-564872dd title">{{item.title}}</label></view>
+                </view>
+              </label></view>
+          </radio-group>
+          <view wx:if="{{remarkInputModal}}" class="_p data-v-564872dd"><textarea value="{{contractObj.otherRemark}}" bindinput="handleProxy" class="_textarea data-v-564872dd textareaInput" placeholder="请输入你的备注信息~" placeholder-class="plClass" data-eventid="{{'4'}}" data-comkey="{{$k}}" /></view></view></view></view> <view class="_div data-v-564872dd flex-box-footer whiteBg"><view class="_div data-v-564872dd spaceBetween"><view class="_div data-v-564872dd left"><view class="_p data-v-564872dd price">¥{{contractObj.repairItemPrice}}</view> <view class="_p data-v-564872dd state">维修服务完成后支付</view><view class="_p data-v-564872dd"></view></view> <view class="_div data-v-564872dd right"><button class="_button data-v-564872dd apply-button" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">提交预约</button></view></view></view></view></template>

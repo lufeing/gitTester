@@ -1,0 +1,25 @@
+<template name="05cb0078">
+  <view class="_div data-v-dd277e80 QA-content">
+    <view class="_div data-v-dd277e80 QA-body">
+      <view class="_div data-v-dd277e80 QA-box" wx:key="index" key="{{index}}" wx:for="{{qaList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-dd277e80 title-content">
+          <view class="_div data-v-dd277e80 question">
+            <view class="_p data-v-dd277e80 icon">问</view>
+            <view class="_p data-v-dd277e80 title">社区离地铁有多远</view>
+          </view>
+          <view class="_p data-v-dd277e80 createTime">2019-10-10</view>
+        </view>
+        <view class="_div data-v-dd277e80 answer-cells" wx:key="idx" key="{{idx}}" wx:for="{{item.answerList}}" wx:for-index="idx" wx:for-item="itm">
+          <view class="_p data-v-dd277e80">
+            <image class="_image data-v-dd277e80 headImg" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/user.png"></image>
+          </view>
+          <view class="_div data-v-dd277e80 answer-body">
+            <view class="_p data-v-dd277e80 phone">133***4514</view>
+            <view class="_p data-v-dd277e80 answer">就在地铁A出口50米的样子</view>
+          </view>
+          <view class="_p data-v-dd277e80 createTime">2019-10-10</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

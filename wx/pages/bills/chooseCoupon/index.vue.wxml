@@ -1,0 +1,51 @@
+<template name="b974525a">
+  <view class="_div data-v-7b7ee595 flex-box-content choose-coupon-content">
+    <view class="_div data-v-7b7ee595 mp-tabs mg_0 white_bg">
+      <view class="_div data-v-7b7ee595 tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-7b7ee595 title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+    </view>
+    <view class="_div data-v-7b7ee595 flex-box-body gray_bg">
+      <view class="_div data-v-7b7ee595 no-use-coupon">
+        <view class="_p data-v-7b7ee595">不使用优惠券</view>
+        <radio-group bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_radio-group data-v-7b7ee595"><label class="_label data-v-7b7ee595 label">
+            <radio class="_radio data-v-7b7ee595 no-use-radio" color="#BC171C" value="{{noUseCoupon}}" checked="{{noUseCoupon}}" /></label></radio-group>
+      </view>
+      <view class="_div data-v-7b7ee595 coupons-body" wx:if="{{dataList.length}}">
+        <view class="_div data-v-7b7ee595 coupons-box" wx:key="objIdx" key="{{objIdx}}" wx:for="{{dataList}}" wx:for-index="objIdx" wx:for-item="object">
+          <view class="_div data-v-7b7ee595 coupons-label-title">
+            <view class="_p data-v-7b7ee595">{{object.subjectName}}</view>
+          </view>
+          <radio-group class="_radio-group data-v-7b7ee595">
+            <view class="_div data-v-7b7ee595 coupons-box-body" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3_'+objIdx+'-'+index}}" data-comkey="{{$k}}" wx:for="{{object.memberCouponVoList}}" wx:for-index="index" wx:for-item="item">
+              <view class="_div data-v-7b7ee595 coupons-box-detail">
+                <view class="_div data-v-7b7ee595 denomination {{tabsIndex == 0 && item.matchAccount == true ? '' : 'denomination-disabeled'}}">
+                  {{item.couponType == 2 ? item.valueDescription + '折' : '¥' + item.valueDescription}}
+                </view>
+                <view class="_div data-v-7b7ee595 state-box">
+                  <view class="_div data-v-7b7ee595 cells">
+                    <view class="_div data-v-7b7ee595 left-status" catchtap="handleProxy" data-eventid="{{'2_'+objIdx+'-'+index}}" data-comkey="{{$k}}">
+                      <view class="_p data-v-7b7ee595 title {{tabsIndex == 0 ? '' : 'title-disabeled'}}">{{item.couponTemplateName}}</view>
+                      <view class="_p data-v-7b7ee595 state">{{item.valueRequire ? item.valueRequire : '--'}}</view>
+                      <view class="_p data-v-7b7ee595 state">{{item.startDate}}-{{item.endDate ? item.endDate : '长期'}}</view>
+                      <view class="_p data-v-7b7ee595 state">门店限制：{{item.storeRequire ? item.storeRequire : '--'}}</view>
+                      <view class="_p data-v-7b7ee595 state">租期限制：{{item.tenancyTermRequire ? item.tenancyTermRequire : '无限制'}}</view>
+                    </view> <label class="_label data-v-7b7ee595 right-choose" wx:if="{{tabsIndex == 0 && item.matchAccount == true}}">
+                      <radio class="_radio data-v-7b7ee595 subjectRadio" color="#BC171C" value="{{index}}" checked="{{item.checked}}" /></label>
+                  </view>
+                  <view class="_div data-v-7b7ee595 limit">
+                    <view class="_p data-v-7b7ee595 state">抵扣费项：{{item.subjectRequire}}</view>
+                    <view class="_p data-v-7b7ee595 state inline">使用说明<view class="_b data-v-7b7ee595 {{expandObject[index] ? 'arrow-top' : 'arrow-bottom'}}"></view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view wx:if="{{expandObject[item.memberCouponId]}}" class="_div data-v-7b7ee595 coupons-hidden-state">
+                {{item.remark}}
+              </view>
+            </view>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-7b7ee595 flex-footer"><button class="_button data-v-7b7ee595 sure-submit-button w_690" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">确定</button></view>
+  </view>
+</template>

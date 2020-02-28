@@ -1,0 +1,13 @@
+<template name="4c82deae">
+  <view class="_div data-v-297dca8e note_content">
+    <view class="_div data-v-297dca8e">
+      <view class="_p data-v-297dca8e state">自动续保,不用担心续保不及时造成保障中断,省心！</view>
+      <view class="_p data-v-297dca8e state">开通自动续保后，可以随时取消，放心！</view>
+      <view class="_p data-v-297dca8e state">自动续保自动扣款,安心！</view>
+      <view class="_div data-v-297dca8e state">
+        <view class="_p data-v-297dca8e">阅读并同意以下条款</view>
+        <view class="_p data-v-297dca8e xieyi" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{agreementList}}" wx:for-index="index" wx:for-item="item">《{{item.agreementName}}》</view>
+      </view>
+    </view>
+  </view>
+</template>

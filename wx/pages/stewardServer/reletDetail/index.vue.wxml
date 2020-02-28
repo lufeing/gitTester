@@ -1,0 +1,68 @@
+<import src="/components/stewardServer/chooseReason.vue.wxml" /><template name="662ec3d6">
+  <view class="_div data-v-4ab9778e content flex-box-content">
+    <view class="_div data-v-4ab9778e flex-box-body">
+      <view class="_div data-v-4ab9778e transactioin-detail-main">
+        <view class="_div data-v-4ab9778e wallet-body-cell">
+          <view class="_div data-v-4ab9778e box">
+            <view class="_div data-v-4ab9778e box-left">
+              <view class="_p data-v-4ab9778e title">在住合同到期日</view>
+            </view>
+            <view class="_div data-v-4ab9778e box-right">
+              <view class="_p data-v-4ab9778e state">{{dataObj.endDate}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-4ab9778e box">
+            <view class="_div data-v-4ab9778e box-left">
+              <view class="_p data-v-4ab9778e title">续租社区</view>
+            </view>
+            <view class="_div data-v-4ab9778e box-right">
+              <view class="_p data-v-4ab9778e state">{{dataObj.communityName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-4ab9778e box">
+            <view class="_div data-v-4ab9778e box-left">
+              <view class="_p data-v-4ab9778e title">续租房间</view>
+            </view>
+            <view class="_div data-v-4ab9778e box-right">
+              <view class="_p data-v-4ab9778e state">{{dataObj.rentRelateName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-4ab9778e box">
+            <view class="_div data-v-4ab9778e box-left">
+              <view class="_p data-v-4ab9778e title">续租人</view>
+            </view>
+            <view class="_div data-v-4ab9778e box-right">
+              <view class="_p data-v-4ab9778e state">{{dataObj.renterName}}</view>
+            </view>
+          </view>
+          <picker bindchange="handleProxy" value="{{monthValue}}" range="{{monthRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-4ab9778e">
+            <view class="_div data-v-4ab9778e box">
+              <view class="_div data-v-4ab9778e box-left">
+                <view class="_p data-v-4ab9778e title">续租租期</view>
+              </view>
+              <view class="_div data-v-4ab9778e box-right">
+                <view class="_p data-v-4ab9778e state mr_10">{{monthRange[monthValue]}}</view>
+                <view class="_b data-v-4ab9778e arrow-right"></view>
+              </view>
+            </view>
+          </picker>
+          <view class="_div data-v-4ab9778e box">
+            <view class="_div data-v-4ab9778e box-left">
+              <view class="_p data-v-4ab9778e title">续住时期</view>
+            </view>
+            <view class="_div data-v-4ab9778e box-right">
+              <view class="_p data-v-4ab9778e state">{{reletObj.beginDate}}--{{reletObj.endDate}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-4ab9778e status-cells" wx:key="index" key="{{index}}" wx:for="{{statusList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-4ab9778e times">{{item.createTime}}</view>
+        <view class="_p data-v-4ab9778e state">{{item.operation}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-4ab9778e flex-box-footer" wx:if="{{dataObj.status == 10}}">
+      <view class="_div data-v-4ab9778e btn-content"><button plain class="_button data-v-4ab9778e edit-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">修改&提交</button> <button plain class="_button data-v-4ab9778e cancal-btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">取消续租</button></view>
+    </view> <template bindchooseResultParam="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="1e593fd2"></template>
+  </view>
+</template>

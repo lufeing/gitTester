@@ -1,0 +1,11 @@
+<template name="74a9b07c">
+  <view class="_div data-v-6537ad84">
+    <view class="_div data-v-6537ad84 label-city-area">
+      <view class="_div data-v-6537ad84 list-item" bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{letterCityRespList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6537ad84 list-cell">
+          {{item.countryNameZh}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

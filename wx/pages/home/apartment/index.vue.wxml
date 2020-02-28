@@ -1,0 +1,41 @@
+<import src="/components/home/search/searchInput.vue.wxml" /><template name="41bd60ca">
+  <view class="_div data-v-4585c117 {{screenModal.show ? 'body-lock' : ''}}">
+    <view class="_header data-v-4585c117"><template data="{{...$root[$kk+'0'], $root}}" is="c3bbee06"></template>
+      <view class="_div data-v-4585c117 select-condition-content">
+        <view class="_div data-v-4585c117 select-cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{bannerList}}" wx:for-index="index" wx:for-item="item">
+          {{item.choose ? item.data[item.choose].listTitle : item.title}}
+          <view class="_b data-v-4585c117 {{screenModal.show && screenModal.index == index ? 'arrow-top' : 'arrow-bottom'}}"></view>
+        </view>
+      </view>
+      <scroll-view class="_scroll-view data-v-4585c117 screen-content" wx:key="index" key="{{index}}" scroll-y="true" wx:if="{{screenModal.show && screenModal.index == index}}" wx:for="{{bannerList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-4585c117 screen-item {{item.choose == index2 ? 'selected' : ''}}" wx:key="index2" key="{{index2}}" bindtap="handleProxy" data-eventid="{{'1_'+index+'-'+index2}}" data-comkey="{{$k}}" wx:for="{{item.data}}" wx:for-index="index2" wx:for-item="item2">
+          {{item2.listTitle}}
+        </view>
+      </scroll-view>
+    </view>
+    <view class="_div data-v-4585c117 apartment-body" catchtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-4585c117 mask" hidden="{{!(screenModal.show)}}"></view>
+      <block wx:if="{{testList.length == 0 && isGet}}">
+        <view class="_div data-v-4585c117 nodata">已经没有更多了</view>
+      </block>
+      <block wx:else>
+        <navigator class="_navigator data-v-4585c117 apartment-cell" wx:key="index" key="{{index}}" url="{{'/pages/home/apartmentDetail/main?communityId=' + object.communityId}}" wx:for="{{testList}}" wx:for-index="index" wx:for-item="object">
+          <view class="_div data-v-4585c117 apartment-list">
+            <view class="_div data-v-4585c117 apartment-label" style=" {{('background:' + colorObj[object.brandName] + ';')}}">{{object.brandName}}</view>
+            <image src="{{object.imageUrl}}" class="_image data-v-4585c117 community-image"></image>
+            <view class="_div data-v-4585c117 community-detail">
+              <view class="_p data-v-4585c117 title">{{object.communityName}}</view>
+              <view class="_p data-v-4585c117 old-price">挂牌价:￥{{object.minRentPrice}}/月起</view>
+            </view>
+            <view class="_div data-v-4585c117 community-detail">
+              <view class="_p data-v-4585c117 address">
+                <image class="_image data-v-4585c117 address-img" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/icon_location.png"></image>{{object.detailAddress}}
+              </view>
+              <view class="_p data-v-4585c117 price">会员价:<label class="_span data-v-4585c117 red">￥{{object.minMemberPrice}}-{{object.maxMemberPrice}}</label>/月</view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</template>

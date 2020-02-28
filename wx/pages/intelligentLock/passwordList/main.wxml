@@ -1,0 +1,1 @@
+<import src="/pages/intelligentLock/passwordList/index.vue.wxml" /><template is="20e6a24e" data="{{ ...$root['0'], $root }}"/>

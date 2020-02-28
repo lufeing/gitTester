@@ -1,0 +1,143 @@
+<import src="/components/stewardServer/imageUpload.vue.wxml" /><template name="4a4d2b28">
+  <form bindsubmit="handleProxy" class="_form data-v-2ed7dee0 transactioin-detail-content flex-box-content" data-eventid="{{'11'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-2ed7dee0 flex-box-body">
+      <view class="_div data-v-2ed7dee0 transactioin-detail-main">
+        <view class="_div data-v-2ed7dee0 wallet-body-cell">
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">退租社区</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 state">{{paramObj.communityName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">退租房间</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 state">{{paramObj.rentRelateName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">退租人</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 state">{{paramObj.renterName}}</view>
+            </view>
+          </view>
+          <view wx:if="{{changeDetailModal}}" class="_div data-v-2ed7dee0">
+            <view class="_div data-v-2ed7dee0 box">
+              <view class="_div data-v-2ed7dee0 box-left">
+                <view class="_p data-v-2ed7dee0 title">申请退租日期</view>
+              </view>
+              <view class="_div data-v-2ed7dee0 box-right">
+                <view class="_p data-v-2ed7dee0 state">{{paramObj.planReturnDate}}</view>
+              </view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box">
+              <view class="_div data-v-2ed7dee0 box-left">
+                <view class="_p data-v-2ed7dee0 title">退租原因</view>
+              </view>
+              <view class="_div data-v-2ed7dee0 box-right">
+                <view class="_p data-v-2ed7dee0 state">{{paramObj.reason}}</view>
+              </view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box">
+              <view class="_div data-v-2ed7dee0 box-left">
+                <view class="_p data-v-2ed7dee0 title">退租方式</view>
+              </view>
+              <view class="_div data-v-2ed7dee0 box-right">
+                <view class="_p data-v-2ed7dee0 state">{{returnTypeRange[returnType]}}</view>
+              </view>
+            </view>
+          </view>
+          <view wx:else class="_div data-v-2ed7dee0">
+            <picker mode="date" bindchange="handleProxy" start="{{pickerStartTime}}" end="2021-01-01" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-2ed7dee0">
+              <view class="_div data-v-2ed7dee0 box">
+                <view class="_div data-v-2ed7dee0 box-left">
+                  <view class="_p data-v-2ed7dee0 title">申请退租日期</view>
+                </view>
+                <view class="_div data-v-2ed7dee0 box-right">
+                  <view class="_p data-v-2ed7dee0 plClass" wx:if="{{!paramObj.planReturnDate}}">选择退租日期</view>
+                  <view class="_p data-v-2ed7dee0 state">{{paramObj.planReturnDate}}</view>
+                  <view class="_b data-v-2ed7dee0 arrow-right"></view>
+                </view>
+              </view>
+            </picker>
+            <view class="_div data-v-2ed7dee0 box" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+              <view class="_div data-v-2ed7dee0 box-left">
+                <view class="_p data-v-2ed7dee0 title">退租原因</view>
+              </view>
+              <view class="_div data-v-2ed7dee0 box-right">
+                <view class="_p data-v-2ed7dee0 plClass" wx:if="{{!paramObj.reason}}">选择退租原因</view>
+                <view class="_p data-v-2ed7dee0 state">{{paramObj.reason}}</view>
+                <view class="_b data-v-2ed7dee0 arrow-right"></view>
+              </view>
+            </view>
+            <picker bindchange="handleProxy" value="{{returnType}}" range="{{returnTypeRange}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_picker data-v-2ed7dee0">
+              <view class="_div data-v-2ed7dee0 box">
+                <view class="_div data-v-2ed7dee0 box-left">
+                  <view class="_p data-v-2ed7dee0 title">退租方式</view>
+                </view>
+                <view class="_div data-v-2ed7dee0 box-right">
+                  <view class="_p data-v-2ed7dee0 state">{{returnTypeRange[returnType]}}</view>
+                  <view class="_b data-v-2ed7dee0 arrow-right"></view>
+                </view>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-2ed7dee0 bank-card-content" wx:if="{{showBankModal}}">
+        <view class="_div data-v-2ed7dee0 wallet-body-cell">
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">*银行卡号</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 right-box"><input type="number" name="cardNo" disabled="{{changeDetailModal}}" value="{{paramObj.cardNo}}" bindinput="handleProxy" class="_input data-v-2ed7dee0 inputClass" placeholder="请输入你的银行卡号" data-eventid="{{'3'}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view>
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">*开户人</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 right-box"><input type="text" name="accountPrincipalName" disabled="{{changeDetailModal}}" value="{{paramObj.accountPrincipalName}}" bindinput="handleProxy" class="_input data-v-2ed7dee0 inputClass" placeholder="请输入你的开户人" data-eventid="{{'4'}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view>
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">*开户行</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 right-box"><input type="text" name="bankName" disabled="{{changeDetailModal}}" value="{{paramObj.bankName}}" bindinput="handleProxy" class="_input data-v-2ed7dee0 inputClass" placeholder="请输入你的开户行名称" data-eventid="{{'5'}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view>
+          <view class="_div data-v-2ed7dee0 box">
+            <view class="_div data-v-2ed7dee0 box-left">
+              <view class="_p data-v-2ed7dee0 title">*开户行信息</view>
+            </view>
+            <view class="_div data-v-2ed7dee0 box-right">
+              <view class="_p data-v-2ed7dee0 right-box"><input type="text" name="bankInfo" disabled="{{changeDetailModal}}" value="{{paramObj.bankInfo}}" bindinput="handleProxy" class="_input data-v-2ed7dee0 inputClass" placeholder="请输入开户行信息" data-eventid="{{'6'}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view> <template bindgetImageObj="handleProxy" bindgetChangeWay="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="600c3f16"></template>
+        </view>
+      </view>
+      <view class="_div data-v-2ed7dee0 status-cells" wx:key="index" key="{{index}}" wx:for="{{statusList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-2ed7dee0 times">{{item.createTime}}</view>
+        <view class="_p data-v-2ed7dee0 state">{{item.operation}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-2ed7dee0 flex-box-footer" wx:if="{{!changeDetailModal}}">
+      <view class="_div data-v-2ed7dee0 btn-content"><button plain class="_button data-v-2ed7dee0 edit-btn" formType="submit">修改&提交</button> <button plain class="_button data-v-2ed7dee0 cancal-btn" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">取消退租</button></view>
+    </view>
+    <modal title="反馈您取消续租的原因：" hidden="{{serverModal}}" bindconfirm="handleProxy" bindcancel="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_modal data-v-2ed7dee0">
+      <view class="_div data-v-2ed7dee0 modal-body">
+        <view class="_div data-v-2ed7dee0 reason" wx:key="index" key="{{index}}" wx:for="{{chooiseList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-2ed7dee0 label {{chooiseIndex === index ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'9_'+index}}" data-comkey="{{$k}}">{{item.choiceReason}}</label></view>
+      </view>
+    </modal>
+  </form>
+</template>

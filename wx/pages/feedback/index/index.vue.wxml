@@ -1,0 +1,23 @@
+<template name="1c24bd61">
+  <view class="_div data-v-d9504546 feedback-content">
+    <view class="_div data-v-d9504546 feedback-header">
+      <navigator url="/pages/feedback/complaint/main" class="_navigator data-v-d9504546 space-cells">
+        <view class="_p data-v-d9504546">
+          <image class="_image data-v-d9504546 imgClass" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/toushu2x.png"></image>
+        </view>
+        <view class="_p data-v-d9504546 state">我要投诉</view>
+      </navigator>
+      <navigator url="/pages/feedback/suggest/main" class="_navigator data-v-d9504546 space-cells">
+        <view class="_p data-v-d9504546">
+          <image class="_image data-v-d9504546 imgClass" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/jianyi2x.png"></image>
+        </view>
+        <view class="_p data-v-d9504546 state">我要建议</view>
+      </navigator>
+    </view>
+    <view class="_div data-v-d9504546 feedback-body">
+      <navigator url="/pages/feedback/complaintList/main" class="_navigator data-v-d9504546 see-content">
+        <view class="_p data-v-d9504546 see-feedback">查看我的投诉</view>
+      </navigator>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,94 @@
+@import "../../../common/vendor.wxss";
+
+.activity_content.data-v-335f7324 {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #f7f6f6;
+}
+.activity_body.data-v-335f7324 {
+  position: relative;
+  padding: 30rpx;
+}
+.activity_box.data-v-335f7324 {
+  position: relative;
+  padding: 40rpx 0;
+  margin-bottom: 30rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.activity_box .activity_header.data-v-335f7324 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.activity_box .activity_header .left.data-v-335f7324 {
+  display: flex;
+}
+.activity_box .activity_header .title.data-v-335f7324 {
+  font-size: 30rpx;
+  font-family: Hiragino Sans GB;
+  font-weight: normal;
+  color: #333;
+  margin-right: 10rpx;
+}
+.activity_box .activity_header .endTime.data-v-335f7324 {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+}
+.activity_box .activity_header .free.data-v-335f7324 {
+  font-size: 20rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff;
+  padding: 6rpx 10rpx;
+  background: #bc171c;
+}
+.activity_box .activity_header .toll.data-v-335f7324 {
+  font-size: 24rpx;
+  font-family: Hiragino Sans GB;
+  font-weight: normal;
+  color: #bc171c;
+}
+.activity_box .bannerImg.data-v-335f7324 {
+  width: 690rpx;
+  height: 350rpx;
+  margin: 30rpx 0;
+}
+.activity_box .address.data-v-335f7324 {
+  display: flex;
+  font-size: 26rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+  padding: 0 20rpx;
+}
+.activity_box .address .imageClass.data-v-335f7324 {
+  width: 24rpx;
+  margin-right: 20rpx;
+}
+.activity_box .activity_intro.data-v-335f7324 {
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tabs_body.data-v-335f7324 {
+  position: relative;
+  background: #fff;
+}
+.tabs_body .active.data-v-335f7324 {
+  color: #bc171c;
+}
+.tabs_body .mtb_0.data-v-335f7324 {
+  background: #fff;
+  margin: 0 !important;
+}

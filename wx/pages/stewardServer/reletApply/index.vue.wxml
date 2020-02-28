@@ -1,0 +1,44 @@
+<import src="/components/center/communityPickerByContract/index.vue.wxml" /><template name="29e34565">
+  <view class="_div data-v-ba144932 transactioin-detail-content">
+    <view class="_div data-v-ba144932 transactioin-detail-main">
+      <view class="_div data-v-ba144932 wallet-body-cell"><template bindgetContractChecked="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3ae6c1e6"></template>
+        <view class="_div data-v-ba144932 box">
+          <view class="_div data-v-ba144932 box-left">
+            <view class="_p data-v-ba144932 title">在住合同到期日</view>
+          </view>
+          <view class="_div data-v-ba144932 box-right">
+            <view class="_p data-v-ba144932 state">{{paramObj.endDate}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-ba144932 box">
+          <view class="_div data-v-ba144932 box-left">
+            <view class="_p data-v-ba144932 title">续租人</view>
+          </view>
+          <view class="_div data-v-ba144932 box-right">
+            <view class="_p data-v-ba144932 state">{{paramObj.renterName}}</view>
+          </view>
+        </view>
+        <picker bindchange="handleProxy" value="{{monthValue}}" range="{{monthRange}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-ba144932">
+          <view class="_div data-v-ba144932 box">
+            <view class="_div data-v-ba144932 box-left">
+              <view class="_p data-v-ba144932 title">续租租期</view>
+            </view>
+            <view class="_div data-v-ba144932 box-right">
+              <view class="_p data-v-ba144932 state mr_10">{{monthRange[monthValue]}}</view>
+              <view class="_b data-v-ba144932 arrow-right"></view>
+            </view>
+          </view>
+        </picker>
+        <view class="_div data-v-ba144932 box">
+          <view class="_div data-v-ba144932 box-left">
+            <view class="_p data-v-ba144932 title">续住时期</view>
+          </view>
+          <view class="_div data-v-ba144932 box-right">
+            <view class="_p data-v-ba144932 state">{{dateObj.beginDate}}--{{dateObj.endDate}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-ba144932 footer-content"><button class="_button data-v-ba144932 sure-submit-button" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">我要续租</button></view>
+  </view>
+</template>

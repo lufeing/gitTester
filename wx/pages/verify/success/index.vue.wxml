@@ -1,0 +1,12 @@
+<template name="b5a765f4">
+  <view class="_div data-v-355eadc2 flex-box-content">
+    <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/success2x.png" class="_img data-v-355eadc2 success-image"></image>
+    <view class="_div data-v-355eadc2 success-text">审核成功</view>
+    <view class="_div data-v-355eadc2 success-description">您已审核成功,需要再次认证？</view>
+    <view class="_div data-v-355eadc2 button-main">
+      <view class="_div data-v-355eadc2 commit returnBack" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">返回个人中心</view>
+      <view class="_div data-v-355eadc2 commit afresh-identity" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">重新认证</view>
+      <view class="_div data-v-355eadc2 empty-bottom"></view>
+    </view>
+  </view>
+</template>

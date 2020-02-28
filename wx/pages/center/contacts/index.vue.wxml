@@ -1,0 +1,10 @@
+<template name="52687030">
+  <form bindsubmit="handleProxy" class="_form data-v-03ccb06e transactioin-detail-content flex-box-content" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-03ccb06e wallet-body-cell">
+      <view class="_div data-v-03ccb06e box"><input type="text" name="contactsName" class="_input data-v-03ccb06e inputClass" value="{{contactObj.contactsName}}" bindinput="handleProxy" placeholder="紧急联系人姓名" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+      <view class="_div data-v-03ccb06e box"><input type="text" name="contactsPhone" class="_input data-v-03ccb06e inputClass" value="{{contactObj.contactsPhone}}" bindinput="handleProxy" placeholder="紧急联系人联系电话" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+      <view class="_div data-v-03ccb06e box"><input type="text" name="contactsRelation" class="_input data-v-03ccb06e inputClass" value="{{contactObj.contactsRelation}}" bindinput="handleProxy" placeholder="彼此关系" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></view>
+      <view class="_div data-v-03ccb06e flex-box-footer mt_20"><button class="_button data-v-03ccb06e allow-button" formType="submit">确定</button></view>
+    </view>
+  </form>
+</template>

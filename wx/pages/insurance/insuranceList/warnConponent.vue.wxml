@@ -1,0 +1,30 @@
+<template name="464070d2">
+  <view class="_div data-v-cd14666c">
+    <view class="_div data-v-cd14666c warn-body" wx:if="{{tabsIndex === 0}}">
+      <view class="_div data-v-cd14666c space-box">
+        <view class="_p data-v-cd14666c">次月自动续保</view>
+        <view class="_div data-v-cd14666c">
+          <switch style="zoom:0.8" checked="{{zkwyObject.autoInsurance}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_switch data-v-cd14666c" />
+        </view>
+      </view>
+      <view class="_div data-v-cd14666c space-box" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view class="_p data-v-cd14666c">出险理赔</view>
+        <view class="_div data-v-cd14666c">
+          <view class="_b data-v-cd14666c arrow-right"></view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-cd14666c shadow_content" wx:if="{{shareModal}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+    <view class="_div data-v-cd14666c choosen" wx:if="{{shareModal}}" animation="{{animationData}}">
+      <view class="_div data-v-cd14666c container-box">
+        <view class="_div data-v-cd14666c close-modal" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"> x </view>
+        <view class="_div data-v-cd14666c status-body">
+          <view class="_p data-v-cd14666c title">出险理赔</view>
+          <view class="_h3 data-v-cd14666c call">出险请拨打：95500</view>
+          <view class="_p data-v-cd14666c status">1、人工反馈时，需要提供保险订单号。</view>
+          <view class="_p data-v-cd14666c status">2、同时保护现场环境，等待保险理赔人员上门核实</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

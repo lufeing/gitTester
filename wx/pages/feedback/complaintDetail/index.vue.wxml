@@ -1,0 +1,31 @@
+<template name="f6aa10aa">
+  <view class="_div data-v-3d25ce32 my-complaint-content">
+    <view class="_div data-v-3d25ce32 my-complaint-body">
+      <view class="_div data-v-3d25ce32 my-complaint-cells">
+        <view class="_div data-v-3d25ce32 complaint-box">
+          <view class="_p data-v-3d25ce32">提交时间</view>
+          <view class="_p data-v-3d25ce32 center">{{paramsObj.createTime}}</view>
+          <view class="_p data-v-3d25ce32 state">{{paramsObj.dealResultType == 10 ? '受理中' : '完成'}}</view>
+        </view>
+      </view>
+      <view class="_div data-v-3d25ce32 my-complaint-cells">
+        <view class="_div data-v-3d25ce32 complaint-box">
+          <view class="_p data-v-3d25ce32">投诉问题</view>
+          <view class="_p data-v-3d25ce32 center">{{paramsObj.complaintTitleName}}</view>
+        </view>
+      </view>
+      <view class="_div data-v-3d25ce32 my-complaint-cells">
+        <view class="_div data-v-3d25ce32 complaint-box">
+          <view class="_p data-v-3d25ce32">投诉内容</view>
+          <view class="_p data-v-3d25ce32 center">{{paramsObj.complaintDetails}}</view>
+        </view>
+      </view>
+      <view class="_div data-v-3d25ce32 my-complaint-cells">
+        <view class="_div data-v-3d25ce32 complaint-box">
+          <view class="_p data-v-3d25ce32">回复信息</view>
+          <view class="_p data-v-3d25ce32 center">{{paramsObj.complaintReply}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

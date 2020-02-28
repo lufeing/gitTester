@@ -1,0 +1,15 @@
+<template name="d7140186">
+  <view class="_div data-v-281a3c3f">
+    <navigator class="_navigator data-v-281a3c3f item_list" wx:key="index" key="{{index}}" url="{{'/pages/home/houseType/main?queryData=' + queryData + '&communityHouseStyleId=' + item.communityHouseStyleId}}" wx:for="{{roomTypeList}}" wx:for-index="index" wx:for-item="item">
+      <image src="{{item.imageMini.imageUrl}}" class="_img data-v-281a3c3f community-image"></image>
+      <view class="_div data-v-281a3c3f community-detail">
+        <view class="_p data-v-281a3c3f title">{{item.houseStyleName}}</view>
+        <view class="_p data-v-281a3c3f address" wx:if="{{item.minRentPrice}}">挂牌价:￥{{item.minRentPrice}}/月</view>
+      </view>
+      <view class="_div data-v-281a3c3f community-detail">
+        <view class="_p data-v-281a3c3f address"></view>
+        <view class="_p data-v-281a3c3f price" wx:if="{{item.minMemberPrice}}"> 会员价: <label class="_span data-v-281a3c3f red">￥{{item.minMemberPrice}}-{{item.maxMemberPrice}}</label>/月 </view>
+      </view>
+    </navigator>
+  </view>
+</template>

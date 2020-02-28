@@ -1,0 +1,52 @@
+<template name="c96e77d4">
+  <view class="_div data-v-b37006d8 wallet-content">
+    <view class="_div data-v-b37006d8 wallet-header">
+      <view class="_div data-v-b37006d8 wallet-header-item">
+        <view class="_div data-v-b37006d8 price-box">
+          <view class="_p data-v-b37006d8 price">¥1000.00</view>
+          <view class="_p data-v-b37006d8 state">可用余额(元)</view>
+        </view> <button class="_button data-v-b37006d8 wallet-recharge">充值</button>
+      </view>
+      <view class="_div data-v-b37006d8 wallet-header-item">
+        <view class="_div data-v-b37006d8 price-box">
+          <view class="_p data-v-b37006d8 price">¥3000.00</view>
+          <view class="_p data-v-b37006d8 state">冻结余额(元)</view>
+        </view> <button class="_button data-v-b37006d8 wallet-deposit">提现</button>
+      </view>
+    </view>
+    <view class="_div data-v-b37006d8 wallet-body">
+      <view class="_div data-v-b37006d8 wallet-body-cell">
+        <navigator class="_navigator data-v-b37006d8 box" url="/pages/center/transactionDetail/main">
+          <view class="_p data-v-b37006d8">交易明细</view>
+          <view class="_p data-v-b37006d8">
+            <view class="_b data-v-b37006d8 arrow-right"></view>
+          </view>
+        </navigator>
+      </view>
+      <view class="_div data-v-b37006d8 wallet-body-cell">
+        <view class="_div data-v-b37006d8 box">
+          <view class="_p data-v-b37006d8">身份认证</view>
+          <view class="_div data-v-b37006d8 in-block">
+            <view class="_p data-v-b37006d8 state">已实名(张三)</view>
+            <view class="_b data-v-b37006d8 arrow-right"></view>
+          </view>
+        </view>
+        <view class="_div data-v-b37006d8 box">
+          <view class="_p data-v-b37006d8">我的银行卡</view>
+          <view class="_div data-v-b37006d8 in-block">
+            <view class="_p data-v-b37006d8 state">1张</view>
+            <view class="_b data-v-b37006d8 arrow-right"></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-b37006d8 wallet-body-cell">
+        <view class="_div data-v-b37006d8 box">
+          <view class="_p data-v-b37006d8">支付密码管理</view>
+          <view class="_p data-v-b37006d8">
+            <view class="_b data-v-b37006d8 arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

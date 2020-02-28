@@ -1,0 +1,53 @@
+@import "../../../common/vendor.wxss";
+
+.right-box.data-v-1ba6461a {
+  width: 400rpx;
+  text-align: right;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.right-box .plClass.data-v-1ba6461a {
+  font-weight: 400;
+  color: #ccc;
+}
+.plTitle.data-v-1ba6461a {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #ccc;
+}
+.right-box.data-v-1ba6461a {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 6rpx;
+}
+.order-footer.data-v-1ba6461a {
+  position: relative;
+  margin-top: 60rpx;
+}
+.order-footer .order-watch.data-v-1ba6461a {
+  width: 690rpx;
+  height: 88rpx;
+  background: #ccc;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+}
+.fixed-area.data-v-1ba6461a {
+  position: fixed;
+  bottom: 60rpx;
+  right: 30rpx;
+  width: 160rpx;
+  height: 88rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}

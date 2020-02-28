@@ -1,0 +1,11 @@
+<template name="2b237775">
+  <view class="_div data-v-38e73526 clean-content">
+    <view class="_div data-v-38e73526 clean-body">
+      <view class="_p data-v-38e73526"><button class="_button data-v-38e73526 handle-button apply" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">发起新预约</button></view>
+      <view class="_p data-v-38e73526"><button class="_button data-v-38e73526 handle-button list" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">查看已有预约</button></view>
+      <view class="_div data-v-38e73526 clean-tips">
+        <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_p data-v-38e73526">清洁服务流程</view>
+      </view>
+    </view>
+  </view>
+</template>

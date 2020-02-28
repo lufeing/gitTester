@@ -1,0 +1,28 @@
+<import src="/components/null.vue.wxml" /><template name="b75ed516">
+  <view class="_div data-v-a2de5026">
+    <view class="_div data-v-a2de5026 contract-list-content" wx:if="{{showNormalPage}}">
+      <view class="_div data-v-a2de5026 contract-list-area" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-a2de5026">
+          <view class="_div data-v-a2de5026 header">
+            <view class="_p data-v-a2de5026 label-title">申请状态</view>
+            <view class="_p data-v-a2de5026 contract-status" wx:if="{{item.status == 23}}">{{item.isMemberConfirm ? '用户已确认' : contractStatusObj[item.status]}}</view>
+            <view class="_p data-v-a2de5026 contract-status" wx:else>{{contractStatusObj[item.status]}}</view>
+          </view>
+          <view class="_div data-v-a2de5026 body">
+            <view class="_p data-v-a2de5026">
+              <image class="_image data-v-a2de5026 imgClass" src="{{item.communityImage}}"></image>
+            </view>
+            <view class="_div data-v-a2de5026 contract-column">
+              <view class="_p data-v-a2de5026 title">{{item.communityName}}</view>
+              <view class="_p data-v-a2de5026 rentRelateName">房间号：{{item.rentRelateName}}</view>
+              <view class="_div data-v-a2de5026 detail-message">
+                <view class="_p data-v-a2de5026">申请日期：{{item.applyDate}}</view>
+                <view wx:if="{{item.status >= 23 && item.isReview == false}}" class="_p data-v-a2de5026"><button plain class="_button data-v-a2de5026 button-warn" catchtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">点评</button></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

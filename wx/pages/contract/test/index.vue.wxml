@@ -1,0 +1,5 @@
+<template name="042f90d2">
+  <view class="_view data-v-71792210 page">
+    <view class="_view data-v-71792210 canvas-view"><canvas id="canvas" width="610" height="610" class="_canvas data-v-71792210 canvas" bindtouchStart="handleProxy" bindtouchMove="handleProxy" bindtouchEnd="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></canvas></view>
+  </view>
+</template>

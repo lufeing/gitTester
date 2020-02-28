@@ -1,0 +1,108 @@
+@import "../../../common/vendor.wxss";
+
+.topic_header.data-v-7ec78516 {
+  position: relative;
+  padding-top: 30rpx;
+}
+.topic_header .pd15.data-v-7ec78516 {
+  padding: 0 30rpx;
+}
+.topic_header .banner.data-v-7ec78516 {
+  width: 750rpx;
+  height: 240rpx;
+  margin-top: 20rpx;
+}
+.topic_content.data-v-7ec78516 {
+  padding: 40rpx 30rpx;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  border-bottom: 10rpx solid #f0f0f0;
+}
+.topic_content .title.data-v-7ec78516 {
+  color: #00a0e9;
+}
+.topic_content .topic_cont.data-v-7ec78516 {
+  color: #333333;
+}
+.comment-body.data-v-7ec78516 {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  height: 120rpx;
+  background: #f3f3f3;
+  padding: 0 30rpx;
+}
+.comment-body .commnt_input.data-v-7ec78516 {
+  width: 500rpx;
+  height: 74rpx;
+  background: #fff;
+  border: 2rpx solid #a0a0a0;
+  border-radius: 6rpx;
+  padding: 0 10rpx;
+  font-size: 24rpx;
+}
+.comment-body .handler_box.data-v-7ec78516 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.comment-body .handler_box .operationImg.data-v-7ec78516 {
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 30rpx;
+}
+.comment-body .handler_box .operationImg.data-v-7ec78516:last-child {
+  margin-right: 0;
+}
+.topic_comment.data-v-7ec78516 {
+  position: relative;
+}
+.topic_comment .comment_number.data-v-7ec78516 {
+  padding: 30rpx;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+.topic_comment .comment_box.data-v-7ec78516 {
+  position: relative;
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+}
+.topic_comment .comment_box .comment_value.data-v-7ec78516 {
+  position: relative;
+  margin-left: 84rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+  padding-bottom: 50rpx;
+}
+.userInfo.data-v-7ec78516 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfo .headerImg.data-v-7ec78516 {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+.userInfo .name.data-v-7ec78516 {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666;
+}
+.userInfo .time.data-v-7ec78516 {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}

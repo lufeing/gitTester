@@ -1,0 +1,86 @@
+<template name="44fdc47b">
+  <view class="_div data-v-2ecf6ebd content flex-box-content">
+    <view class="_div data-v-2ecf6ebd flex-box-body">
+      <view class="_div data-v-2ecf6ebd transactioin-detail-main">
+        <view class="_div data-v-2ecf6ebd wallet-body-cell">
+          <view class="_div data-v-2ecf6ebd box">
+            <view class="_div data-v-2ecf6ebd box-left">
+              <view class="_p data-v-2ecf6ebd title">换房社区</view>
+            </view>
+            <view class="_div data-v-2ecf6ebd box-right">
+              <view class="_p data-v-2ecf6ebd state">{{paramObj.communityName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-2ecf6ebd box">
+            <view class="_div data-v-2ecf6ebd box-left">
+              <view class="_p data-v-2ecf6ebd title">换房房间</view>
+            </view>
+            <view class="_div data-v-2ecf6ebd box-right">
+              <view class="_p data-v-2ecf6ebd state">{{paramObj.rentRelateName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-2ecf6ebd box">
+            <view class="_div data-v-2ecf6ebd box-left">
+              <view class="_p data-v-2ecf6ebd title">入住人</view>
+            </view>
+            <view class="_div data-v-2ecf6ebd box-right">
+              <view class="_p data-v-2ecf6ebd state">{{paramObj.renterName}}</view>
+            </view>
+          </view>
+          <picker bindchange="handleProxy" value="{{roomType}}" range="{{roomTypeRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-2ecf6ebd">
+            <view class="_div data-v-2ecf6ebd box">
+              <view class="_div data-v-2ecf6ebd box-left">
+                <view class="_p data-v-2ecf6ebd title">意向房型</view>
+              </view>
+              <view class="_div data-v-2ecf6ebd box-right">
+                <view wx:if="{{!roomType}}" class="_p data-v-2ecf6ebd plState">请选择意向房型</view>
+                <view class="_p data-v-2ecf6ebd state">{{roomTypeRange[roomType]}}</view>
+                <view class="_b data-v-2ecf6ebd arrow-right"></view>
+              </view>
+            </view>
+          </picker>
+          <picker mode="date" value="{{paramObj.planChangeDate}}" bindchange="handleProxy" start="{{pickerStartTime}}" end="2019-06-01" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-2ecf6ebd">
+            <view class="_div data-v-2ecf6ebd box">
+              <view class="_div data-v-2ecf6ebd box-left">
+                <view class="_p data-v-2ecf6ebd title">换房日期</view>
+              </view>
+              <view class="_div data-v-2ecf6ebd box-right">
+                <view class="_p data-v-2ecf6ebd state mr_10">{{paramObj.planChangeDate}}</view>
+                <view class="_b data-v-2ecf6ebd arrow-right"></view>
+              </view>
+            </view>
+          </picker>
+          <view class="_div data-v-2ecf6ebd box" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            <view class="_div data-v-2ecf6ebd box-left">
+              <view class="_p data-v-2ecf6ebd title">换房原因</view>
+            </view>
+            <view class="_div data-v-2ecf6ebd box-right">
+              <view class="_p data-v-2ecf6ebd state">{{paramObj.reason}}</view>
+              <view class="_b data-v-2ecf6ebd arrow-right"></view>
+            </view>
+          </view>
+          <view class="_div data-v-2ecf6ebd box">
+            <view class="_div data-v-2ecf6ebd box-left">
+              <view class="_p data-v-2ecf6ebd title">换房要求</view>
+            </view>
+            <view class="_div data-v-2ecf6ebd box-right">
+              <view class="_p data-v-2ecf6ebd right-box"><input type="text" value="{{paramObj.changeRequire}}" bindinput="handleProxy" class="_input data-v-2ecf6ebd inputClass" placeholder="请输入你的换房要求" data-eventid="{{'3'}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-2ecf6ebd status-cells" wx:key="index" key="{{index}}" wx:for="{{statusList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-2ecf6ebd times">{{item.createTime}}</view>
+        <view class="_p data-v-2ecf6ebd state">{{item.operation}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-2ecf6ebd flex-box-footer" wx:if="{{detailStatus == 10}}">
+      <view class="_div data-v-2ecf6ebd btn-content"><button plain class="_button data-v-2ecf6ebd edit-btn" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">修改&提交</button> <button plain class="_button data-v-2ecf6ebd cancal-btn" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">取消换房</button></view>
+    </view>
+    <modal title="反馈您取消续租的原因：" hidden="{{serverModal}}" bindconfirm="handleProxy" bindcancel="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_modal data-v-2ecf6ebd">
+      <view class="_div data-v-2ecf6ebd modal-body">
+        <view class="_div data-v-2ecf6ebd reason" wx:key="index" key="{{index}}" wx:for="{{chooiseList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-2ecf6ebd label {{chooiseIndex === index ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}">{{item.choiceReason}}</label></view>
+      </view>
+    </modal>
+  </view>
+</template>

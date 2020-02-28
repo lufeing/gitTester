@@ -1,0 +1,26 @@
+<import src="/components/null.vue.wxml" /><template name="7ca4b290">
+  <view class="_div data-v-2f6ae7b4">
+    <view class="_div data-v-2f6ae7b4 my-complaint-content" wx:if="{{showNormalPage}}">
+      <view class="_div data-v-2f6ae7b4 my-complaint-body">
+        <view class="_div data-v-2f6ae7b4 my-complaint-cells" wx:key="index" key="{{index}}" wx:for="{{complainList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-2f6ae7b4 complaint-box">
+            <view class="_p data-v-2f6ae7b4">提交时间：</view>
+            <view class="_p data-v-2f6ae7b4 center">{{item.createTime}}</view>
+            <view class="_p data-v-2f6ae7b4 state">{{item.dealResultType == 10 ? '受理中' : '完成'}} </view>
+          </view>
+          <view class="_div data-v-2f6ae7b4 complaint-box">
+            <view class="_p data-v-2f6ae7b4">投诉问题：</view>
+            <view class="_p data-v-2f6ae7b4 center">{{item.complaintTitleName}}</view>
+          </view>
+          <view class="_div data-v-2f6ae7b4 complaint-box" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">
+            <view class="_p data-v-2f6ae7b4 minWid">投诉内容：</view>
+            <view class="_div data-v-2f6ae7b4 complaint-details">
+              <view class="_p data-v-2f6ae7b4 introduce {{isExpand[index] ? 'spread' : 'packUp'}}">{{item.complaintDetails}}</view>
+              <view class="_p data-v-2f6ae7b4 downUp">{{isExpand[index] ? '收起' : '查看更多'}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

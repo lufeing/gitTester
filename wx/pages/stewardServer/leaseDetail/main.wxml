@@ -1,0 +1,1 @@
+<import src="/pages/stewardServer/leaseDetail/index.vue.wxml" /><template is="4a4d2b28" data="{{ ...$root['0'], $root }}"/>

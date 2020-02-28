@@ -1,0 +1,12 @@
+<template name="3522856a">
+  <view class="_div data-v-ba407334 clean-content">
+    <view class="_div data-v-ba407334">
+      <view class="_div data-v-ba407334 complete-body">
+        <view class="_p data-v-ba407334 complete-tips">小主，清洁已经完成啦，本次需要支付<label class="_span data-v-ba407334 money">{{paramObj.realAmount}}</label>元</view>
+        <view wx:if="{{paramObj.reply}}" class="_div data-v-ba407334">
+          <view class="_p data-v-ba407334">管家回复:</view> <text class="_text data-v-ba407334 text">{{paramObj.reply}}</text>
+        </view>
+      </view> <button class="_button data-v-ba407334 clean-button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">立即支付</button>
+    </view>
+  </view>
+</template>

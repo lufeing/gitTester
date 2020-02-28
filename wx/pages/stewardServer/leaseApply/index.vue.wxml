@@ -1,0 +1,65 @@
+<import src="/components/center/communityPickerByContract/index.vue.wxml" />
+<import src="/pages/stewardServer/leaseApply/components/certificate.vue.wxml" />
+<import src="/components/stewardServer/region.vue.wxml" />
+<import src="/components/stewardServer/imageUpload.vue.wxml" />
+<import src="/components/stewardServer/chooseReason.vue.wxml" /><template name="7b91abd3">
+  <form bindsubmit="handleProxy" class="_form data-v-16b77c56 transactioin-detail-content" data-eventid="{{'13'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-16b77c56 transactioin-detail-main">
+      <view class="_div data-v-16b77c56 wallet-body-cell"><template bindgetContractChecked="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3ae6c1e6"></template> <template bindchangeIDCardModal="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="0e760cc0"></template>
+        <view class="_div data-v-16b77c56 box">
+          <view class="_div data-v-16b77c56 box-left">
+            <view class="_p data-v-16b77c56 title">退租人</view>
+          </view>
+          <view class="_div data-v-16b77c56 box-right">
+            <view class="_p data-v-16b77c56 state">{{paramObj.renterName}}</view>
+          </view>
+        </view>
+        <picker mode="date" bindchange="handleProxy" start="{{pickerStartTime}}" end="2021-01-01" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_picker data-v-16b77c56">
+          <view class="_div data-v-16b77c56 box">
+            <view class="_div data-v-16b77c56 box-left">
+              <view class="_p data-v-16b77c56 title">申请退租日期</view>
+            </view>
+            <view class="_div data-v-16b77c56 box-right">
+              <view class="_p data-v-16b77c56 plClass" wx:if="{{!paramObj.hopeDate}}">选择退租日期</view>
+              <view class="_p data-v-16b77c56 state">{{paramObj.hopeDate}}</view>
+              <view class="_b data-v-16b77c56 arrow-right"></view>
+            </view>
+          </view>
+        </picker>
+        <view class="_div data-v-16b77c56 box" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-16b77c56 box-left">
+            <view class="_p data-v-16b77c56 title">退租原因</view>
+          </view>
+          <view class="_div data-v-16b77c56 box-right">
+            <view class="_p data-v-16b77c56 plClass" wx:if="{{!paramObj.reason}}">选择退租原因</view>
+            <view class="_p data-v-16b77c56 state">{{paramObj.reason}}</view>
+            <view class="_b data-v-16b77c56 arrow-right"></view>
+          </view>
+        </view>
+        <picker bindchange="handleProxy" value="{{returnType}}" range="{{returnTypeRange}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_picker data-v-16b77c56">
+          <view class="_div data-v-16b77c56 box">
+            <view class="_div data-v-16b77c56 box-left">
+              <view class="_p data-v-16b77c56 title">退租方式</view>
+            </view>
+            <view class="_div data-v-16b77c56 box-right">
+              <view class="_p data-v-16b77c56 state">{{returnTypeRange[returnType]}}</view>
+              <view class="_b data-v-16b77c56 arrow-right"></view>
+            </view>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="_div data-v-16b77c56 bank-card-content" wx:if="{{showBankModal}}">
+      <view class="_div data-v-16b77c56 wallet-body-cell">
+        <view class="_div data-v-16b77c56 space-box"><input type="text" name="cardNo" value="{{paramObj.cardNo}}" bindinput="handleProxy" disabled="{{isDisabeld}}" class="_input data-v-16b77c56 inputClass" placeholder="请输入你的银行卡号" data-eventid="{{'5'}}" data-comkey="{{$k}}" />
+          <view bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_p data-v-16b77c56">拍摄银行卡号</view>
+        </view>
+        <view class="_div data-v-16b77c56 space-box"><template bindgetAddress="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="5c30664b"></template></view>
+        <view class="_div data-v-16b77c56 space-box"><input type="text" name="accountPrincipalName" value="{{paramObj.accountPrincipalName}}" bindinput="handleProxy" class="_input data-v-16b77c56 inputClass" placeholder="请输入持卡人姓名" data-eventid="{{'8'}}" data-comkey="{{$k}}" /></view>
+        <view class="_div data-v-16b77c56 space-box"><input type="text" name="bankName" value="{{paramObj.bankName}}" bindinput="handleProxy" class="_input data-v-16b77c56 inputClass" placeholder="请输入银行名称" data-eventid="{{'9'}}" data-comkey="{{$k}}" /></view>
+        <view class="_div data-v-16b77c56 space-box"><input type="text" name="bankInfo" value="{{paramObj.bankInfo}}" bindinput="handleProxy" confirm-type="search" bindconfirm="handleProxy" class="_input data-v-16b77c56 inputClass" placeholder="请输入支行名称" data-eventid="{{'10'}}" data-comkey="{{$k}}" /></view> <template bindgetImageObj="handleProxy" bindgetChangeWay="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'3'], $root}}" is="600c3f16"></template>
+      </view>
+    </view>
+    <view class="_div data-v-16b77c56 footer-content"><button class="_button data-v-16b77c56 sure-submit-button" formType="submit">我要退房</button></view> <template bindchooseResultParam="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'4'], $root}}" is="1e593fd2"></template>
+  </form>
+</template>

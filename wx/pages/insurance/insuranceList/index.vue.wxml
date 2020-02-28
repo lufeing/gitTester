@@ -1,0 +1,37 @@
+<import src="/pages/insurance/insuranceList/warnConponent.vue.wxml" />
+<import src="/components/null.vue.wxml" /><template name="7ffc724c">
+  <view class="_div data-v-152d7378">
+    <view class="_div data-v-152d7378 insurance-content">
+      <view class="_div data-v-152d7378 insurance-detail-main">
+        <view class="_div data-v-152d7378 mp-tabs tab-content">
+          <view class="_div data-v-152d7378 tabs-item bold" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-152d7378 title {{tabsIndex == index ? 'active' : ''}}">{{item.title}}</label></view>
+        </view>
+        <view class="_div data-v-152d7378 insurance-list-content" wx:if="{{insuranceList.length}}">
+          <view class="_div data-v-152d7378 detail-body">
+            <view class="_div data-v-152d7378 wallet-body-cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{insuranceList}}" wx:for-index="index" wx:for-item="item">
+              <view class="_div data-v-152d7378 box">
+                <view class="_div data-v-152d7378 box-left flex-direction">
+                  <view class="_p data-v-152d7378 title">{{item.insuranceName}}</view>
+                  <view class="_p data-v-152d7378 state">保障日期：{{item.efficientDate}}至{{item.terminationDate}}</view>
+                </view>
+                <view class="_div data-v-152d7378 seal">
+                  <view class="_p data-v-152d7378 status" wx:if="{{item.status == 50}}"> 待生效 </view>
+                  <image wx:else mode="widthFix" src="{{item.status == 30 ? 'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/insurance/insing.png' : 'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/insurance/insed.png'}}" class="_image data-v-152d7378 imgClass"></image>
+                </view>
+              </view>
+            </view>
+          </view> <template bindgetZkwyObject="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="464070d2"></template>
+        </view>
+        <view wx:else class="_div data-v-152d7378">
+          <view class="_div data-v-152d7378 detail-body" wx:if="{{tabsIndex == 0}}">
+            <view class="_div data-v-152d7378 insuranceList-header">
+              <image mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/center/null.png" class="_image data-v-152d7378 null"></image>
+              <view class="_p data-v-152d7378">暂无生效保险</view> <button type="warn" class="_button data-v-152d7378 allow-button" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">立即购买</button>
+            </view>
+          </view>
+          <view class="_div data-v-152d7378 detail-body" wx:if="{{tabsIndex == 1}}"><template data="{{...$root[$kk+'1'], $root}}" is="6729b836"></template></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

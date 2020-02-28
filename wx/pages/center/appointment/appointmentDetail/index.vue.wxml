@@ -1,0 +1,54 @@
+<template name="b725861c">
+  <view class="_div data-v-384f968a order-content">
+    <view class="_div data-v-384f968a order-body">
+      <view class="_div data-v-384f968a header-content">
+        <image src="{{detailObj.communityPicture}}" class="_image data-v-384f968a room-img"></image>
+        <view class="_div data-v-384f968a state-box">
+          <view class="_div data-v-384f968a title">{{detailObj.communityName}}</view>
+          <view class="_div data-v-384f968a">
+            <view class="_p data-v-384f968a normal-price">挂牌价：￥{{detailObj.originalPrice}}/月起</view>
+            <view class="_p data-v-384f968a mebmber-price">会员价：<label class="_span data-v-384f968a red">￥{{detailObj.memberPriceMin}}-{{detailObj.memberPriceMax}}</label>/月</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-384f968a message-content">
+        <view class="_p data-v-384f968a label-title">基本信息</view>
+        <view class="_div data-v-384f968a">
+          <view class="_div data-v-384f968a space-box">
+            <view class="_p data-v-384f968a">您的姓名</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.name}}</view>
+          </view>
+          <view class="_div data-v-384f968a space-box">
+            <view class="_p data-v-384f968a">联系电话</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.phone}}</view>
+          </view>
+          <view class="_div data-v-384f968a space-box">
+            <view class="_p data-v-384f968a">看房日期</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.meetTime}}</view>
+          </view>
+        </view>
+        <view class="_p data-v-384f968a label-title">更多信息</view>
+        <view class="_div data-v-384f968a">
+          <view class="_div data-v-384f968a space-box" wx:if="{{detailObj.arrivalDate}}">
+            <view class="_p data-v-384f968a">期望入住时间</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.arrivalDate}}</view>
+          </view>
+          <view class="_div data-v-384f968a space-box" wx:if="{{detailObj.priceRange}}">
+            <view class="_p data-v-384f968a">租金预算</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.priceRange}}</view>
+          </view>
+          <view class="_div data-v-384f968a space-box" wx:if="{{detailObj.houseStyleName}}">
+            <view class="_p data-v-384f968a">意向房型</view>
+            <view class="_p data-v-384f968a right-box">{{detailObj.houseStyleName}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-384f968a order-footer">
+      <view class="_div data-v-384f968a footer-content">
+        <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_p data-v-384f968a">电话联系</view>
+        <view wx:if="{{status == 10}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_p data-v-384f968a">取消预约</view>
+      </view>
+    </view>
+  </view>
+</template>

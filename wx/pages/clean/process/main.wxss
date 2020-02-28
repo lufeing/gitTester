@@ -1,0 +1,52 @@
+@import "../../../common/vendor.wxss";
+
+.clean-content.data-v-4fd68a6c {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #f9f9f9 !important;
+}
+.backgroud_top.data-v-4fd68a6c {
+  width: 750rpx;
+  height: 360rpx;
+}
+.process-body.data-v-4fd68a6c {
+  padding: 0 30rpx 30rpx;
+  position: relative;
+  margin-top: -200rpx;
+}
+.process-body .backgroud_middle.data-v-4fd68a6c {
+  width: 700rpx;
+}
+.process-body .process-state.data-v-4fd68a6c {
+  width: 700rpx;
+  min-height: 580rpx;
+  background-image: url("https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/clean/press-bottom.png");
+  background-size: 100% 100%;
+  margin-top: 40rpx;
+}
+.process-body .title-content.data-v-4fd68a6c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx 0;
+}
+.process-body .title-content .defaultImg.data-v-4fd68a6c {
+  width: 18rpx;
+  height: 22rpx;
+}
+.process-body .title-content .title.data-v-4fd68a6c {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+  margin: 0 20rpx;
+}
+.process-body .artcile-body.data-v-4fd68a6c {
+  font-weight: 400;
+  color: #6d6d6d;
+  font-size: 24rpx;
+  padding: 0 30rpx;
+}
+.process-body .artcile-body .caps.data-v-4fd68a6c {
+  margin-bottom: 30rpx;
+}

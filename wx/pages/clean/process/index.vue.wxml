@@ -1,0 +1,27 @@
+<template name="2cde3b92">
+  <view class="_div data-v-4fd68a6c clean-content">
+    <view class="_div data-v-4fd68a6c">
+      <view class="_div data-v-4fd68a6c">
+        <image class="_image data-v-4fd68a6c backgroud_top" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/clean/Backgroud_top.jpg"></image>
+      </view>
+      <view class="_div data-v-4fd68a6c process-body">
+        <image class="_image data-v-4fd68a6c backgroud_middle" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/clean/process-state.png"></image>
+        <view class="_div data-v-4fd68a6c process-state">
+          <view class="_div data-v-4fd68a6c title-content">
+            <image class="_image data-v-4fd68a6c defaultImg" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/clean/default.png"></image>
+            <view class="_p data-v-4fd68a6c title">服务说明</view>
+            <image class="_image data-v-4fd68a6c defaultImg" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/clean/default.png"></image>
+          </view>
+          <view class="_div data-v-4fd68a6c artcile-body">
+            <view class="_p data-v-4fd68a6c caps">1、取消预约：在管家接单之前，您可在微信小程序上操作，在管家接单之后，则需要另外通知管家，进行关闭。</view>
+            <view class="_p data-v-4fd68a6c caps">2、费用：在完成清洁后，由于涉及到各个门店情况，您所住的房间大小，清洁程度，可能会导致实际清洁费用高于预约费用，详细情况建议询问所在的社区门店人员。</view>
+            <view class="_p data-v-4fd68a6c caps">3、支付：有两种方式供您选择：</view>
+            <view class="_p data-v-4fd68a6c">第一种，您可以选择单次支付服务产生的费用。</view>
+            <view class="_p data-v-4fd68a6c">第二种，可以跟月账单日时再统一支付。</view>
+            <view class="_p data-v-4fd68a6c">Tips,如若没有做选择或是及时支付，系统会自动录入账单日进行支付。</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

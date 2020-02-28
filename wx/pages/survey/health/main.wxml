@@ -1,0 +1,1 @@
+<import src="/pages/survey/health/index.vue.wxml" /><template is="0725fb58" data="{{ ...$root['0'], $root }}"/>

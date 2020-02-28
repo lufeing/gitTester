@@ -1,0 +1,30 @@
+@import "../../../common/vendor.wxss";
+
+.lock-detail-content.data-v-7130c9a3 {
+  padding: 0 30rpx;
+  height: 100%;
+  background: #f2f2f2;
+}
+.ttt.data-v-7130c9a3 {
+  position: relative;
+  width: 640rpx;
+  background: #f2f2f2;
+}
+.test.data-v-7130c9a3 {
+  width: 100%;
+  height: 124rpx;
+  position: relative;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+.test .www.data-v-7130c9a3 {
+  background: #fff;
+  width: 600rpx;
+}
+.test .www.data-v-7130c9a3::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 2rpx solid #50E3B6;
+  padding-right: 40rpx;
+}

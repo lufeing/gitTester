@@ -1,0 +1,28 @@
+<template name="7b761f9e">
+  <view class="_div data-v-8e355e4c flex-box-content">
+    <view class="_div data-v-8e355e4c flex-box-body lock-list-content">
+      <view class="_div data-v-8e355e4c bill-content">
+        <view class="_div data-v-8e355e4c bill-box">
+          <view class="_div data-v-8e355e4c top"></view>
+          <view class="_div data-v-8e355e4c bill-detail">
+            <view class="_div data-v-8e355e4c detail thead">
+              <view class="_p data-v-8e355e4c title">账单名称</view>
+              <view class="_p data-v-8e355e4c price">金额(元)</view>
+            </view>
+            <checkbox-group class="_checkbox-group data-v-8e355e4c">
+              <view class="_div data-v-8e355e4c detail" wx:key="idx" key="{{idx}}" wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item">
+                <view class="_p data-v-8e355e4c title">{{item.orderName}}</view>
+                <view class="_p data-v-8e355e4c price">{{item.realAmount}}</view>
+              </view>
+            </checkbox-group>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-8e355e4c flex-box-footer">
+      <view class="_div data-v-8e355e4c total-box">
+        <view class="_p data-v-8e355e4c total"> 合计： <label class="_span data-v-8e355e4c red">{{resultPrice}}</label></view> <button plain class="_button data-v-8e355e4c sure-pay" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">确认支付</button>
+      </view>
+    </view>
+  </view>
+</template>

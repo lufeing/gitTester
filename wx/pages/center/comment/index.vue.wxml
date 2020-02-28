@@ -1,0 +1,10 @@
+<import src="/components/center/comment/comment.vue.wxml" /><template name="49df3d3e">
+  <view class="_div data-v-4bdcc40c comment-content">
+    <view class="_div data-v-4bdcc40c comment-body">
+      <view class="_div data-v-4bdcc40c comment-handle">
+        <view class="_p data-v-4bdcc40c title">请对本次服务进行评价：</view>
+        <view class="_p data-v-4bdcc40c state">满意请给5星哦</view>
+      </view> <template bindgetStarReqList="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="6621898e"></template>
+      <view class="_div data-v-4bdcc40c comment-input-content">
+        <view class="_p data-v-4bdcc40c state">评价内容</view>
+        <view class="_p data-v-4bdcc40c"><textarea class="_textarea data-v-4bdcc40c textareaInput" value="{{commentObj.commentDetails}}" bindinput="handleProxy" placeholder="请输入你的评价~" placeholder-class="plClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view></view></view> <view class="_div data-v-4bdcc40c comment-footer"><button class="_button data-v-4bdcc40c sure-submit-button" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">提交</button></view></view></template>

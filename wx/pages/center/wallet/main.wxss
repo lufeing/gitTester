@@ -1,0 +1,84 @@
+@import "../../../common/vendor.wxss";
+
+.wallet-content.data-v-b37006d8 {
+  background: #f2f2f2;
+  height: 100%;
+}
+.wallet-header.data-v-b37006d8 {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+  background: #fff;
+}
+.wallet-header .wallet-header-item.data-v-b37006d8 {
+  flex: 1;
+  text-align: center;
+}
+.wallet-header .wallet-header-item .price-box.data-v-b37006d8 {
+  margin-bottom: 40rpx;
+}
+.wallet-header .wallet-header-item .price-box.data-v-b37006d8:first-child {
+  border-right: 2rpx solid #eeeeee;
+}
+.wallet-header .wallet-header-item .price.data-v-b37006d8 {
+  font-size: 48rpx;
+  font-weight: 500;
+  color: #333;
+}
+.wallet-header .wallet-header-item .state.data-v-b37006d8 {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+}
+.wallet-header .wallet-header-item .wallet-recharge.data-v-b37006d8 {
+  width: 240rpx;
+  height: 72rpx;
+  background: #b60005;
+  border: 2rpx solid #b60005;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #ffffff;
+}
+.wallet-header .wallet-header-item .wallet-deposit.data-v-b37006d8 {
+  width: 240rpx;
+  height: 72rpx;
+  background: #fff;
+  border: 2rpx solid #b60005;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #b60005;
+}
+.wallet-body.data-v-b37006d8 {
+  padding: 20rpx 0;
+}
+.wallet-body-cell.data-v-b37006d8 {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.wallet-body-cell .box.data-v-b37006d8 {
+  height: 100rpx;
+  padding-right: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.wallet-body-cell .box.data-v-b37006d8:last-child {
+  border-bottom: 0;
+}
+.wallet-body-cell .in-block.data-v-b37006d8 {
+  display: flex;
+  align-items: center;
+}
+.wallet-body-cell .in-block .state.data-v-b37006d8 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+  margin-right: 20rpx;
+}

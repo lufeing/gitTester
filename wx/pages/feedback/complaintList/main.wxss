@@ -1,0 +1,63 @@
+@import "../../../common/vendor.wxss";
+
+.my-complaint-content.data-v-2f6ae7b4 {
+  position: relative;
+  padding: 30rpx 0;
+  height: calc(100% - 60rpx);
+  background: #f2f2f2;
+}
+.my-complaint-cells.data-v-2f6ae7b4 {
+  position: relative;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+.complaint-box.data-v-2f6ae7b4 {
+  min-height: 100rpx;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.complaint-box .center.data-v-2f6ae7b4 {
+  flex-grow: 1;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.complaint-box .state.data-v-2f6ae7b4 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #bc171c;
+}
+.minWid.data-v-2f6ae7b4 {
+  min-width: 140rpx !important;
+}
+.complaint-details.data-v-2f6ae7b4 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.complaint-details .spread.data-v-2f6ae7b4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+.complaint-details .packUp.data-v-2f6ae7b4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.complaint-details .downUp.data-v-2f6ae7b4 {
+  min-width: 100rpx;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #b60005;
+}

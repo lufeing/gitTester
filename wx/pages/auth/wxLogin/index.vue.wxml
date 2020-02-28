@@ -1,0 +1,11 @@
+<import src="/components/customModal.vue.wxml" /><template name="632d058c">
+  <view class="_div data-v-02bfc314">
+    <view class="_div data-v-02bfc314 officalLogo">
+      <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/wq_logo.png" mode="widthFix" class="_image data-v-02bfc314"></image>
+    </view>
+    <view class="_div data-v-02bfc314 form-box">
+      <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/logo.png" class="_image data-v-02bfc314 logo"></image> <button class="_button data-v-02bfc314 login-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">{{loginText}}</button>
+      <view class="_div data-v-02bfc314 login" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">短信登录</view>
+    </view> <template bindgetVisible="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="fae3df64"></template>
+  </view>
+</template>

@@ -1,0 +1,70 @@
+@import "../../../common/vendor.wxss";
+
+.suggest-content.data-v-b1d49ce2 {
+  position: relative;
+  padding: 30rpx 0;
+  height: calc(100% - 60rpx);
+  background: #f2f2f2;
+}
+.suggest-body.data-v-b1d49ce2 {
+  position: relative;
+  background: #f2f2f2;
+}
+.suggest-body .suggest-textarea.data-v-b1d49ce2 {
+  padding: 40rpx 30rpx;
+  background: #fff;
+}
+.suggest-body .suggest-textarea .textareaClass.data-v-b1d49ce2 {
+  width: calc(100% - 60rpx);
+  padding: 30rpx;
+  font-size: 28rpx;
+  background: #f9f9f9;
+  border-radius: 16rpx;
+  line-height: 1;
+}
+.suggest-body .suggest-textarea .textAreaPlClass.data-v-b1d49ce2 {
+  font-weight: 400;
+  color: #ccc;
+}
+.suggest-body .contact-content.data-v-b1d49ce2 {
+  padding: 0 30rpx;
+  height: 116rpx;
+  margin-top: 40rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.suggest-body .contact-content .phoneImg.data-v-b1d49ce2 {
+  width: 24rpx;
+  margin-right: 30rpx;
+}
+.suggest-body .contact-content .closeImg.data-v-b1d49ce2 {
+  width: 28rpx;
+}
+.suggest-body .contact-content .phone-box.data-v-b1d49ce2 {
+  flex-grow: 1;
+}
+.suggest-body .contact-content .state.data-v-b1d49ce2 {
+  font-size: 20rpx;
+  font-weight: 400;
+  color: #999;
+}
+.suggest-body .contact-content .phoneInput.data-v-b1d49ce2 {
+  width: 100%;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.suggest-body .footer-content.data-v-b1d49ce2 {
+  margin-top: 100rpx;
+}
+.commnity-content.data-v-b1d49ce2,
+.memberPhone-content.data-v-b1d49ce2 {
+  padding: 0 30rpx;
+  height: 116rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+<template name="78235bda">
+  <view class="_div data-v-bd02eeb8 module-cell">
+    <view class="_div data-v-bd02eeb8 title-area">
+      <view class="_p data-v-bd02eeb8 title">房源推荐</view>
+    </view>
+    <view class="_div data-v-bd02eeb8 scroll_box">
+      <scroll-view class="_scroll-view data-v-bd02eeb8 scroll-view_x" scroll-x style="width: 100%;">
+        <navigator class="_navigator data-v-bd02eeb8 item_list" wx:key="index" key="{{index}}" url="{{'/pages/home/apartmentDetail/main?communityId=' + item.communityId}}" wx:for="{{houseList}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.thumbnailUrl}}" class="_image data-v-bd02eeb8 community-image"></image>
+          <view class="_div data-v-bd02eeb8 community-detail">
+            <view class="_p data-v-bd02eeb8 title">{{item.communityName}}</view>
+            <view class="_p data-v-bd02eeb8 address">挂牌价:￥{{item.minRentPrice}}/月</view>
+          </view>
+          <view class="_div data-v-bd02eeb8 community-detail">
+            <view class="_p data-v-bd02eeb8 address">
+              <image class="_image data-v-bd02eeb8 address-img" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/icon_location.png"></image>{{item.detailAddress}}
+            </view>
+            <view class="_p data-v-bd02eeb8 price">会员价:<label class="_span data-v-bd02eeb8 red">￥{{item.minMemberPrice}}-{{item.maxMemberPrice}}</label>/月</view>
+          </view>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+</template>

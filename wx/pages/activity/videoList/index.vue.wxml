@@ -1,0 +1,22 @@
+<template name="abe7ccdc">
+  <view class="_div data-v-54eb2be4">
+    <view class="_div data-v-54eb2be4 video-content">
+      <view class="_div data-v-54eb2be4 video-box" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{videoList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_header data-v-54eb2be4 video_header">
+          <image src="{{item.vedioPicUrl}}" class="_image data-v-54eb2be4 coverImage"></image>
+          <view class="_p data-v-54eb2be4 videoTitle">{{item.vedioTitle}}</view>
+        </view>
+        <view class="_div data-v-54eb2be4 target_details">
+          <view class="_div data-v-54eb2be4 target_author">
+            <image src="{{item.communityHeadImageUrl}}" class="_image data-v-54eb2be4 headImage"></image>
+            <view class="_p data-v-54eb2be4 author">{{item.communityName}}</view>
+          </view>
+          <view class="_div data-v-54eb2be4 target_operation">
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/like.png" mode="widthFix" class="_image data-v-54eb2be4 operationImg"></image>
+            <view class="_p data-v-54eb2be4 like_number mr15">{{item.likeNum}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

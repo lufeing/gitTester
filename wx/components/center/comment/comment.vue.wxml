@@ -1,0 +1,8 @@
+<template name="6621898e">
+  <view class="_div data-v-1ed43392">
+    <view class="_div data-v-1ed43392 grade-cell" wx:key="index" key="{{index}}" wx:for="{{commentItemList}}" wx:for-index="index" wx:for-item="item">
+      <view class="_p data-v-1ed43392 starDescribe">{{item.starDescribe}}</view>
+      <view class="_div data-v-1ed43392 gradePanel"><text wx:key="itmIndex" key="{{itmIndex}}" id="{{itmIndex + 1}}" bindtap="handleProxy" class="_text data-v-1ed43392 normalStar {{[itmIndex + 1 > item.starNumber ? 'starGray' : '']}}" data-eventid="{{'0_'+index+'-'+itmIndex}}" data-comkey="{{$k}}" wx:for="{{maxScore}}" wx:for-index="itmIndex" wx:for-item="itm"></text></view>
+    </view>
+  </view>
+</template>

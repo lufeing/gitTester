@@ -1,0 +1,44 @@
+<template name="453290d0">
+  <view class="_div data-v-21627154 flex-box-content"><map class="_map data-v-21627154 map-container" longitude="{{location.longitude}}" latitude="{{location.latitude}}" markers="{{markers}}">
+      <cover-image class="_cover-image data-v-21627154 my-location {{mylocationclass}}" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/map/my_location2x.png" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></cover-image>
+      <cover-view class="_cover-view data-v-21627154 detail-view">
+        <cover-view class="_cover-view data-v-21627154 detail-scale" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+          <cover-view class="_cover-view data-v-21627154 scale-long-line"></cover-view>
+          <cover-view class="_cover-view data-v-21627154 scale-short-line"></cover-view>
+        </cover-view>
+        <cover-view class="_cover-view data-v-21627154 detail-store">
+          <cover-view class="_cover-view data-v-21627154 name-money">
+            <cover-view class="_cover-view data-v-21627154 name">{{communityObject.communityName}}</cover-view>
+            <cover-view class="_cover-view data-v-21627154 money">挂牌价：￥{{communityObject.minRentPrice}}/月起</cover-view>
+          </cover-view>
+          <cover-view class="_cover-view data-v-21627154 location-member">
+            <cover-view class="_cover-view data-v-21627154">
+              <cover-image class="_cover-image data-v-21627154 location-image" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/icon_location.png"></cover-image>
+              <cover-view class="_cover-view data-v-21627154 location-address">{{communityObject.detailAddress}}</cover-view>
+            </cover-view>
+            <cover-view class="_cover-view data-v-21627154">
+              <cover-view class="_cover-view data-v-21627154 member-date">/月</cover-view>
+              <cover-view class="_cover-view data-v-21627154 member-money">￥{{communityObject.minMemberPrice}}-{{communityObject.maxMemberPrice}}</cover-view>
+              <cover-view class="_cover-view data-v-21627154 member-price">会员价:</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class="_cover-view data-v-21627154 detail-border"></cover-view>
+        </cover-view>
+      </cover-view>
+    </map>
+    <view class="_div data-v-21627154 store-near-container {{nearClass}}">
+      <view class="_div data-v-21627154 store-near" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{communityObject.houseStyles}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-21627154 image-store" src="{{item.imageMini.thumbnailUrl}}"></image>
+        <view class="_div data-v-21627154 name-store">{{item.houseStyleName}}</view>
+        <view class="_div data-v-21627154 price">
+          <view class="_div data-v-21627154 normal-price">挂牌价：￥{{item.minRentPrice}}/月起</view>
+          <view class="_div data-v-21627154 member-price">
+            <view class="_div data-v-21627154 member-date">/月</view>
+            <view class="_div data-v-21627154 member-price1">￥{{item.minMemberPrice}}-{{item.maxMemberPrice}}</view>
+            <view class="_div data-v-21627154 member-name">会员价:</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

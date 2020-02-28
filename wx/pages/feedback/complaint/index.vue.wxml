@@ -1,0 +1,13 @@
+<import src="/components/center/communityPicker/index.vue.wxml" /><template name="9d54a50c">
+  <view class="_div data-v-46580414 complaint-content">
+    <view class="_div data-v-46580414 complaint-header">
+      <view class="_p data-v-46580414 label-title">投诉问题</view>
+      <view class="_div data-v-46580414 scroll_box pd0 white_bg">
+        <scroll-view class="_scroll-view data-v-46580414 scroll-view_x" scroll-x style="width: 100%;">
+          <view class="_div data-v-46580414 complaint_list {{tabIndex == index ? 'active' : ''}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{complaintList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-46580414 title">{{item.complaintParentTitleName}}</label></view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="_div data-v-46580414 suggest-body">
+      <view class="_p data-v-46580414 label-title">内容描述</view>
+      <view class="_div data-v-46580414 suggest-textarea"><textarea value="{{paramsObj.complaintDetails}}" bindinput="handleProxy" class="_textarea data-v-46580414 textareaClass" placeholder="请输入您的反馈问题，我们将不断为你改进" placeholder-class="textAreaPlClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view> <view class="_div data-v-46580414 contact-content"><template bindgetCommunityChecked="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="33c8e9b8"></template> <view class="_div data-v-46580414 memberPhone-content"><view class="_p data-v-46580414"><image class="_image data-v-46580414 memberPhoneImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/phone2x.png"></image></view> <view class="_div data-v-46580414 memberPhone-box"><view class="_p data-v-46580414 state">联系电话</view> <input type="number" value="{{paramsObj.memberPhone}}" bindinput="handleProxy" class="_input data-v-46580414 memberPhoneInput" placeholder="请输入电话号码" data-eventid="{{'3'}}" data-comkey="{{$k}}" /></view> <view class="_p data-v-46580414"><image class="_image data-v-46580414 closeImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/close2x.png"></image></view></view></view> <view class="_div data-v-46580414 footer-content"><button class="_button data-v-46580414 sure-submit-button w_690 {{isDisabled ? 'garyBack' : ''}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">提交</button></view></view></view></template>

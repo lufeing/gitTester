@@ -1,0 +1,1 @@
+<import src="/pages/stewardServer/roomChangeApply/index.vue.wxml" /><template is="208f1c20" data="{{ ...$root['0'], $root }}"/>

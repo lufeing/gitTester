@@ -1,0 +1,13 @@
+<template name="fae3df64">
+  <view class="_view data-v-3eabdb6a modal" wx:if="{{visible && userHandled}}">
+    <view class="_view data-v-3eabdb6a dialog">
+      <view class="_view data-v-3eabdb6a modal-content">
+        <view class="_view data-v-3eabdb6a modal-header">{{title}}</view>
+        <view class="_view data-v-3eabdb6a modal-body">{{content}}</view>
+        <view class="_view data-v-3eabdb6a modal-footer flex">
+          <view wx:key="index" key="{{index}}" class="_div data-v-3eabdb6a bottom-content" wx:for="{{buttons}}" wx:for-index="index" wx:for-item="item"><button wx:if="{{item.openType === 'getUserInfo'}}" class="_button data-v-3eabdb6a modal-btn modal-btn-default {{item.className}}" index="{{index}}" type="{{item.type}}" open-type="{{item.openType}}" bindgetuserinfo="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">{{item.text}}</button><button wx:elif="{{item.openType === 'getPhoneNumber'}}" class="_button data-v-3eabdb6a modal-btn modal-btn-default {{item.className}}" index="{{index}}" type="{{item.type}}" open-type="{{item.openType}}" bindgetPhoneNumber="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">{{item.text}}</button><button wx:else class="_button data-v-3eabdb6a modal-btn modal-btn-default {{item.className}}" index="{{index}}" type="{{item.type}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">{{item.text}}</button></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

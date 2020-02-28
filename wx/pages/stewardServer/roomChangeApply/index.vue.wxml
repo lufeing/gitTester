@@ -1,0 +1,58 @@
+<import src="/components/center/communityPickerByContract/index.vue.wxml" />
+<import src="/components/stewardServer/chooseReason.vue.wxml" /><template name="208f1c20">
+  <view class="_div data-v-57bcc258 transactioin-detail-content">
+    <view class="_div data-v-57bcc258 transactioin-detail-main">
+      <view class="_div data-v-57bcc258 wallet-body-cell"><template bindgetContractChecked="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3ae6c1e6"></template>
+        <view class="_div data-v-57bcc258 box">
+          <view class="_div data-v-57bcc258 box-left">
+            <view class="_p data-v-57bcc258 title">入住人</view>
+          </view>
+          <view class="_div data-v-57bcc258 box-right">
+            <view class="_p data-v-57bcc258 state">{{paramObj.renterName}}</view>
+          </view>
+        </view>
+        <picker bindchange="handleProxy" value="{{roomType}}" range="{{roomTypeRange}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-57bcc258">
+          <view class="_div data-v-57bcc258 box">
+            <view class="_div data-v-57bcc258 box-left">
+              <view class="_p data-v-57bcc258 title">意向房型</view>
+            </view>
+            <view class="_div data-v-57bcc258 box-right">
+              <view wx:if="{{!roomType}}" class="_p data-v-57bcc258 plState">请选择意向房型</view>
+              <view class="_p data-v-57bcc258 state">{{roomTypeRange[roomType]}}</view>
+              <view class="_b data-v-57bcc258 arrow-right"></view>
+            </view>
+          </view>
+        </picker>
+        <picker mode="date" bindchange="handleProxy" start="{{pickerStartTime}}" end="2021-01-01" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_picker data-v-57bcc258">
+          <view class="_div data-v-57bcc258 box">
+            <view class="_div data-v-57bcc258 box-left">
+              <view class="_p data-v-57bcc258 title">换房日期</view>
+            </view>
+            <view class="_div data-v-57bcc258 box-right">
+              <view class="_p data-v-57bcc258 state mr_10">{{paramObj.planChangeDate}}</view>
+              <view class="_b data-v-57bcc258 arrow-right"></view>
+            </view>
+          </view>
+        </picker>
+        <view class="_div data-v-57bcc258 box" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-57bcc258 box-left">
+            <view class="_p data-v-57bcc258 title">换房原因</view>
+          </view>
+          <view class="_div data-v-57bcc258 box-right">
+            <view class="_p data-v-57bcc258 state">{{paramObj.reason}}</view>
+            <view class="_b data-v-57bcc258 arrow-right"></view>
+          </view>
+        </view>
+        <view class="_div data-v-57bcc258 box">
+          <view class="_div data-v-57bcc258 box-left">
+            <view class="_p data-v-57bcc258 title">换房要求</view>
+          </view>
+          <view class="_div data-v-57bcc258 box-right">
+            <view class="_p data-v-57bcc258 right-box"><input type="text" value="{{paramObj.changeRequire}}" bindinput="handleProxy" class="_input data-v-57bcc258 inputClass" placeholder="请输入你的换房要求" data-eventid="{{'4'}}" data-comkey="{{$k}}" /></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-57bcc258 footer-content"><button class="_button data-v-57bcc258 sure-submit-button" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">我要换房</button></view> <template bindchooseResultParam="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="1e593fd2"></template>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+@import "../../../common/vendor.wxss";
+
+.clean-content.data-v-87488a10 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #F9F9F9 !important;
+}

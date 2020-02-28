@@ -1,0 +1,35 @@
+<template name="7223468d">
+  <view class="_div data-v-5a42abd8 insurance_nine">
+    <view class="_div data-v-5a42abd8 insurance-card">
+      <view class="_div data-v-5a42abd8 space-btw insurance-title">
+        <view class="_p data-v-5a42abd8">保障详情</view>
+      </view>
+      <view class="_div data-v-5a42abd8 insurance_detail" wx:if="{{tabsIndex == 0}}">
+        <view class="_div data-v-5a42abd8 space-btw" wx:key="index" key="{{index}}" wx:for="{{nineList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_p data-v-5a42abd8">{{item.name}}</view>
+          <view class="_div data-v-5a42abd8">{{item.price}}</view>
+        </view>
+      </view>
+      <view class="_div data-v-5a42abd8 insurance_detail" wx:if="{{tabsIndex == 1}}">
+        <view wx:key="index" key="{{index}}" wx:for="{{tNineList}}" wx:for-index="index" wx:for-item="item" class="_div data-v-5a42abd8">
+          <view class="_div data-v-5a42abd8 space-btw" wx:if="{{!item.children}}">
+            <view class="_p data-v-5a42abd8">{{item.name}}</view>
+            <view class="_div data-v-5a42abd8">{{item.price}}</view>
+          </view>
+          <view wx:else class="_div data-v-5a42abd8">
+            <view class="_p data-v-5a42abd8">{{item.name}}</view>
+            <view class="_div data-v-5a42abd8 space-btw" wx:key="idx" key="{{idx}}" wx:for="{{item.children}}" wx:for-index="idx" wx:for-item="child">
+              <view class="_p data-v-5a42abd8 indentation">{{child.name}}</view>
+              <view class="_p data-v-5a42abd8">{{child.price}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-5a42abd8 insurance-type">
+      <view class="_p data-v-5a42abd8">意外保障</view>
+      <view class="_p data-v-5a42abd8">责任保障</view>
+      <view class="_p data-v-5a42abd8">财产保障</view>
+    </view>
+  </view>
+</template>

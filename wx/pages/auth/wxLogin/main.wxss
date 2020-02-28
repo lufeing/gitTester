@@ -1,0 +1,54 @@
+@import "../../../common/vendor.wxss";
+
+.form-box.data-v-02bfc314 {
+  width: 650rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #fff;
+}
+.logo.data-v-02bfc314 {
+  width: 144rpx;
+  height: 144rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 80rpx;
+  margin-bottom: 70rpx;
+  border: 0;
+  border-radius: 50% !important;
+}
+.login-btn.data-v-02bfc314 {
+  margin-top: 200rpx;
+  font-size: 32rpx;
+  width: 100%;
+  height: 88rpx;
+  background: #bc171c;
+  border-radius: 8rpx;
+  font-weight: 600;
+  color: #fff;
+}
+.form-item-text.data-v-02bfc314 {
+  height: 36rpx;
+  width: 100%;
+}
+.login.data-v-02bfc314 {
+  margin-top: 50rpx;
+  color: #b4282d;
+  text-align: center;
+  font-size: 28rpx;
+  display: block;
+}
+.returnBack.data-v-02bfc314 {
+  margin-top: 50rpx;
+  color: #333;
+  text-align: center;
+  font-size: 28rpx;
+  display: block;
+}
+.officalLogo.data-v-02bfc314 {
+  margin: 0 auto;
+  padding: 60rpx 0 20rpx;
+  text-align: center;
+}
+.officalLogo image.data-v-02bfc314 {
+  width: 280rpx;
+}

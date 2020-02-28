@@ -1,0 +1,20 @@
+@import "../../../common/vendor.wxss";
+
+.lock-list-content.data-v-0fa495aa {
+  position: relative;
+  min-height: 100%;
+  background: #f2f2f2;
+}
+.label-title.data-v-0fa495aa {
+  padding: 20rpx 30rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+  background: #f2f2f2;
+}
+.lock-list-main.data-v-0fa495aa {
+  background: #fff;
+}
+.lock-list-main .imgClass.data-v-0fa495aa {
+  width: 24rpx;
+}

@@ -1,0 +1,1 @@
+<import src="/pages/intelligentLock/changePass/index.vue.wxml" /><template is="3f8b793e" data="{{ ...$root['0'], $root }}"/>

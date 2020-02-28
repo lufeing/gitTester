@@ -1,0 +1,12 @@
+@import "../../../common/vendor.wxss";
+
+.canvas-view.data-v-71792210 {
+  display: flex;
+  justify-content: center;
+}
+.canvas.data-v-71792210 {
+  width: 610rpx;
+  height: 610rpx;
+  background-color: #fff;
+  border: 2rpx solid #333;
+}

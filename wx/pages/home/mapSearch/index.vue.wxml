@@ -1,0 +1,10 @@
+<template name="5ae7f40d">
+  <view class="_div data-v-7d6734ee flex-box-content"><map class="_map data-v-7d6734ee map-container" longitude="{{location.longitude}}" latitude="{{location.latitude}}" markers="{{markers}}" show-location="true">
+      <cover-image class="_cover-image data-v-7d6734ee my-location" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/map/my_location2x.png" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></cover-image>
+      <cover-view class="_cover-view data-v-7d6734ee search-view" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <cover-image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/map/search.png" class="_cover-image data-v-7d6734ee search-image"></cover-image>
+        <cover-view class="_cover-view data-v-7d6734ee search-input">请输入地铁站、写字楼或地址</cover-view>
+        <cover-view class="_cover-view data-v-7d6734ee search-span">搜索</cover-view>
+      </cover-view>
+    </map></view>
+</template>

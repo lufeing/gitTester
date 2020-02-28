@@ -1,0 +1,33 @@
+<import src="/components/null.vue.wxml" /><template name="3b2dae24">
+  <view class="_div data-v-599c48ea">
+    <view class="_div data-v-599c48ea contract-list-content" wx:if="{{showNormalPage}}">
+      <view class="_div data-v-599c48ea contract-list-area" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view wx:if="{{item.contractStatus != 10 && item.contractStatus !=11}}" class="_div data-v-599c48ea">
+          <view class="_div data-v-599c48ea header">
+            <view class="_p data-v-599c48ea label-title">{{item.contractStatus < 30 ? '合同未生效' : '合同状态'}}</view>
+            <view class="_p data-v-599c48ea contract-status">{{contractStatusObj[item.contractStatus]}}</view>
+          </view>
+          <view class="_div data-v-599c48ea body">
+            <view class="_p data-v-599c48ea">
+              <image class="_image data-v-599c48ea imgClass" src="{{item.communityImage}}"></image>
+            </view>
+            <view class="_div data-v-599c48ea contract-column">
+              <view class="_p data-v-599c48ea title">{{item.communityName}}</view>
+              <view class="_div data-v-599c48ea detail-message">
+                <view class="_p data-v-599c48ea">房间号：{{item.rentRelateName}}</view>
+                <view class="_p data-v-599c48ea">租金：{{item.rental}}元/月</view>
+              </view>
+              <view class="_div data-v-599c48ea detail-message">
+                <view class="_p data-v-599c48ea">入住日期：{{item.startDate}}</view>
+                <view class="_p data-v-599c48ea">到期日期：{{item.endDate}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-599c48ea footer">
+            <view wx:if="{{item.contractSource == 0 && item.contractStatus == 20}}" class="_p data-v-599c48ea"> *请于{{item.autoCancelTime}}之前确认支付，否则系统将视为自动放弃 </view>
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

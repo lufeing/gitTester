@@ -1,0 +1,42 @@
+@import "../../../common/vendor.wxss";
+
+.clean-content.data-v-8512493a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9 !important;
+}
+.clean-body.data-v-8512493a {
+  padding-top: 300rpx;
+  margin: 0 30rpx;
+}
+.clean-body .handle-button.data-v-8512493a {
+  width: 690rpx;
+  height: 100rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 32rpx;
+  margin-top: 30rpx;
+}
+.clean-body .apply.data-v-8512493a {
+  background: #bc171c;
+  color: #fff;
+}
+.clean-body .list.data-v-8512493a {
+  color: #bc171c;
+  background: #fff;
+  border: 2rpx solid #bc171c;
+}
+.clean-tips.data-v-8512493a {
+  padding: 60rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #0d94f5;
+  line-height: 28rpx;
+}

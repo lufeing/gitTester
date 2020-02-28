@@ -1,0 +1,41 @@
+@import "../../../common/vendor.wxss";
+
+.transactioin-detail-content.data-v-66a737b2 {
+  height: 100%;
+  background: #f2f2f2;
+}
+.wallet-body-cell.data-v-66a737b2 {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box.data-v-66a737b2 {
+  height: 100rpx;
+  padding-right: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.wallet-body-cell .box.data-v-66a737b2:last-child {
+  border-bottom: 0;
+}
+.wallet-body-cell .title.data-v-66a737b2 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.wallet-body-cell .box-right.data-v-66a737b2 {
+  display: flex;
+  align-items: center;
+}
+.wallet-body-cell .box-right .state.data-v-66a737b2 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box-right .red.data-v-66a737b2 {
+  color: #b60005;
+}

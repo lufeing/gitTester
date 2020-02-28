@@ -1,0 +1,17 @@
+<template name="3ae6c1e6">
+  <picker mode="selector" bindchange="handleProxy" value="{{communityObj.communityChecked}}" range="{{communityObj.communityRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-33fef74b">
+    <view class="_div data-v-33fef74b commnity-content">
+      <view class="_div data-v-33fef74b borer-bottom">
+        <view class="_div data-v-33fef74b memberPhone-box">
+          <view class="_p data-v-33fef74b title">房间:</view>
+        </view>
+        <view class="_div data-v-33fef74b box-right">
+          <view class="_p data-v-33fef74b state mr_10">{{communityObj.communityRange[communityObj.communityChecked] || '请选择要服务的房间'}}</view>
+        </view>
+        <view class="_p data-v-33fef74b">
+          <view class="_b data-v-33fef74b arrow-right"></view>
+        </view>
+      </view>
+    </view>
+  </picker>
+</template>

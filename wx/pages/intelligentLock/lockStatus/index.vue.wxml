@@ -1,0 +1,10 @@
+<template name="b9f29d06">
+  <view class="_div data-v-5ef1c6ff lock-detail-content">
+    <view class="_div data-v-5ef1c6ff lock-body-area">
+      <view class="_div data-v-5ef1c6ff lock-box" wx:key="index" key="{{index}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-5ef1c6ff">反锁</view>
+        <view class="_p data-v-5ef1c6ff">是</view>
+      </view>
+    </view>
+  </view>
+</template>

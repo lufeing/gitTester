@@ -1,0 +1,1 @@
+<import src="/pages/intelligentLock/lock/index.vue.wxml" /><template is="79a0adab" data="{{ ...$root['0'], $root }}"/>

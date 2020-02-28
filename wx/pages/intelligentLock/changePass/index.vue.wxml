@@ -1,0 +1,21 @@
+<template name="3f8b793e">
+  <view class="_div data-v-c7b54e3a lock-detail-content">
+    <view class="_div data-v-c7b54e3a lock-body-area">
+      <view class="_div data-v-c7b54e3a lock-box">
+        <view class="_p data-v-c7b54e3a">旧密码</view>
+        <view class="_p data-v-c7b54e3a right-box"><input type="text" maxlength="6" value="{{paramsObj.oldPass}}" bindinput="handleProxy" class="_input data-v-c7b54e3a" placeholder="请输入旧密码" placeholder-class="plClass" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+      </view>
+      <view class="_div data-v-c7b54e3a lock-box">
+        <view class="_p data-v-c7b54e3a">6位新密码</view>
+        <view class="_p data-v-c7b54e3a right-box"><input type="password" maxlength="6" value="{{paramsObj.newPass}}" bindinput="handleProxy" class="_input data-v-c7b54e3a" placeholder="请输入6位新密码" placeholder-class="plClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+      </view>
+      <view class="_div data-v-c7b54e3a lock-box">
+        <view class="_p data-v-c7b54e3a">确认6位新密码</view>
+        <view class="_p data-v-c7b54e3a right-box"><input type="password" maxlength="6" value="{{paramsObj.surePass}}" bindinput="handleProxy" class="_input data-v-c7b54e3a" placeholder="请再次输入6位新密码" placeholder-class="plClass" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></view>
+      </view>
+    </view>
+    <view class="_div data-v-c7b54e3a order-footer">
+      <view class="_p data-v-c7b54e3a"><button class="_button data-v-c7b54e3a sure-submit-button {{isDisabled ? 'garyBack' : ''}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">确认修改</button></view>
+    </view>
+  </view>
+</template>

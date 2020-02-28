@@ -1,0 +1,84 @@
+@import "../../../common/vendor.wxss";
+
+.comment-content.data-v-4bdcc40c {
+  height: 100%;
+  background: #f2f2f2;
+}
+.comment-content .comment-body.data-v-4bdcc40c {
+  padding: 0 30rpx 40rpx;
+  background: #ffffff;
+}
+.comment-content .comment-handle.data-v-4bdcc40c {
+  width: 100%;
+  padding: 40rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment-content .comment-handle .title.data-v-4bdcc40c {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #000;
+}
+.comment-content .comment-handle .state.data-v-4bdcc40c {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.comment-content .comment-input-content.data-v-4bdcc40c {
+  display: flex;
+  margin-top: 20rpx;
+}
+.comment-content .comment-input-content .state.data-v-4bdcc40c {
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.comment-content .comment-input-content .textareaInput.data-v-4bdcc40c {
+  width: 480rpx;
+  height: 200rpx;
+  background: #f2f2f2;
+  border-radius: 4rpx;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.comment-content .comment-input-content .plClass.data-v-4bdcc40c {
+  font-weight: 400;
+  color: #ccc;
+}
+.comment-content .comment-footer.data-v-4bdcc40c {
+  margin-top: 40rpx;
+}
+.grade-cell.data-v-1ed43392 {
+  display: flex;
+  align-items: center;
+}
+.grade-cell .starDescribe.data-v-1ed43392 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+  margin-right: 40rpx;
+}
+.gradePanel.data-v-1ed43392 {
+  position: relative;
+  color: #343434;
+  background: #fff;
+  padding: 20rpx 0;
+}
+.normalStar.data-v-1ed43392 {
+  display: inline-block;
+  width: 42rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+  background-image: url("https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/ic_star_big_yellow2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.normalStar.data-v-1ed43392:last-child {
+  margin-right: 0;
+}
+.starGray.data-v-1ed43392 {
+  background-image: url("https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/ic_star_big_gary2x.png") !important;
+}

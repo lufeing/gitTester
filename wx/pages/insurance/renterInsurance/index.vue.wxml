@@ -1,0 +1,26 @@
+<import src="/components/center/communityPickerByContract/index.vue.wxml" />
+<import src="/pages/insurance/renterInsurance/components/detail.vue.wxml" />
+<import src="/pages/insurance/renterInsurance/components/note.vue.wxml" /><template name="705c1b08">
+  <view class="_div data-v-b195ff80 flex-box-content insurance-content">
+    <view class="_div data-v-b195ff80 flex-body-noScroll bgf2">
+      <view class="_div data-v-b195ff80 mt_10"><template bindgetContractChecked="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3ae6c1e6"></template></view>
+      <view class="_div data-v-b195ff80 insurance_tabs">
+        <view class="_div data-v-b195ff80 tabs_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{insuranceList}}" wx:for-index="index" wx:for-item="item"><button class="_button data-v-b195ff80 btn {{index == tabsIndex ? 'active' : ''}}">{{item.name}}</button></view>
+      </view> <template data="{{...$root[$kk+'1'], $root}}" is="7223468d"></template>
+      <view class="_div data-v-b195ff80 insurance-card">
+        <view class="_div data-v-b195ff80 space-btw insurance-title">
+          <view class="_p data-v-b195ff80">次月自动续保</view>
+          <view class="_p data-v-b195ff80">
+            <switch style="zoom:0.8" checked="{{autoInsurance}}" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_switch data-v-b195ff80" />
+          </view>
+        </view>
+      </view> <template data="{{...$root[$kk+'2'], $root}}" is="4c82deae"></template>
+    </view>
+    <view class="_div data-v-b195ff80 flex-box-footer pd0">
+      <view class="_div data-v-b195ff80 btn-content">
+        <view class="_div data-v-b195ff80 left"><label class="_span data-v-b195ff80 price">{{price}}</label>元/月</view>
+        <view disabled="{{disabled}}" type="default" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-b195ff80 {{disabled ? 'fail' : 'active'}}">我要投保</view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,74 @@
+@import "../../../common/vendor.wxss";
+
+.contract-list-content.data-v-77f4bb0a {
+  position: relative;
+  padding: 30rpx 0;
+  min-height: calc(100% - 60rpx);
+  background: #f9f9f9;
+}
+.contract-list-area.data-v-77f4bb0a {
+  position: relative;
+  min-height: 300rpx;
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.contract-list-area .header.data-v-77f4bb0a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+.contract-list-area .header .label-title.data-v-77f4bb0a {
+  font-weight: 400;
+  color: #333;
+}
+.contract-list-area .header .contract-status.data-v-77f4bb0a {
+  font-weight: 600;
+  color: #bc171c;
+}
+.contract-list-area .body.data-v-77f4bb0a {
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+.contract-list-area .body .contract-column.data-v-77f4bb0a {
+  flex-grow: 1;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contract-list-area .body .contract-column .title.data-v-77f4bb0a {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+.contract-list-area .body .contract-column .rentRelateName.data-v-77f4bb0a {
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+.contract-list-area .body .contract-column .detail-message.data-v-77f4bb0a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 20rpx;
+  font-weight: 400;
+  color: #999;
+}
+.contract-list-area .body .contract-column .detail-message .button-warn.data-v-77f4bb0a {
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  background: #f90;
+  font-weight: 400;
+  color: #fff;
+  border: 0;
+}
+.contract-list-area .body .imgClass.data-v-77f4bb0a {
+  width: 180rpx;
+  height: 134rpx;
+  border-radius: 8rpx;
+}

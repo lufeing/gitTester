@@ -1,0 +1,176 @@
+@import "../../../common/vendor.wxss";
+
+.insurance-content.data-v-152d7378 {
+  position: relative;
+  height: 100%;
+}
+.insurance-detail-main.data-v-152d7378 {
+  position: relative;
+  background: #f9f9f9;
+  height: 100%;
+}
+.insuranceList-header.data-v-152d7378 {
+  width: 100%;
+  text-align: center;
+}
+.insuranceList-header .null.data-v-152d7378 {
+  width: 500rpx;
+}
+.insuranceList-header .allow-button.data-v-152d7378 {
+  position: relative;
+  margin-top: 40rpx;
+  width: 650rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.mp-tabs.data-v-152d7378 {
+  background: #fff;
+  margin: 0 !important;
+}
+.mp-tabs .bold.data-v-152d7378 {
+  color: #323335 !important;
+  padding: 30rpx 0;
+}
+.insurance-list-content.data-v-152d7378 {
+  position: relative;
+  height: calc(100vh - 106rpx);
+}
+.detail-body.data-v-152d7378 {
+  position: relative;
+  padding: 30rpx 30rpx;
+}
+.detail-body .isNull.data-v-152d7378 {
+  margin: 20rpx 0;
+  text-align: center;
+}
+.wallet-body-cell.data-v-152d7378 {
+  background: #ffffff;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 20rpx 30rpx;
+}
+.wallet-body-cell .box.data-v-152d7378 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wallet-body-cell .title.data-v-152d7378 {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+  line-height: 28rpx;
+  margin-bottom: 20rpx;
+}
+.wallet-body-cell .state.data-v-152d7378 {
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #999;
+  transform: scale(0.83);
+  margin-left: -40rpx;
+}
+.wallet-body-cell .seal.data-v-152d7378 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140rpx;
+}
+.wallet-body-cell .seal .description.data-v-152d7378 {
+  width: 130rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: 2rpx solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: red;
+  font-weight: 600;
+}
+.wallet-body-cell .seal .imgClass.data-v-152d7378 {
+  width: 124rpx;
+  height: 124rpx;
+}
+.wallet-body-cell .seal .status.data-v-152d7378 {
+  min-width: 100rpx;
+  text-align: right;
+  color: #ec808d;
+}
+.wallet-body-cell .flex-direction.data-v-152d7378 {
+  flex-direction: column;
+}
+.mt10.data-v-cd14666c {
+  margin-top: 20rpx;
+}
+.shadow_content.data-v-cd14666c {
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.choosen.data-v-cd14666c {
+  width: 100%;
+  height: 560rpx;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  z-index: 98;
+}
+.container-box.data-v-cd14666c {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  z-index: 98;
+}
+.status-body.data-v-cd14666c {
+  position: relative;
+  margin: 0 30rpx;
+}
+.status-body .title.data-v-cd14666c {
+  display: flex;
+  justify-content: center;
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+}
+.status-body .call.data-v-cd14666c {
+  margin: 40rpx 0;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+}
+.status-body .status.data-v-cd14666c {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #333;
+  line-height: 50rpx;
+}
+.close-modal.data-v-cd14666c {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30rpx 30rpx 20rpx;
+  font-size: 60rpx;
+}
+.warn-body.data-v-cd14666c {
+  position: relative;
+  background: #fff;
+  margin: 30rpx;
+  margin-top: 0;
+}
+.warn-body .space-box.data-v-cd14666c {
+  height: 120rpx;
+}

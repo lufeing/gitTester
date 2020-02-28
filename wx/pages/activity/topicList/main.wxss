@@ -1,0 +1,123 @@
+@import "../../../common/vendor.wxss";
+
+.video-content.data-v-24d4507c {
+  position: relative;
+  width: 100%;
+}
+.swiper-box.data-v-24d4507c {
+  position: relative;
+  width: 750rpx;
+  height: 240rpx;
+}
+.swiper-box .image.data-v-24d4507c {
+  width: 750rpx;
+  height: 240rpx;
+}
+.topic_box.data-v-24d4507c {
+  position: relative;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #bfbfbf;
+}
+.topic_box .video_header.data-v-24d4507c {
+  position: relative;
+}
+.topic_box .video_header .coverImage.data-v-24d4507c {
+  width: 100%;
+  height: 240rpx;
+}
+.topic_box .target_details.data-v-24d4507c {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 30rpx;
+}
+.topic_box .target_details .target_operation.data-v-24d4507c {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.topic_box .target_details .target_operation .operationImg.data-v-24d4507c {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 20rpx;
+}
+.topic_box .target_details .target_operation .operationImg.data-v-24d4507c:last-child {
+  margin-right: 0;
+}
+.topic_box .target_details .target_operation .like_number.data-v-24d4507c,
+.topic_box .target_details .target_operation .commentNumber.data-v-24d4507c {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #545454;
+  margin-right: 50rpx;
+}
+.topic_box .target_details .browse_number.data-v-24d4507c {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+.topic_box .topic_content.data-v-24d4507c {
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2;
+}
+.topic_box .topic_content .title.data-v-24d4507c {
+  color: #00a0e9;
+}
+.topic_box .topic_content .topic_cont.data-v-24d4507c {
+  color: #333333;
+}
+.topic_box .comment_body.data-v-24d4507c {
+  position: relative;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 2;
+}
+.topic_box .comment_body .name.data-v-24d4507c {
+  color: #666;
+}
+.topic_box .comment_body .comment_value.data-v-24d4507c {
+  color: #333333;
+}
+.topic_box .comment_body .lookMore.data-v-24d4507c {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #36adea;
+}
+.userInfo.data-v-24d4507c {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfo .headerImg.data-v-24d4507c {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+.userInfo .name.data-v-24d4507c {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666;
+}
+.userInfo .time.data-v-24d4507c {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+.pd15.data-v-24d4507c {
+  padding: 40rpx 30rpx 30rpx;
+}

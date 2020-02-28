@@ -1,0 +1,7 @@
+<template name="38675aef">
+  <view class="_div data-v-3236a8aa clean-content">
+    <view class="_div data-v-3236a8aa refuse-body">
+      <view class="_p data-v-3236a8aa">管家回复:</view> <text class="_text data-v-3236a8aa text">{{reply}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,20 @@
+<template name="1e593fd2">
+  <view class="_div data-v-2da45309 mask" wx:if="{{serverModal}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-2da45309 modal-content" style="height:45%">
+      <view class="_div data-v-2da45309 choose-reason-content">
+        <view class="_p data-v-2da45309 title">选择原因</view>
+        <view class="_div data-v-2da45309 main-body">
+          <view class="_div data-v-2da45309 reason-boxs">
+            <view class="_p data-v-2da45309 label {{chooiseIndex === index ? 'active' : ''}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{chooiseList}}" wx:for-index="index" wx:for-item="item">{{item.choiceReason}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-2da45309 remark-content">
+        <view class="_p data-v-2da45309 other">其他:</view> <input value="{{paramObj.remark}}" bindinput="handleProxy" class="_input data-v-2da45309 inputClass" placeholder="请输入换房原因" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+      </view>
+      <view class="_div data-v-2da45309 modal-btn-wrapper">
+        <view class="_div data-v-2da45309 chooseReason-confirm-btn" style="color:#13b5f5" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">确定</view>
+      </view>
+    </view>
+  </view>
+</template>

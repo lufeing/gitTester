@@ -1,0 +1,5 @@
+<template name="b2a3e00a">
+  <view wx:if="{{show}}" class="_div data-v-3a2950b9">
+    <web-view src="{{url}}" bindmessage="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_web-view data-v-3a2950b9"></web-view>
+  </view>
+</template>

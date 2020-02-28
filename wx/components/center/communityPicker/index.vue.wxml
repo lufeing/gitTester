@@ -1,0 +1,15 @@
+<template name="33c8e9b8">
+  <picker bindchange="handleProxy" value="{{communityObj.communityChecked}}" range="{{communityObj.communityRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-31c55ca2">
+    <view class="_div data-v-31c55ca2 commnity-content">
+      <view class="_p data-v-31c55ca2">
+        <image class="_image data-v-31c55ca2 memberPhoneImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/shequ2x.png"></image>
+      </view>
+      <view class="_div data-v-31c55ca2 memberPhone-box">
+        <view class="_p data-v-31c55ca2 title">社区地址</view>
+      </view>
+      <view class="_div data-v-31c55ca2 box-right">
+        <view class="_p data-v-31c55ca2 state mr_10">{{communityObj.communityRange[communityObj.communityChecked] || '请选择社区'}}</view>
+      </view>
+    </view>
+  </picker>
+</template>

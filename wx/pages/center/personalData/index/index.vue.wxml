@@ -1,0 +1,51 @@
+<template name="80fe9d46">
+  <view class="_div data-v-5fde0828 transactioin-detail-content">
+    <view class="_div data-v-5fde0828 wallet-body-cell">
+      <view class="_div data-v-5fde0828 box" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-5fde0828 box-left">
+          <view class="_p data-v-5fde0828 title">头像</view>
+        </view>
+        <view class="_div data-v-5fde0828 box-right">
+          <image src="{{paramObj.headImg}}" class="_image data-v-5fde0828 headImg"></image>
+          <view class="_b data-v-5fde0828 arrow-right"></view>
+        </view>
+      </view>
+      <navigator class="_navigator data-v-5fde0828 box" url="{{'/pages/center/personalData/nickName/main?nickName=' + paramObj.nickName}}">
+        <view class="_div data-v-5fde0828 box-left">
+          <view class="_p data-v-5fde0828 title">昵称</view>
+        </view>
+        <view class="_div data-v-5fde0828 box-right">
+          <view class="_p data-v-5fde0828 state">{{paramObj.nickName}}</view>
+          <view class="_b data-v-5fde0828 arrow-right"></view>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5fde0828 box" url="{{'/pages/center/personalData/mailBox/main?email=' + paramObj.email}}">
+        <view class="_div data-v-5fde0828 box-left">
+          <view class="_p data-v-5fde0828 title">邮箱</view>
+        </view>
+        <view class="_div data-v-5fde0828 box-right">
+          <view class="_p data-v-5fde0828 state">{{paramObj.email}}</view>
+          <view class="_b data-v-5fde0828 arrow-right"></view>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5fde0828 box" url="{{paramObj.isReal ? '/pages/verify/success/main' : '/pages/verify/index/main'}}">
+        <view class="_div data-v-5fde0828 box-left">
+          <view class="_p data-v-5fde0828 title">实名认证</view>
+        </view>
+        <view class="_div data-v-5fde0828 box-right">
+          <view class="_p data-v-5fde0828 state">{{paramObj.isReal ? '已认证' : '未认证'}}</view>
+          <view class="_b data-v-5fde0828 arrow-right"></view>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-5fde0828 box" url="/pages/center/contacts/main">
+        <view class="_div data-v-5fde0828 box-left">
+          <view class="_p data-v-5fde0828 title">紧急联系人</view>
+        </view>
+        <view class="_div data-v-5fde0828 box-right">
+          <view class="_p data-v-5fde0828 state">{{paramObj.contactsName ? '已填写' : '未填写'}}</view>
+          <view class="_b data-v-5fde0828 arrow-right"></view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

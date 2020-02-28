@@ -1,0 +1,15 @@
+<template name="421ab844">
+  <view class="_div data-v-3b69f41c lock-list-content">
+    <view class="_div data-v-3b69f41c lock-list-area">
+      <view class="_p data-v-3b69f41c label-title">我主控门锁</view>
+      <view class="_div data-v-3b69f41c lock-list-main">
+        <navigator url="/pages/intelligentLock/lock/main" wx:key="index" key="{{index}}" class="_navigator data-v-3b69f41c space-box noBorder" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_p data-v-3b69f41c">
+            <image class="_image data-v-3b69f41c imgClass" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/appointment/icon_location2x.png"></image> 窝趣天平架社区312
+          </view>
+          <view class="_b data-v-3b69f41c arrow-right"></view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>

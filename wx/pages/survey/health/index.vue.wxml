@@ -1,0 +1,28 @@
+<import src="/pages/survey/health/picker.vue.wxml" /><template name="0725fb58">
+  <view class="_div data-v-076c3ad2 survey_content">
+    <view class="_header data-v-076c3ad2 htitle">{{healthParams.questionnaireName}}</view>
+    <view class="_div data-v-076c3ad2 survey_main">
+      <view class="_div data-v-076c3ad2 description">
+        <view class="_p data-v-076c3ad2">现全国各城市启动最高级别的响应机制，国家要求公寓对住客的健康情况进行详实的准确登记，需要麻烦您仔细阅读填写哈！</view>
+        <view class="_p data-v-076c3ad2">无论您现在是在公寓，还是在家未返程，尽量不要外出，出门戴好口罩，如返回公寓后自觉到前台登记测温，回房洗手消毒。</view>
+        <view class="_p data-v-076c3ad2">到了在家躺着就能为国家做贡献的时候啦！</view>
+      </view>
+      <view class="_div data-v-076c3ad2 divQuestion">
+        <view wx:key="index" key="{{index}}" wx:for="{{healthParams.questionRespList}}" wx:for-index="index" wx:for-item="param" class="_div data-v-076c3ad2"><template wx:if="{{param.questionType == 1 || param.questionType == 2}}" bindchoiceResult="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0_'+index], $root}}" is="1294e17c"></template>
+          <view wx:if="{{param.questionType == 3}}" class="_div data-v-076c3ad2">
+            <view class="_div data-v-076c3ad2 space_mg">
+              <view class="_p data-v-076c3ad2">{{param.questionContent}}</view>
+              <view class="_p data-v-076c3ad2 right-box"><input type="text" value="{{param.questionAnswerContent}}" bindinput="handleProxy" bindblur="handleProxy" class="_input data-v-076c3ad2 inputClass" placeholder="请输入" placeholder-class="plClass" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" /></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_footer data-v-076c3ad2">
+        <checkbox-group class="_checkbox-group data-v-076c3ad2 mt_20"><label class="_label data-v-076c3ad2 sure-message">
+            <radio class="_radio data-v-076c3ad2 radio" color="#BC171C" checked="{{isSure}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+            {{healthParams.questionnaireDescription}}
+          </label></checkbox-group> <button class="_button data-v-076c3ad2 sure-submit-button mt_20" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">提交</button>
+      </view>
+    </view>
+  </view>
+</template>

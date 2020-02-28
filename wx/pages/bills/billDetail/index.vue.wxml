@@ -1,0 +1,55 @@
+<import src="/components/popup/bindPhone.vue.wxml" /><template name="30b2e52e">
+  <view class="_div data-v-67b0bd30 flex-box-content">
+    <view class="_div data-v-67b0bd30 flex-box-body lock-list-content">
+      <view class="_div data-v-67b0bd30 bill-content">
+        <view class="_div data-v-67b0bd30 bill-box">
+          <view class="_div data-v-67b0bd30 top">
+            <view class="_p data-v-67b0bd30 name">未付账单</view>
+          </view>
+          <view class="_div data-v-67b0bd30 bill-detail">
+            <view class="_div data-v-67b0bd30 detail thead">
+              <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_p data-v-67b0bd30">
+                <checkbox class="_checkbox data-v-67b0bd30 checkbox" color="#BC171C" checked="{{allCheck}}" />
+              </view>
+              <view class="_p data-v-67b0bd30 title">账单名称</view>
+              <view class="_p data-v-67b0bd30 price">金额(元)</view>
+              <view class="_p data-v-67b0bd30 billDate">账单日</view>
+            </view>
+            <checkbox-group bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-67b0bd30">
+              <view class="_div data-v-67b0bd30 detail" wx:key="idx" key="{{idx}}" wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item">
+                <view class="_p data-v-67b0bd30">
+                  <checkbox class="_checkbox data-v-67b0bd30 checkbox" color="#BC171C" value="{{item.accountBillId}}" checked="{{item.checked}}" />
+                </view>
+                <view class="_p data-v-67b0bd30 title">{{item.accountBillName}}</view>
+                <view class="_p data-v-67b0bd30 price"><label class="_span data-v-67b0bd30 realAmount_class">{{item.realAmount}}</label> <label class="_span data-v-67b0bd30 totalAmount_class" wx:if="{{item.realAmount != item.totalAmount}}">{{item.totalAmount}}</label></view>
+                <view class="_p data-v-67b0bd30 billDate">{{item.accountBillDate}}</view>
+              </view>
+            </checkbox-group>
+            <checkbox-group bindchange="handleProxy" class="_checkbox-group data-v-67b0bd30 bx_group" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+              <view class="_div data-v-67b0bd30 detail" wx:key="idx" key="{{idx}}" wx:for="{{bxList}}" wx:for-index="idx" wx:for-item="item">
+                <view class="_p data-v-67b0bd30">
+                  <checkbox class="_checkbox data-v-67b0bd30 checkbox" color="#BC171C" value="{{item.accountBillId}}" checked="{{item.checked}}" />
+                </view>
+                <view class="_p data-v-67b0bd30 title">{{item.accountBillName}}</view>
+                <view class="_p data-v-67b0bd30 price"><label class="_span data-v-67b0bd30 realAmount_class">{{item.realAmount}}</label> <label class="_span data-v-67b0bd30 totalAmount_class" wx:if="{{item.realAmount != item.totalAmount}}">{{item.totalAmount}}</label></view>
+                <view class="_p data-v-67b0bd30 billDate">{{item.accountBillDate}}</view>
+              </view>
+            </checkbox-group>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-67b0bd30 naviTo-content" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <view class="_p data-v-67b0bd30">优惠券</view>
+        <view class="_div data-v-67b0bd30 space-box mg0">
+          <view class="_p data-v-67b0bd30">{{valueState}}</view>
+          <view class="_b data-v-67b0bd30 arrow-right"></view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-67b0bd30 flex-box-footer">
+      <view class="_div data-v-67b0bd30 total-box">
+        <view class="_p data-v-67b0bd30 total">合计：<label class="_span data-v-67b0bd30 red">{{resultPrice}}</label></view> <button plain class="_button data-v-67b0bd30 sure-pay {{isDisabled ? 'grayBack' : ''}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">确认支付</button>
+      </view>
+    </view> <template wx:if="{{isBind}}" bindcancelMask="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="75045313"></template>
+  </view>
+</template>

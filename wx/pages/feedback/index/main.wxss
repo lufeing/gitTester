@@ -1,0 +1,54 @@
+@import "../../../common/vendor.wxss";
+
+.feedback-content.data-v-d9504546 {
+  position: relative;
+  height: 100%;
+  background: #f2f2f2;
+}
+.feedback-header.data-v-d9504546 {
+  position: relative;
+  height: 222rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.feedback-header .space-cells.data-v-d9504546 {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 2rpx solid #e5e5e5;
+}
+.feedback-header .space-cells .state.data-v-d9504546 {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #333;
+  line-height: 40rpx;
+}
+.feedback-header .imgClass.data-v-d9504546 {
+  width: 100rpx;
+  height: 100rpx;
+}
+.feedback-body.data-v-d9504546 {
+  position: relative;
+  margin: 30rpx 0;
+}
+.feedback-body .see-content.data-v-d9504546 {
+  width: 100%;
+  height: 168rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-body .see-feedback.data-v-d9504546 {
+  width: 370rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8rpx;
+  border: 2rpx solid #eee;
+}

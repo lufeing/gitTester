@@ -1,0 +1,1 @@
+<import src="/pages/stewardServer/returnRoomApplicationForm/index.vue.wxml" /><template is="dae86eb4" data="{{ ...$root['0'], $root }}"/>

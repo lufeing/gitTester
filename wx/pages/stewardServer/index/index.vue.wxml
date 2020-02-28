@@ -1,0 +1,20 @@
+<template name="28d6b1a2">
+  <view class="_div data-v-092bd1b2 transactioin-detail-content">
+    <view class="_div data-v-092bd1b2 transactioin-detail-main">
+      <view class="_div data-v-092bd1b2 wallet-body-cell">
+        <navigator wx:key="index" key="{{index}}" class="_navigator data-v-092bd1b2 box" hover-class="none" url="{{item.naviUrl}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-092bd1b2 box-left">
+            <image class="_image data-v-092bd1b2 icon-img" src="{{item.imgUrl}}" mode="widthFix"></image>
+            <view class="_div data-v-092bd1b2">
+              <view class="_p data-v-092bd1b2 title">{{item.title}}</view>
+              <view class="_p data-v-092bd1b2 time">{{item.status}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-092bd1b2 box-right">
+            <view class="_b data-v-092bd1b2 arrow-right"></view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>

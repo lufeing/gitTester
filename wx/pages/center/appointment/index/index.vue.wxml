@@ -1,0 +1,30 @@
+<import src="/components/null.vue.wxml" /><template name="6bb01c74">
+  <view class="_div data-v-20438e3d appointment-content">
+    <view class="_div data-v-20438e3d appointment-list" wx:if="{{dataList.length}}">
+      <navigator class="_navigator data-v-20438e3d appointment-item" wx:key="index" key="{{index}}" url="{{'/pages/center/appointment/appointmentDetail/main?bookSeeRoomId=' + item.bookSeeRoomId + '&communityId=' +item.communityId + '&status=' + item.status}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-20438e3d appointment-space-box">
+          <view class="_p data-v-20438e3d">约看人：{{item.name}}</view>
+          <view class="_div data-v-20438e3d handle-status">
+            <view wx:if="{{item.status == 50 || item.status == 60 || item.status == 70}}" class="_p data-v-20438e3d orangeBg" catchtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">{{item.isReview ? '已点评' : '点评'}}</view>
+            <view class="_p data-v-20438e3d">{{statusObj[item.status]}}</view>
+          </view>
+        </view>
+        <view class="_p data-v-20438e3d times">看房时间：{{item.meetTime}}</view>
+        <view class="_div data-v-20438e3d appointment-space-box">
+          <image class="_image data-v-20438e3d communityImg" lazy-load mode="widthFix" src="{{item.communityPicture}}"></image>
+          <view class="_div data-v-20438e3d state-main">
+            <view class="_p data-v-20438e3d title">{{item.communityName}}</view>
+            <view wx:if="{{item.houseStyleName}}" class="_p data-v-20438e3d">{{item.houseStyleName}}</view>
+            <view class="_div data-v-20438e3d location-content">
+              <image class="_image data-v-20438e3d locationImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/appointment/icon_location2x.png"></image>
+              <view class="_p data-v-20438e3d address">{{item.communityAddress}}</view>
+            </view>
+          </view>
+          <view catchtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_div data-v-20438e3d">
+            <image class="_image data-v-20438e3d phoneImg" lazy-load mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/appointment/dianhua2x.png"></image>
+          </view>
+        </view>
+      </navigator>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

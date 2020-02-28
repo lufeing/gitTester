@@ -1,0 +1,57 @@
+@import "../../../common/vendor.wxss";
+
+.about-content.data-v-dced478c {
+  position: relative;
+  background: #fff;
+  height: calc(100% - 120rpx);
+  padding: 60rpx 0;
+}
+.about-top.data-v-dced478c {
+  display: flex;
+  justify-content: center;
+}
+.about-top .wq_logo.data-v-dced478c {
+  width: 300rpx;
+}
+.about-top .intersperse-left.data-v-dced478c {
+  width: 38rpx;
+  position: absolute;
+  left: 150rpx;
+}
+.about-top .intersperse-right.data-v-dced478c {
+  width: 80rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 160rpx;
+}
+.about-body.data-v-dced478c {
+  position: relative;
+  margin-top: 140rpx;
+}
+.about-body .state.data-v-dced478c {
+  text-indent: 50rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #333;
+  padding: 0 80rpx;
+}
+.about-body .hemispheroid.data-v-dced478c {
+  position: fixed;
+  top: 800rpx;
+  width: 80rpx;
+  margin-left: -40rpx;
+}
+.about-bottom.data-v-dced478c {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 100rpx;
+}
+.about-bottom ._p.data-v-dced478c {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+}

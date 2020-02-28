@@ -1,0 +1,18 @@
+<template name="1294e17c">
+  <view class="_div data-v-677cb8be">
+    <picker bindchange="handleProxy" value="{{param.value}}" range="{{param.answerRespList}}" range-key="questionAnswerContent" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-677cb8be">
+      <view class="_div data-v-677cb8be box">
+        <view class="_div data-v-677cb8be box-left">
+          <view class="_p data-v-677cb8be title">{{param.questionContent}}</view>
+        </view>
+        <view class="_div data-v-677cb8be box-right">
+          <view wx:if="{{param.value == null}}" class="_p data-v-677cb8be plState mr_10">请选择</view>
+          <view wx:else class="_p data-v-677cb8be state mr_10">{{param.answerRespList[param.value] && param.answerRespList[param.value]['questionAnswerContent']}}</view>
+          <view class="_p data-v-677cb8be">
+            <view class="_b data-v-677cb8be arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </picker>
+  </view>
+</template>

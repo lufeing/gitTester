@@ -1,0 +1,47 @@
+@import "../../../common/vendor.wxss";
+
+.info-content.data-v-9d376166 {
+  position: relative;
+  height: 100%;
+  background: #f9f9f9;
+}
+.info-header.data-v-9d376166 {
+  position: relative;
+  padding: 100rpx 0;
+  text-align: center;
+}
+.info-header .uploadSuccess.data-v-9d376166 {
+  width: 120rpx;
+  border-radius: 50%;
+}
+.info-header .title.data-v-9d376166 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.info-body.data-v-9d376166 {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+  padding: 0 30rpx;
+  text-align: center;
+}
+.info-body .time.data-v-9d376166 {
+  color: #bc171c;
+}
+.info-body .see-my-complaint.data-v-9d376166 {
+  position: relative;
+  margin-top: 100rpx;
+  text-align: center;
+}
+.info-body .see-my-complaint .see-button.data-v-9d376166 {
+  width: 370rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  background: #fff;
+  border-radius: 8rpx;
+  border: 2rpx solid #eee;
+}

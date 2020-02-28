@@ -1,0 +1,53 @@
+{
+  "appId": "wxc05b90df0ea49296",
+  "button": [
+    {
+      "name": "我要预订",
+      "sub_button": [
+        {
+          "type": "miniprogram",
+          "name": "白领公寓",
+          "url": "https://www.wowqu.cn",
+          "appid": "wxf32120c146d8c2c8",
+          "pagepath": "/pages/home/index/main"
+        },
+        {
+          "type": "miniprogram",
+          "name": "服务式公寓",
+          "url": "https://wap.bestwehotel.com",
+          "appid": "wx4e5614dba2dc7974",
+          "pagepath": "project/home/views/home/index?brandChannel=100"
+        }
+      ]
+    },
+    {
+      "name": "窝仔福利",
+      "sub_button": [
+        {
+          "type": "miniprogram",
+          "name": "无忧权益券",
+          "url": "https://www.wowqu.cn",
+          "appid": "wxf32120c146d8c2c8",
+          "pagepath": "/pages/activity/poster/main"
+        },
+        {
+          "type": "view",
+          "name": "测试游戏",
+          "url": "https://www.wowqu.cn/h5/motopods"
+        },
+        {
+          "type": "view",
+          "name": "窝趣直播间",
+          "url": "https://mudu.tv/watch/4720513"
+        }
+      ]
+    },
+    {
+      "name": "会员中心",
+      "type": "miniprogram",
+      "url": "https://www.wowqu.cn",
+      "appid": "wxf32120c146d8c2c8",
+      "pagepath": "/pages/center/my/main"
+    }
+  ]
+}

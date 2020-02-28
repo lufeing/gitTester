@@ -1,0 +1,18 @@
+<template name="b6b3bf30">
+  <view class="_div data-v-7c9b710e module-cell">
+    <view class="_div data-v-7c9b710e title-area">
+      <view class="_p data-v-7c9b710e title">品牌公寓</view>
+    </view>
+    <view class="_div data-v-7c9b710e scroll_box">
+      <scroll-view class="_scroll-view data-v-7c9b710e scroll-view_x" scroll-x style="width: 100%;">
+        <view class="_div data-v-7c9b710e item_list w_165" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{brandList}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.thumbnailUrl}}" class="_image data-v-7c9b710e shopping-image"></image>
+          <view class="_div data-v-7c9b710e brand-content">
+            <image src="{{item.brandImage}}" class="_image data-v-7c9b710e icon-img"></image>
+            <view class="_p data-v-7c9b710e title">{{item.brandName}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,9 @@
+<template name="7a5f97a0">
+  <view class="_div data-v-646126a4 flex-box-content">
+    <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/success2x.png" class="_img data-v-646126a4 success-image"></image>
+    <view class="_div data-v-646126a4 success-text">提交成功</view>
+    <view class="_div data-v-646126a4 success-description">提交成功，等待后台人员审核，如有疑问请联系管家</view>
+    <view bindtap="handleProxy" class="_div data-v-646126a4 commit" data-eventid="{{'0'}}" data-comkey="{{$k}}">返回个人中心</view>
+    <view class="_div data-v-646126a4 empty-bottom"></view>
+  </view>
+</template>

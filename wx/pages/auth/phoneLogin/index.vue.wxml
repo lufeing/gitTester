@@ -1,0 +1,18 @@
+<import src="/components/customModal.vue.wxml" /><template name="bd968176">
+  <view class="_div data-v-42a906c3">
+    <view class="_div data-v-42a906c3 officalLogo">
+      <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/wq_logo.png" mode="widthFix" class="_image data-v-42a906c3"></image>
+    </view>
+    <view class="_div data-v-42a906c3 form-box">
+      <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/logo.png" class="_image data-v-42a906c3 logo"></image>
+      <view class="_div data-v-42a906c3 form-item"><input class="_input data-v-42a906c3 username" type="number" value="{{phone}}" bindinput="handleProxy" maxlength="11" placeholder="请输入手机号码" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        <image wx:if="{{phone.length > 0}}" id="clear-username" class="_image data-v-42a906c3 clear" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/auth/clear.png" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></image>
+      </view>
+      <view class="_div data-v-42a906c3 form-item disFlex"><input class="_input data-v-42a906c3 password" type="number" value="{{encryptCode}}" bindinput="handleProxy" maxlength="6" placeholder="验证码" data-eventid="{{'2'}}" data-comkey="{{$k}}" /> <button class="_button data-v-42a906c3 send-code" disabled="{{disabled}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">{{codeText}}</button></view>
+      <view class="_div data-v-42a906c3 form-item disFlex"><input type="text" id="code" name="codeImg" placeholder-class="C3" placeholder="请输入图形验证码" maxlength="4" value="{{imgCode}}" bindinput="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-42a906c3" />
+        <view class="_div data-v-42a906c3 validate-box" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"><canvas class="_canvas data-v-42a906c3 canvasClass" canvas-id="canvas" id="canvas"></canvas></view>
+      </view> <button class="_button data-v-42a906c3 login-btn {{isDisabled ? 'garyBack' : ''}}" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">登录</button>
+      <view class="_div data-v-42a906c3 wxlogin" wx:if="{{loginText === '微信登录'}}" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">{{loginText}}</view>
+    </view> <template bindgetVisible="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="fae3df64"></template>
+  </view>
+</template>

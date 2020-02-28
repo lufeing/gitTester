@@ -1,0 +1,18 @@
+<template name="0156fb7e">
+  <view class="_div data-v-dced478c about-content">
+    <view class="_div data-v-dced478c about-top">
+      <image class="_image data-v-dced478c intersperse-left" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/about/bg2.png"></image>
+      <image class="_image data-v-dced478c wq_logo" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/about/logo.png"></image>
+      <image class="_image data-v-dced478c intersperse-right" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/about/bg1.png"></image>
+    </view>
+    <view class="_div data-v-dced478c about-body">
+      <view class="_p data-v-dced478c state">广州窝趣公寓管理有限公司是铂涛集团旗下的首个公寓品牌，2017年，窝趣品牌获58集团战略领投，并公开发布“深耕一公里”品牌战略。 品牌核心价值主张“我•享•趣”，并倡导“重新定义享乐主义”，意在为都市青年提供新享乐租住生活方式。</view>
+      <view class="_div data-v-dced478c">
+        <image class="_image data-v-dced478c hemispheroid" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/about/bg1.png"></image>
+      </view>
+    </view>
+    <view class="_div data-v-dced478c about-bottom">
+      <view class="_p data-v-dced478c">窝趣V1.0</view>
+    </view>
+  </view>
+</template>

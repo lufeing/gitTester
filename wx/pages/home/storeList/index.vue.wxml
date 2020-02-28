@@ -1,0 +1,12 @@
+<template name="4fbff948">
+  <view class="_div data-v-93b72a78 choose-city-content">
+    <view class="_div data-v-93b72a78 current-location"><input type="text" value="{{keyLike}}" bindinput="handleProxy" class="_input data-v-93b72a78 searchInput" placeholder="请输入地铁站、写字楼或地址" focus data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+      <view class="_div data-v-93b72a78 city-cell" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">搜索</view>
+    </view>
+    <view class="_div data-v-93b72a78 label-city-area">
+      <view class="_div data-v-93b72a78 list-item" bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{letterCityRespList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-93b72a78 list-cell">{{item.communityName}}</view>
+      </view>
+    </view>
+  </view>
+</template>

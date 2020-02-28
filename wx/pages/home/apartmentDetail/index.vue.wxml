@@ -1,0 +1,60 @@
+<import src="/components/home/swiper/activeImage.vue.wxml" />
+<import src="/components/home/trafficmap/map.vue.wxml" />
+<import src="/components/home/evaluateComponent/index.vue.wxml" />
+<import src="/components/home/room-type/list.vue.wxml" /><template name="7162bd0c">
+  <view class="_div data-v-722e3f48">
+    <view class="_div data-v-722e3f48 apartment-header"><template wx:if="{{dataObj.images}}" data="{{...$root[$kk+'0'], $root}}" is="7c874580"></template>
+      <view class="_p data-v-722e3f48 type-detail-title">{{dataObj.communityName}}</view>
+      <view class="_div data-v-722e3f48 type-detail">
+        <view class="_div data-v-722e3f48 type-detail-left">
+          <view class="_div data-v-722e3f48">
+            <view wx:key="index" key="{{index}}" wx:for="{{dataObj.features}}" wx:for-index="index" wx:for-item="item" class="_p data-v-722e3f48">{{item}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-722e3f48 type-detail-right">
+          <view class="_p data-v-722e3f48 normal-price">挂牌价：￥{{dataObj.minRentPrice}}/月起</view>
+          <view class="_p data-v-722e3f48 member-price"> 会员价： <label class="_span data-v-722e3f48 red">￥{{dataObj.minMemberPrice}}-{{dataObj.maxMemberPrice}}</label></view>
+        </view>
+      </view>
+      <view class="_div data-v-722e3f48 detail-content">
+        <view class="_p data-v-722e3f48 title">社区详情</view>
+        <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-722e3f48">
+          <view class="_p data-v-722e3f48 introduce {{isExpand ? 'spread' : 'packUp'}}">{{dataObj.communityIntroduction}}</view>
+          <view class="_p data-v-722e3f48 downUp">{{isExpand ? '收起' : '查看更多'}}</view>
+        </view>
+        <view bindtap="handleProxy" wx:if="{{mpvuePlatform === 'wx'}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-722e3f48">
+          <view class="_div data-v-722e3f48 city-traffic-content">
+            <view class="_p data-v-722e3f48 title mb_10">周边配套和交通</view>
+            <view class="_p data-v-722e3f48 more"> 查看介绍 <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/more.png" class="_img data-v-722e3f48 more-img"></image>
+            </view>
+          </view> <template data="{{...$root[$kk+'1'], $root}}" is="3b95e124"></template>
+        </view>
+        <view class="_div data-v-722e3f48 evaluate-content"><template data="{{...$root[$kk+'2'], $root}}" is="4cc1c4bb"></template></view>
+        <view class="_div data-v-722e3f48 house-type-content">
+          <view class="_p data-v-722e3f48 title mb_10">社区房型</view> <template data="{{...$root[$kk+'3'], $root}}" is="d7140186"></template>
+        </view>
+        <view class="_div data-v-722e3f48 commmuncity-server-content">
+          <view class="_p data-v-722e3f48 title mb_10">社区服务</view>
+          <view class="_div data-v-722e3f48 communcity-server">
+            <view class="_div data-v-722e3f48 server-item" wx:key="index" key="{{index}}" wx:for="{{dataObj.services}}" wx:for-index="index" wx:for-item="item">
+              <image class="_img data-v-722e3f48 server-img" src="{{'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/apartment/' + item.serviceIco}}"></image>
+              <view class="_p data-v-722e3f48 server-state">{{item.serviceName}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-722e3f48 padding60"></view>
+    </view>
+    <view class="_div data-v-722e3f48 apartment-footer">
+      <view class="_div data-v-722e3f48 refer">
+        <view class="_div data-v-722e3f48 phone-area" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view class="_p data-v-722e3f48">
+            <image class="_img data-v-722e3f48 phone-img" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/apartment/phone2x.png"></image>
+          </view>
+          <view class="_p data-v-722e3f48">电话咨询</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-722e3f48"><button class="_button data-v-722e3f48 order-watch">预约看房</button></view>
+      </view>
+    </view>
+  </view>
+</template>

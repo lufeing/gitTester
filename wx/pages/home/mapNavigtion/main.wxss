@@ -1,0 +1,59 @@
+@import "../../../common/vendor.wxss";
+
+.map-container.data-v-3a24272c {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.toolbar-container.data-v-3a24272c {
+  position: fixed;
+  bottom: 66rpx;
+  left: 39rpx;
+  right: 39rpx;
+  box-sizing: border-box;
+  width: 670rpx;
+  height: 188rpx;
+  background-color: #fff;
+  display: flex;
+  padding-top: 40rpx;
+  justify-content: space-around;
+}
+.navigator.data-v-3a24272c {
+  width: 140rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  line-height: 82rpx;
+  height: 82rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left: 304rpx;
+  background: #bc171c;
+  border-radius: 41rpx;
+}
+.toolbar-container .image-container.data-v-3a24272c {
+  width: 50rpx;
+  height: 50rpx;
+}
+.toolbar-container .img.data-v-3a24272c {
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toolbar-container .title.data-v-3a24272c {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #333;
+  margin-top: 10rpx;
+}
+.tool-container.data-v-3a24272c {
+  text-align: center;
+  width: calc(670rpx / 6);
+  height: 100rpx;
+}

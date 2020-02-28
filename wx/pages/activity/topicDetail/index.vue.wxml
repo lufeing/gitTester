@@ -1,0 +1,34 @@
+<template name="121eecb9">
+  <view class="_div data-v-7ec78516 flex-box-content">
+    <view class="_div data-v-7ec78516 flex-box-body">
+      <view class="_header data-v-7ec78516 topic_header">
+        <view class="_div data-v-7ec78516 userInfo pd15">
+          <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/game.png" class="_image data-v-7ec78516 headerImg"></image>
+          <view class="_p data-v-7ec78516 name">窝趣官方</view>
+          <view class="_p data-v-7ec78516 time">201-08-20</view>
+        </view>
+        <image src="https://wowquwxmgmqcloudcos.plateno.cc/pms/apt/1546655963800173082.jpg" class="_image data-v-7ec78516 banner"></image>
+        <view class="_div data-v-7ec78516 topic_content"><label class="_span data-v-7ec78516 title">#盛夏光年#</label> <label class="_span data-v-7ec78516 topic_cont">生活不止眼前的苟且，还有远方的诗和田野，活不止眼前的苟且，还有远方的诗和田野。</label></view>
+      </view>
+      <view class="_div data-v-7ec78516 topic_comment">
+        <view class="_p data-v-7ec78516 comment_number">评论 15420</view>
+        <view class="_div data-v-7ec78516 comment_box" wx:key="index" key="{{index}}" wx:for="{{commentList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-7ec78516 userInfo">
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/game.png" class="_image data-v-7ec78516 headerImg"></image>
+            <view class="_p data-v-7ec78516 name">窝趣官方</view>
+            <view class="_p data-v-7ec78516 time">201-08-20</view>
+          </view>
+          <view class="_div data-v-7ec78516 comment_value"> 这是一条非常热门的评论 </view>
+        </view>
+      </view>
+    </view>
+    <view class="_footer data-v-7ec78516 flex-box-footer pd0">
+      <view class="_div data-v-7ec78516 comment-body"><input type="text" value="{{commentValue}}" bindinput="handleProxy" placeholder="我也说两句……" class="_input data-v-7ec78516 commnt_input" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        <view class="_div data-v-7ec78516 handler_box">
+          <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/like.png" mode="widthFix" class="_image data-v-7ec78516 operationImg"></image>
+          <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/share.png" mode="widthFix" class="_image data-v-7ec78516 operationImg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

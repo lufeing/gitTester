@@ -1,0 +1,112 @@
+<template name="06a8c6fa">
+  <view class="_div data-v-fc3df6fe flex-box-content">
+    <view class="_div data-v-fc3df6fe flex-box-body bg_c5">
+      <view class="_div data-v-fc3df6fe payment-plan-content">
+        <view class="_div data-v-fc3df6fe payment-plan-main">
+          <view class="_p data-v-fc3df6fe leftB-title">付款计划</view>
+          <view class="_div data-v-fc3df6fe detail-message">
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">合同编号</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.contractCode}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">社区名称</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.communityName}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe thin">房间号</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.rentRelateName}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe thin">押金</view>
+              <view class="_p data-v-fc3df6fe importance">{{detailObj.deposit}}元</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box" wx:if="{{detailObj.margin}}">
+              <view class="_p data-v-fc3df6fe thin">定金</view>
+              <view class="_p data-v-fc3df6fe importance">{{detailObj.margin}}元</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe thin">租金</view>
+              <view class="_p data-v-fc3df6fe importance">{{detailObj.rental}}元</view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-fc3df6fe payment-plan-main">
+          <view class="_p data-v-fc3df6fe leftB-title">签约人信息</view>
+          <view class="_div data-v-fc3df6fe detail-message">
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">租用人</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.renterName}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">证件类型</view>
+              <view class="_p data-v-fc3df6fe" wx:if="{{certificate}}">{{certificate.certificateTypeName}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">证件号码</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.certificateNo}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">性别</view>
+              <view class="_p data-v-fc3df6fe">{{sexObject[detailObj.renterSex]}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">电话号码</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.renterPhone}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe time">会员等级</view>
+              <view class="_p data-v-fc3df6fe"> V{{detailObj.renterLevel}} / {{detailObj.renterLevelName}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-fc3df6fe payment-plan-main">
+          <view class="_p data-v-fc3df6fe leftB-title">紧急联系人信息</view>
+          <view class="_div data-v-fc3df6fe detail-message">
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe thin">紧急联系人</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.contactsName}}</view>
+            </view>
+            <view class="_div data-v-fc3df6fe message-box">
+              <view class="_p data-v-fc3df6fe thin">紧急联系人电话</view>
+              <view class="_p data-v-fc3df6fe">{{detailObj.contactsPhone}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-fc3df6fe payment-plan-main">
+          <view class="_p data-v-fc3df6fe leftB-title">水电/物业费信息</view>
+          <view class="_div data-v-fc3df6fe detail-message">
+            <view class="_div data-v-fc3df6fe message-box" wx:key="index" key="{{index}}" wx:for="{{detailObj.feeRespList}}" wx:for-index="index" wx:for-item="item">
+              <view class="_p data-v-fc3df6fe thin">{{item.feeTypeName}}</view>
+              <view class="_p data-v-fc3df6fe importance">{{item.price}}{{item.unit}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-fc3df6fe payment-plan-main">
+          <view class="_p data-v-fc3df6fe leftB-title">须知及规定</view>
+          <view class="_div data-v-fc3df6fe detail-message">
+            <navigator class="_navigator data-v-fc3df6fe message-box" url="/pages/contract/rentAgreement/main?rentAddress=">
+              <view class="_p data-v-fc3df6fe thin">房屋租赁合同</view>
+              <view class="_p data-v-fc3df6fe importance">阅读></view>
+            </navigator>
+            <navigator class="_navigator data-v-fc3df6fe message-box" url="/pages/contract/agreement/main">
+              <view class="_p data-v-fc3df6fe thin">合同协议须知</view>
+              <view class="_p data-v-fc3df6fe importance">阅读></view>
+            </navigator>
+            <navigator class="_navigator data-v-fc3df6fe message-box" url="/pages/contract/checkInNotice/main">
+              <view class="_p data-v-fc3df6fe thin">入住须知</view>
+              <view class="_p data-v-fc3df6fe importance">阅读></view>
+            </navigator>
+          </view>
+        </view> <label class="_label data-v-fc3df6fe sure-message">
+          <radio value class="_radio data-v-fc3df6fe radio" color="#BC171C" checked="{{isSure}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" /> 本人已阅读并知晓以上信息 </label>
+      </view>
+    </view>
+    <view class="_div data-v-fc3df6fe flex-box-footer pd810">
+      <radio-group bindchange="handleProxy" class="_radio-group data-v-fc3df6fe insurance_group" data-eventid="{{'2'}}" data-comkey="{{$k}}"><label class="_label data-v-fc3df6fe insurance_radio" wx:key="index" key="{{index}}" wx:for="{{insuranceGoodsList}}" wx:for-index="index" wx:for-item="item">
+          <checkbox class="_checkbox data-v-fc3df6fe radio" value="{{item.insuranceId}}" checked="{{item.isDefault}}" /> 是否购买<text class="_text data-v-fc3df6fe state" catchtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">{{item.price}}保险</text></label></radio-group>
+      <view class="_div data-v-fc3df6fe footer"><button plain class="_button data-v-fc3df6fe retHome" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">取消合同</button> <button plain class="_button data-v-fc3df6fe payCash" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">确认签约</button></view>
+    </view>
+  </view>
+</template>

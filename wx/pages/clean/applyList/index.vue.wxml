@@ -1,0 +1,29 @@
+<import src="/components/null.vue.wxml" /><template name="13df94cf">
+  <view class="_div data-v-34c45547">
+    <view class="_div data-v-34c45547 clean-content" wx:if="{{showNormalPage}}">
+      <view class="_div data-v-34c45547 clean-body">
+        <view class="_div data-v-34c45547 clean-cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-34c45547 header">
+            <view class="_p data-v-34c45547 cleanItemName">{{item.cleanItemName}}</view>
+            <view class="_p data-v-34c45547">{{!item.isReview ? cleanStatusObj[item.cleanStatus] : '已点评'}}</view>
+          </view>
+          <view class="_div data-v-34c45547 body">
+            <view class="_div data-v-34c45547 flex-space">
+              <view class="_p data-v-34c45547">{{item.communityName}}</view>
+              <view class="_p data-v-34c45547">¥{{item.realAmount}}元</view>
+            </view>
+            <view class="_div data-v-34c45547 flex-start">
+              <view class="_p data-v-34c45547">预约时间:{{item.startTime}}</view>
+            </view>
+            <view class="_div data-v-34c45547 flex-end" wx:if="{{item.cleanStatus == 10}}">
+              <view class="_p data-v-34c45547"><button plain class="_button data-v-34c45547 button-default" catchtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">取消</button></view>
+            </view>
+            <view class="_div data-v-34c45547 flex-end" wx:elif="{{item.cleanStatus == 50 && item.isPaid == 1 && item.isReview == false}}">
+              <view class="_p data-v-34c45547"><button plain class="_button data-v-34c45547 button-warn">点评</button></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

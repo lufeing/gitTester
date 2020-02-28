@@ -1,0 +1,34 @@
+<template name="ff97bc58">
+  <view class="_div data-v-64fbce60">
+    <picker mode="date" bindchange="handleProxy" start="{{dataObj.date}}" end="2021-01-01" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-64fbce60">
+      <view class="_div data-v-64fbce60 commnity-content">
+        <view class="_div data-v-64fbce60 borer-bottom">
+          <view class="_div data-v-64fbce60 memberPhone-box">
+            <view class="_p data-v-64fbce60 title">预约日期:</view>
+          </view>
+          <view class="_div data-v-64fbce60 box-right">
+            <view class="_p data-v-64fbce60 state mr_10">{{dataObj.date || '请选择日期'}}</view>
+          </view>
+          <view class="_p data-v-64fbce60">
+            <view class="_b data-v-64fbce60 arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </picker>
+    <picker mode="time" bindchange="handleProxy" value="{{dataObj.time}}" start="08:00" end="24:00" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-64fbce60">
+      <view class="_div data-v-64fbce60 commnity-content">
+        <view class="_div data-v-64fbce60 borer-bottom">
+          <view class="_div data-v-64fbce60 memberPhone-box">
+            <view class="_p data-v-64fbce60 title">预约时间:</view>
+          </view>
+          <view class="_div data-v-64fbce60 box-right">
+            <view class="_p data-v-64fbce60 state mr_10">{{dataObj.time || '请选择时间'}}</view>
+          </view>
+          <view class="_p data-v-64fbce60">
+            <view class="_b data-v-64fbce60 arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </picker>
+  </view>
+</template>

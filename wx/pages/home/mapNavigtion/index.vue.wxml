@@ -1,0 +1,13 @@
+<template name="641c5d2c">
+  <view class="_div data-v-3a24272c flex-box-content"><map class="_map data-v-3a24272c map-container" markers="{{markers}}" scale="{{14}}" polyline="{{polyline}}" latitude="{{location.latitude}}" longitude="{{location.longitude}}" show-location="true">
+      <cover-view class="_cover-view data-v-3a24272c toolbar-container">
+        <cover-view wx:key="index" key="{{index}}" class="_cover-view data-v-3a24272c tool-container" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{toollist}}" wx:for-index="index" wx:for-item="item">
+          <covcer-view class="_covcer-view data-v-3a24272c image-container">
+            <cover-image src="{{item.img}}" class="_cover-image data-v-3a24272c img" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></cover-image>
+          </covcer-view>
+          <cover-view class="_cover-view data-v-3a24272c title">{{item.title}}</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class="_cover-view data-v-3a24272c navigator" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">导航</cover-view>
+    </map></view>
+</template>

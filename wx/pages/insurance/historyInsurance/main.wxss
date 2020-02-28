@@ -1,0 +1,88 @@
+@import "../../../common/vendor.wxss";
+
+.insuranceList-content.data-v-392657e0 {
+  width: 100%;
+  padding: 100rpx 0;
+}
+.insuranceList-header.data-v-392657e0 {
+  width: 100%;
+  text-align: center;
+}
+.insuranceList-header .null.data-v-392657e0 {
+  width: 500rpx;
+}
+.insuranceList-header .allow-button.data-v-392657e0 {
+  position: relative;
+  margin-top: 40rpx;
+  width: 650rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.wallet-body-cell.data-v-392657e0 {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  margin: 0 30rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 20rpx 0;
+}
+.wallet-body-cell .box.data-v-392657e0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wallet-body-cell .insurance-status.data-v-392657e0 {
+  font-size: 32rpx;
+  color: red;
+  font-weight: 400;
+}
+.wallet-body-cell .title.data-v-392657e0 {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  line-height: 2;
+}
+.wallet-body-cell .box-right.data-v-392657e0 {
+  min-width: 120rpx;
+  text-align: right;
+}
+.wallet-body-cell .box-right .state.data-v-392657e0 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.wallet-body-cell .box-right .red.data-v-392657e0 {
+  color: #b60005;
+}
+.wallet-body-cell .seal.data-v-392657e0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 2rpx solid red;
+}
+.wallet-body-cell .seal .description.data-v-392657e0 {
+  width: 120rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 2rpx solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: red;
+  font-weight: 600;
+}
+.wallet-body-cell .flex-direction.data-v-392657e0 {
+  flex-direction: column;
+}
+.nobady.data-v-392657e0 {
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: center;
+}

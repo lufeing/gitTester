@@ -1,0 +1,1 @@
+<import src="/pages/center/appointment/orderHouse/index.vue.wxml" /><template is="4224c76c" data="{{ ...$root['0'], $root }}"/>

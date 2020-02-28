@@ -1,0 +1,7 @@
+<import src="/pages/verify/protection/upload.vue.wxml" /><template name="0b24f5d2">
+  <view class="_div data-v-5dcb4dd0">
+    <view class="_div data-v-5dcb4dd0 flex-box-content">
+      <view class="_div data-v-5dcb4dd0 flex-box-body"><template wx:if="{{tabsIndex === 0}}" data="{{...$root[$kk+'0'], $root}}" is="211471b1"></template></view>
+    </view>
+  </view>
+</template>

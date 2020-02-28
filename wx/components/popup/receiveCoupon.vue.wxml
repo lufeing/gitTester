@@ -1,0 +1,25 @@
+<template name="c074886a">
+  <view class="_view data-v-46802918 mask" wx:if="{{maskModal}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-46802918 modal-content" style="height:450px" catchtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-46802918 coupon-content">
+        <view class="_div data-v-46802918 main-body">
+          <view class="_div data-v-46802918 package_box">
+            <view class="_div data-v-46802918 msg_content">
+              <view wx:if="{{receiveCode === 1000}}" class="_div data-v-46802918">
+                <view class="_p data-v-46802918 receiveMsg">注册成功!</view>
+                <view class="_p data-v-46802918 receiveMsg">关注公众号【窝趣WOWQU】提现红包</view>
+              </view>
+              <view wx:else class="_div data-v-46802918">
+                <view class="_p data-v-46802918 receiveMsg">{{receiveMsg}}</view>
+              </view>
+              <view class="_div data-v-46802918 withdraw_content" wx:if="{{receiveCode === 1000 || receiveCode === 4000}}"><button class="_button data-v-46802918 normal withdraw_deposit {{isWithDrawBoolean ? 'gray_deposit' : ''}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">{{isWithDrawBoolean ? '已提现': '提现'}}</button></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-46802918 modal-btn-wrapper" catchtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-46802918 close" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/close.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

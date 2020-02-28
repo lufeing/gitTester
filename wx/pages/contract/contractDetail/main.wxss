@@ -1,0 +1,122 @@
+@import "../../../common/vendor.wxss";
+
+.payment-plan-content.data-v-fc3df6fe {
+  position: relative;
+  padding: 20rpx;
+  min-height: calc(100% - 40rpx);
+  background: #f9f9f9;
+}
+.payment-plan-main.data-v-fc3df6fe {
+  position: relative;
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 30rpx 30rpx 0;
+  margin-bottom: 20rpx;
+}
+.bg_c5.data-v-fc3df6fe {
+  background: #f2f2f2 !important;
+}
+.detail-message.data-v-fc3df6fe {
+  position: relative;
+}
+.message-box.data-v-fc3df6fe {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx dashed #e5e5e5;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.message-box.data-v-fc3df6fe:last-child {
+  border-bottom: 0;
+}
+.message-box .thin.data-v-fc3df6fe {
+  color: #666666;
+}
+.importance.data-v-fc3df6fe {
+  color: #bc171c;
+}
+.sure-message.data-v-fc3df6fe {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.sure-message .radio.data-v-fc3df6fe {
+  zoom: 0.7;
+}
+.sure-message .state.data-v-fc3df6fe {
+  color: #2d8cf0;
+}
+.pd810.data-v-fc3df6fe {
+  padding: 16rpx 20rpx !important;
+}
+.footer.data-v-fc3df6fe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.footer .retHome.data-v-fc3df6fe {
+  width: 330rpx;
+  height: 88rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  border: 2rpx solid #bc171c;
+  color: #bc171c;
+  font-size: 32rpx;
+  font-weight: 400;
+  margin-right: 30rpx;
+}
+.footer .payCash.data-v-fc3df6fe {
+  width: 330rpx;
+  height: 88rpx;
+  background: #bc171c;
+  border-radius: 8rpx;
+  border: 4rpx solid #bc171c;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 400;
+}
+.insurance_group.data-v-fc3df6fe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insurance_group .insurance_radio.data-v-fc3df6fe {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.insurance_group .insurance_radio .radio.data-v-fc3df6fe {
+  zoom: 0.7;
+}
+.insurance_group .insurance_radio .state.data-v-fc3df6fe {
+  color: #2d8cf0;
+}
+checkbox .wx-checkbox-input {
+  width: 40rpx;
+  height: 40rpx;
+  border: 4rpx solid #999;
+  border-radius: 100%;
+  background: none;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: 4rpx solid #3cbcee !important;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 60%;
+  height: 60%;
+  background: #3cbcee;
+  border-radius: 100%;
+  content: "";
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

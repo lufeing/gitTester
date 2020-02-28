@@ -1,0 +1,43 @@
+<import src="/pages/invite/inviteList/bottomModal.vue.wxml" /><template name="69086430">
+  <view class="_div data-v-88a287a4 invite-content">
+    <view class="_div data-v-88a287a4 invite_body">
+      <view class="_div data-v-88a287a4 now_go">
+        <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/invite/invite_button.png" class="_image data-v-88a287a4 now_image" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+      </view>
+      <view class="_div data-v-88a287a4 playing-method-content">
+        <view class="_div data-v-88a287a4 body">
+          <view class="_div data-v-88a287a4 image_content">
+            <view class="_p data-v-88a287a4 invite_title">玩法介绍</view>
+          </view>
+          <view class="_div data-v-88a287a4 plan-line" wx:key="index" key="{{index}}" wx:for="{{planList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_p data-v-88a287a4 orderNum"></view>
+            <view class="_p data-v-88a287a4 rule">{{item.rule}}</view>
+          </view>
+          <view class="_p data-v-88a287a4 status">（为防止出现恶意注册账户，我们有权对注册手机号码进行检测，如三次联系无法接通机主，我们将此手机号码列为僵尸手机号，有权不予发放奖励，最终解释权归我们所有）</view>
+        </view>
+      </view>
+      <view class="_div data-v-88a287a4 inviteList-content">
+        <view class="_div data-v-88a287a4 body">
+          <view class="_div data-v-88a287a4 image_content">
+            <view class="_p data-v-88a287a4 invite_title">我的邀请</view>
+          </view>
+          <view class="_div data-v-88a287a4 userMessage-content" wx:if="{{userList.length}}">
+            <view class="_div data-v-88a287a4 user_header">
+              <view class="_p data-v-88a287a4 date">日期</view>
+              <view class="_p data-v-88a287a4 userName">手机号</view>
+              <view class="_p data-v-88a287a4 createTime">抵用劵金额</view>
+            </view>
+            <view class="_div data-v-88a287a4 user_box" wx:key="index" key="{{index}}" wx:for="{{userList}}" wx:for-index="index" wx:for-item="item">
+              <view class="_p data-v-88a287a4 date">{{item.createDate}}</view>
+              <view class="_p data-v-88a287a4 userName">{{item.memberName}}</view>
+              <view class="_p data-v-88a287a4 createTime {{tabsIndex === 0 ? 'invite_price' : ''}}">+{{item.price}}</view>
+            </view>
+          </view>
+          <view wx:else class="_div data-v-88a287a4">
+            <view class="_p data-v-88a287a4 noMore">暂无抵用劵可领取，快去邀请好友吧！</view>
+          </view>
+        </view>
+      </view>
+    </view> <template bindchangeShareModal="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="5043aa20"></template>
+  </view>
+</template>

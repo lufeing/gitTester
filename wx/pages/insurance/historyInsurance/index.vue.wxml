@@ -1,0 +1,28 @@
+<template name="03de88ce">
+  <view class="_div data-v-392657e0">
+    <view wx:if="{{insuranceList.length}}" class="_div data-v-392657e0 transactioin-detail-main">
+      <view class="_div data-v-392657e0 wallet-body-cell" wx:key="index" key="{{index}}" wx:for="{{insuranceList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-392657e0 box">
+          <view class="_div data-v-392657e0 box-left">
+            <view class="_p data-v-392657e0 insurance-status">{{stateObj[item.status]}}</view>
+          </view>
+          <view class="_div data-v-392657e0 box-right">
+            <view class="_p data-v-392657e0 title">历史保险</view>
+          </view>
+        </view>
+        <view class="_div data-v-392657e0 box">
+          <view class="_div data-v-392657e0 box-left flex-direction">
+            <view class="_p data-v-392657e0 title">{{item.insuranceName}}</view>
+            <view class="_p data-v-392657e0 state">保障日期：{{item.efficientDate}}至{{item.terminationDate}}</view>
+          </view>
+          <view class="_div data-v-392657e0 seal">
+            <view class="_p data-v-392657e0 insurance-status">{{stateObj[item.status]}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="_div data-v-392657e0">
+      <view class="_p data-v-392657e0 nobady">暂无历史记录</view>
+    </view>
+  </view>
+</template>

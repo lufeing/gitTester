@@ -1,0 +1,8 @@
+<template name="0a0fe2ee">
+  <view class="_div data-v-c0013bea clean-content">
+    <view class="_div data-v-c0013bea clean-body">
+      <view class="_p data-v-c0013bea"><button class="_button data-v-c0013bea handle-button apply" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">发起新预约</button></view>
+      <view class="_p data-v-c0013bea"><button class="_button data-v-c0013bea handle-button list" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">查看已有预约</button></view>
+    </view>
+  </view>
+</template>

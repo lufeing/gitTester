@@ -1,0 +1,45 @@
+@import "../../../common/vendor.wxss";
+
+.success-image.data-v-9f288656 {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 100rpx;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.commit.data-v-9f288656 {
+  width: 375rpx;
+  margin-left: auto;
+  margin-right: auto;
+  height: 88rpx;
+  font-size: 32rpx;
+  background: #fff;
+  border: 2rpx solid #eee;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 88rpx;
+  bottom: 20rpx;
+  color: #333;
+  font-weight: 400;
+  margin-top: 40rpx;
+}
+.empty-bottom.data-v-9f288656 {
+  height: 108rpx;
+}
+.success-text.data-v-9f288656 {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.success-description.data-v-9f288656 {
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 80rpx;
+  font-weight: 500;
+  color: #333;
+}

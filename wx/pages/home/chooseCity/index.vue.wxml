@@ -1,0 +1,24 @@
+<template name="2ac7cd35">
+  <view class="_div data-v-6787d69a choose-city-content">
+    <view class="_div data-v-6787d69a current-location">
+      <view class="_p data-v-6787d69a title">当前定位城市</view>
+      <view class="_div data-v-6787d69a city-cell">{{currentCity}}</view>
+    </view>
+    <view class="_div data-v-6787d69a hot-location">
+      <view class="_p data-v-6787d69a title">热门城市</view>
+      <view class="_div data-v-6787d69a city-item">
+        <view class="_div data-v-6787d69a city-cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{hotCityList}}" wx:for-index="index" wx:for-item="item">
+          {{item.cityName}}
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-6787d69a label-city-area">
+      <view class="_div data-v-6787d69a list-item" wx:key="index" key="{{index}}" wx:for="{{letterCityRespList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-6787d69a list-label">{{item.letter}}</view>
+        <view class="_div data-v-6787d69a list-cell" wx:key="idx" key="{{idx}}" bindtap="handleProxy" data-eventid="{{'1_'+index+'-'+idx}}" data-comkey="{{$k}}" wx:for="{{item.cityList}}" wx:for-index="idx" wx:for-item="city">
+          {{city.cityName}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

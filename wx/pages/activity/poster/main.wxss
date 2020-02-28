@@ -1,0 +1,17 @@
+@import "../../../common/vendor.wxss";
+
+.poster_content.data-v-f5bb1024 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://dev.qcloudcos.plateno.cc/null/2b594491c89740c5a7b1a249a0345e52.png") no-repeat;
+  background-size: 100% 100%;
+}
+.getCoupons_class.data-v-f5bb1024 {
+  position: fixed;
+  bottom: 60rpx;
+  margin: 0 80rpx;
+  width: calc(100% - 160rpx);
+  height: 130rpx;
+  z-index: 11;
+}

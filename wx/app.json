@@ -1,0 +1,200 @@
+{
+  "pages": [
+    "pages/home/index/main",
+    "pages/home/search/main",
+    "pages/home/test/main",
+    "pages/home/chooseCity/main",
+    "pages/home/apartment/main",
+    "pages/home/apartmentDetail/main",
+    "pages/home/houseType/main",
+    "pages/activity/swiperPage/main",
+    "pages/activity/poster/main",
+    "pages/activity/index/main",
+    "pages/activity/activityList/main",
+    "pages/activity/activityDetail/main",
+    "pages/activity/topicList/main",
+    "pages/activity/topicDetail/main",
+    "pages/activity/videoList/main",
+    "pages/activity/videoDetail/main",
+    "pages/auth/phoneLogin/main",
+    "pages/auth/wxLogin/main",
+    "pages/auth/solicitude/main",
+    "pages/stewardServer/index/main",
+    "pages/stewardServer/reletHome/main",
+    "pages/stewardServer/reletApply/main",
+    "pages/stewardServer/reletDetail/main",
+    "pages/stewardServer/reletList/main",
+    "pages/stewardServer/leaseHome/main",
+    "pages/stewardServer/leaseList/main",
+    "pages/stewardServer/leaseApply/main",
+    "pages/stewardServer/leaseDetail/main",
+    "pages/stewardServer/roomChangeHome/main",
+    "pages/stewardServer/roomChangeApply/main",
+    "pages/stewardServer/roomChangeList/main",
+    "pages/stewardServer/roomChangeDetail/main",
+    "pages/stewardServer/returnRoomApplicationForm/main",
+    "pages/contract/index/main",
+    "pages/contract/contractDetail/main",
+    "pages/contract/roomFacility/main",
+    "pages/contract/agreement/main",
+    "pages/contract/plan/main",
+    "pages/contract/signature/main",
+    "pages/contract/efficientContract/main",
+    "pages/contract/handwriting/main",
+    "pages/contract/checkInNotice/main",
+    "pages/contract/rentAgreement/main",
+    "pages/contract/oldRentAgreement/main",
+    "pages/contract/test/main",
+    "pages/contract/contractAgreement/main",
+    "pages/bills/billList/main",
+    "pages/bills/billDetail/main",
+    "pages/bills/chooseCoupon/main",
+    "pages/intelligentLock/pushServer/main",
+    "pages/intelligentLock/unlockingRecord/main",
+    "pages/intelligentLock/lock/main",
+    "pages/intelligentLock/lockList/main",
+    "pages/intelligentLock/lockStatus/main",
+    "pages/intelligentLock/addPass/main",
+    "pages/intelligentLock/applyPass/main",
+    "pages/intelligentLock/passwordList/main",
+    "pages/intelligentLock/userList/main",
+    "pages/center/appointment/index/main",
+    "pages/center/appointment/orderHouse/main",
+    "pages/center/appointment/appointmentDetail/main",
+    "pages/center/coupons/main",
+    "pages/center/comment/main",
+    "pages/center/changePhone/main",
+    "pages/center/setting/main",
+    "pages/center/wallet/main",
+    "pages/center/transactionDetail/main",
+    "pages/center/expensesDetail/main",
+    "pages/center/certification/main",
+    "pages/center/my/main",
+    "pages/center/aboutAs/main",
+    "pages/center/personalData/index/main",
+    "pages/center/personalData/mailBox/main",
+    "pages/center/personalData/nickName/main",
+    "pages/center/contacts/main",
+    "pages/invite/inviteList/main",
+    "pages/invite/shareToFriends/main",
+    "pages/clean/index/main",
+    "pages/clean/applyList/main",
+    "pages/clean/result/main",
+    "pages/clean/refuseOrder/main",
+    "pages/clean/completeOrder/main",
+    "pages/clean/addCleanApply/main",
+    "pages/clean/process/main",
+    "pages/maintain/index/main",
+    "pages/maintain/applyList/main",
+    "pages/maintain/result/main",
+    "pages/maintain/refuseOrder/main",
+    "pages/maintain/completeOrder/main",
+    "pages/maintain/addMaintain/main",
+    "pages/feedback/index/main",
+    "pages/feedback/suggest/main",
+    "pages/feedback/complaint/main",
+    "pages/feedback/complaintList/main",
+    "pages/feedback/complaintDetail/main",
+    "pages/feedback/uploadSuccess/main",
+    "pages/insurance/insuranceList/main",
+    "pages/insurance/historyInsurance/main",
+    "pages/insurance/renterInsurance/main",
+    "pages/insurance/insuranceDetail/main",
+    "pages/insurance/agreement/main",
+    "pages/center/orderDetail/main",
+    "pages/center/member/main",
+    "pages/verify/identitycard/main",
+    "pages/verify/index/main",
+    "pages/verify/protection/main",
+    "pages/verify/chooseCountry/main",
+    "pages/verify/success/main",
+    "pages/verify/commit/main",
+    "pages/verify/fail/main",
+    "pages/home/mapSearch/main",
+    "pages/home/storeList/main",
+    "pages/home/mapstore/main",
+    "pages/home/mapNavigtion/main",
+    "pages/home/evaluateList/main",
+    "pages/home/QandA/main",
+    "pages/survey/health/main",
+    "static/verify_mpsdk/index/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.3.7",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "窝趣",
+    "defaultTitle": "窝趣",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/index/main",
+        "iconPath": "static/tabbar/icon_tabbar_home_d2x.png",
+        "selectedIconPath": "static/tabbar/icon_tabbar_home_h2x.png"
+      },
+      {
+        "text": "找房",
+        "pagePath": "pages/home/apartment/main",
+        "iconPath": "static/tabbar/icon_tabbar_search_d2x.png",
+        "selectedIconPath": "static/tabbar/icon_tabbar_search_h2x.png"
+      },
+      {
+        "text": "趣生活",
+        "pagePath": "pages/activity/index/main",
+        "iconPath": "static/tabbar/icon_tabbar_activity_d2x.png",
+        "selectedIconPath": "static/tabbar/icon_tabbar_activity_h2x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/center/my/main",
+        "iconPath": "static/tabbar/icon_tabbar_my_d2x.png",
+        "selectedIconPath": "static/tabbar/icon_tabbar_my_h2x.png"
+      }
+    ],
+    "items": [
+      {
+        "name": "首页",
+        "pagePath": "pages/home/index/main",
+        "icon": "static/tabbar/icon_tabbar_home_d2x.png",
+        "activeIcon": "static/tabbar/icon_tabbar_home_h2x.png"
+      },
+      {
+        "name": "找房",
+        "pagePath": "pages/home/apartment/main",
+        "icon": "static/tabbar/icon_tabbar_search_d2x.png",
+        "activeIcon": "static/tabbar/icon_tabbar_search_h2x.png"
+      },
+      {
+        "name": "我的",
+        "pagePath": "pages/center/my/main",
+        "icon": "static/tabbar/icon_tabbar_my_d2x.png",
+        "activeIcon": "static/tabbar/icon_tabbar_my_h2x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx6cdb72dcc13e636e"
+  ],
+  "sitemapLocation": "sitemap31.json"
+}

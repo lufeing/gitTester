@@ -1,0 +1,40 @@
+<import src="/components/null.vue.wxml" /><template name="7a8d7a6c">
+  <view class="_div data-v-0abfdb28 coupons-content">
+    <view class="_div data-v-0abfdb28 mp-tabs tab-content">
+      <view class="_div data-v-0abfdb28 tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-0abfdb28 title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+    </view>
+    <view class="_div data-v-0abfdb28 coupons-body" wx:if="{{showNormalPage}}">
+      <view wx:key="index" key="{{index}}" wx:for="{{couponsList}}" wx:for-index="index" wx:for-item="item" class="_div data-v-0abfdb28">
+        <view class="_div data-v-0abfdb28 coupons-box">
+          <view class="_div data-v-0abfdb28 coupons-box-detail" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">
+            <view class="_div data-v-0abfdb28 denomination denomination_red {{[tabsIndex !== 0 ? 'denomination_disabeled' : '']}}" wx:if="{{item.couponConsumeType === 1}}">
+              {{item.couponType == 2 ? item.valueDescription + '折' : '¥' + item.valueDescription}}
+            </view>
+            <view wx:else class="_div data-v-0abfdb28 denomination denomination_equity {{[tabsIndex !== 0 ? 'denomination_disabeled' : '']}}">
+              <view class="_div data-v-0abfdb28 alignItems">
+                <view class="_p data-v-0abfdb28">窝趣</view>
+                <view class="_p data-v-0abfdb28">WOWQU</view>
+              </view>
+            </view>
+            <view class="_div data-v-0abfdb28 state-box">
+              <view class="_div data-v-0abfdb28 cells">
+                <view class="_p data-v-0abfdb28 title {{tabsIndex == 0 ? '' : 'title-disabeled'}}">{{item.couponTemplateName}}</view>
+                <view class="_p data-v-0abfdb28 state" hidden="{{!(item.couponConsumeType === 1)}}">{{item.valueRequire ? item.valueRequire : '-'}}</view>
+                <view class="_p data-v-0abfdb28 state">{{item.startDate}}-{{item.endDate == null ? '长期' : item.endDate}}</view>
+                <view class="_p data-v-0abfdb28 state cursor" wx:if="{{item.ruleStoreRelateId}}" catchtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">不可使用门店：点击查看</view>
+                <view class="_div data-v-0abfdb28 limit">
+                  <view class="_p data-v-0abfdb28 state">抵扣费项：{{item.subjectRequire}}</view>
+                  <view class="_p data-v-0abfdb28 state inline">使用说明<view class="_b data-v-0abfdb28 {{expandList[index] ? 'arrow-top' : 'arrow-bottom'}}"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view wx:if="{{expandList[index]}}" class="_div data-v-0abfdb28 coupons-hidden-state">
+            {{item.remark}}
+          </view>
+        </view>
+      </view>
+    </view><template wx:else data="{{...$root[$kk+'0'], $root}}" is="6729b836"></template>
+  </view>
+</template>

@@ -1,0 +1,31 @@
+<template name="79a0adab">
+  <view class="_div data-v-020e1eed lock-content">
+    <view class="_div data-v-020e1eed lock-area">
+      <view class="_div data-v-020e1eed lock-header">
+        <view class="_div data-v-020e1eed lock-status-content {{paramsObj.isFault ? 'fault-border' : ''}}">
+          <view class="_div data-v-020e1eed lock-inside-circle {{paramsObj.isFault ? 'fault-inside-border' : ''}}">
+            <view class="_div data-v-020e1eed {{paramsObj.isFault ? 'fault-status-detail' : 'lock-status-detail'}}">
+              <view wx:if="{{!paramsObj.isFault}}" class="_div data-v-020e1eed">
+                <view class="_p data-v-020e1eed title">运行中</view>
+                <view class="_p data-v-020e1eed status">电池电量：80%</view>
+              </view>
+              <view wx:else class="_div data-v-020e1eed">
+                <view class="_p data-v-020e1eed title">故障</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-020e1eed lock-main">
+        <view class="_div data-v-020e1eed lock-operation-area">
+          <navigator wx:key="index" key="{{index}}" class="_navigator data-v-020e1eed operation-box" url="{{item.naviUrl}}" wx:for="{{imageList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_p data-v-020e1eed imgCells">
+              <image class="_image data-v-020e1eed imgClass" mode="widthFix" src="{{item.imgUrl}}"></image>
+            </view>
+            <view class="_p data-v-020e1eed">{{item.title}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

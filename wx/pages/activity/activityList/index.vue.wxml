@@ -1,0 +1,29 @@
+<import src="/pages/activity/components/blankPage.vue.wxml" /><template name="ec4e13a0">
+  <view class="_div data-v-335f7324 activity_content">
+    <view class="_header data-v-335f7324 tabs_body">
+      <view class="_div data-v-335f7324 mp-tabs mtb_0">
+        <view class="_div data-v-335f7324 tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-335f7324 title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-335f7324 activity_body" wx:if="{{activityList.length}}">
+      <view class="_div data-v-335f7324 activity_box" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{activityList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_header data-v-335f7324 activity_header">
+          <view class="_div data-v-335f7324 left">
+            <view class="_p data-v-335f7324 title">{{item.activityInfoTitle}}</view>
+            <view class="_p data-v-335f7324 free">{{item.activityPayType === 0 ? '免费' : '付费'}}</view>
+          </view>
+          <view class="_div data-v-335f7324">
+            <view class="_p data-v-335f7324 endTime">报名截止：{{item.activityApplyEndDateTime}}</view>
+          </view>
+        </view>
+        <image class="_image data-v-335f7324 bannerImg" src="{{item.activityPicUrl}}"></image>
+        <view class="_div data-v-335f7324 address">
+          <image class="_image data-v-335f7324 imageClass" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/address.png"></image>
+          <view class="_p data-v-335f7324">{{item.activityCommunityAddress}}</view>
+        </view>
+        <view class="_p data-v-335f7324 activity_intro">{{item.activityInfoDescription}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-335f7324 activity_body" wx:else><template data="{{...$root[$kk+'0'], $root}}" is="170ddfac"></template></view>
+  </view>
+</template>

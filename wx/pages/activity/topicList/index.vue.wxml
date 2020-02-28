@@ -1,0 +1,39 @@
+<template name="7bd0f174">
+  <view class="_div data-v-24d4507c">
+    <view class="_div data-v-24d4507c video-content">
+      <view class="_header data-v-24d4507c">
+        <swiper class="_swiper data-v-24d4507c swiper-box" indicator-dots="true" indicator-color="#e0e0e0" indicator-active-color="#ff3300" autoplay="true" interval="3000" duration="1000">
+          <swiper-item wx:key="index" key="{{index}}" wx:for="{{swiperList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-24d4507c">
+            <image class="_image data-v-24d4507c image" src="{{item.thumbnailUrl}}" background-size="cover" mode="widthFix" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="_div data-v-24d4507c topic_box" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{videoList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-24d4507c">
+          <view class="_div data-v-24d4507c userInfo pd15">
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/game.png" class="_image data-v-24d4507c headerImg"></image>
+            <view class="_p data-v-24d4507c name">窝趣官方</view>
+            <view class="_p data-v-24d4507c time">2019-08-20</view>
+          </view>
+        </view>
+        <view class="_div data-v-24d4507c video_header">
+          <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/zhongshan.jpg" class="_image data-v-24d4507c coverImage"></image>
+        </view>
+        <view class="_div data-v-24d4507c target_details">
+          <view class="_div data-v-24d4507c target_operation">
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/like.png" mode="widthFix" class="_image data-v-24d4507c operationImg"></image>
+            <view class="_p data-v-24d4507c like_number">{{item.likeNumber}}</view>
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/comment.png" mode="widthFix" class="_image data-v-24d4507c operationImg"></image>
+            <view class="_p data-v-24d4507c commentNumber">{{item.commentNumber}}</view>
+          </view>
+          <view class="_p data-v-24d4507c browse_number">3215次浏览</view>
+        </view>
+        <view class="_div data-v-24d4507c topic_content"><label class="_span data-v-24d4507c title">#盛夏光年#</label> <label class="_span data-v-24d4507c topic_cont">生活不止眼前的苟且，还有远方的诗和田野，活不止眼前的苟且，还有远方的诗和田野。</label></view>
+        <view class="_div data-v-24d4507c comment_body">
+          <view wx:key="commentIndex" key="{{commentIndex}}" wx:for="{{commentList}}" wx:for-index="commentIndex" wx:for-item="param" class="_div data-v-24d4507c"><label class="_label data-v-24d4507c name">炽热欢愉：</label> <label class="_span data-v-24d4507c comment_value">楼上说得对</label></view>
+          <view class="_p data-v-24d4507c lookMore">查看全部</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

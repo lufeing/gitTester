@@ -1,0 +1,5 @@
+<template name="4ab1e220">
+  <view class="_div data-v-f5bb1024 poster_content">
+    <view class="_div data-v-f5bb1024 getCoupons_class" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>

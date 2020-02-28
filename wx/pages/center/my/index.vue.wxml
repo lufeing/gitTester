@@ -1,0 +1,53 @@
+<import src="/components/popup/receiveCoupon.vue.wxml" /><template name="29377989">
+  <scroll-view class="_scroll-view data-v-4dd85af2 myselef-detail-content" scroll-view scroll-y="{{!receiveCouponModal}}" style=" {{receiveCouponModal ? 'height:100%' : ''}}">
+    <view class="_div data-v-4dd85af2 myselef-detail-header" catchtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-4dd85af2 left-box" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-4dd85af2 user" src="{{memberObj.headImg ||'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/user.png'}}"></image>
+        <view class="_div data-v-4dd85af2 userInfo" wx:if="{{loginStatusObject.loginStatus}}">
+          <view class="_p data-v-4dd85af2 name">{{memberObj.memberNameshow}}</view> <label class="_span data-v-4dd85af2 state">{{memberObj.phoneshow}}</label>
+        </view>
+        <view class="_div data-v-4dd85af2 userInfo" wx:else>请登录</view>
+      </view>
+      <view class="_div data-v-4dd85af2 right-box right-v1" wx:if="{{memberObj.memberLevel == 1}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <image src="https://wowquwxmgmqcloudcos.plateno.cc/V1TAB.png" class="_image data-v-4dd85af2 V1TAB"></image>
+      </view>
+      <view wx:else class="_div data-v-4dd85af2 right-box right-v2" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <image src="https://wowquwxmgmqcloudcos.plateno.cc/V2TAB.png" class="_image data-v-4dd85af2 V1TAB"></image>
+      </view>
+    </view>
+    <view class="_div data-v-4dd85af2 myselef-detail-tab">
+      <view class="_div data-v-4dd85af2">
+        <view class="_div data-v-4dd85af2">{{numParams.balance}}</view>
+        <view class="_div data-v-4dd85af2">钱包</view>
+      </view> <label class="_span data-v-4dd85af2 border_span" style="left: calc(100% / 3);"></label>
+      <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-4dd85af2">
+        <view class="_div data-v-4dd85af2">{{numParams.couponNum}}</view>
+        <view class="_div data-v-4dd85af2">优惠券</view>
+      </view> <label class="_span data-v-4dd85af2 border_span"></label>
+      <view class="_div data-v-4dd85af2">
+        <view class="_div data-v-4dd85af2">{{numParams.integral}}</view>
+        <view class="_div data-v-4dd85af2">积分</view>
+      </view>
+    </view>
+    <navigator wx:if="{{memberObj.memberLevel === 1}}" class="_navigator data-v-4dd85af2 myselef-dredge" url="/pages/center/member/main?memberLevel=1"><label class="_span data-v-4dd85af2 myself-dredge-container">
+        <image src="https://wowquwxmgmqcloudcos.plateno.cc/quweichangzaojia.png" class="_image data-v-4dd85af2 myself-dredge-bg"></image>
+      </label></navigator>
+    <view wx:else class="_div data-v-4dd85af2 bg-border"></view>
+    <view class="_div data-v-4dd85af2 myselef-detail-body">
+      <view class="_div data-v-4dd85af2 myselef-detail-tabbar">
+        <view class="_div data-v-4dd85af2 tabber-box" wx:key="index" key="{{index}}" url="{{item.naviUrl}}" bindtap="handleProxy" data-eventid="{{'5_'+index}}" data-comkey="{{$k}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-4dd85af2 cells" wx:if="{{!item.isHide}}">
+            <view class="_p data-v-4dd85af2 img-content">
+              <image class="_image data-v-4dd85af2 imgUrl" src="{{item.imgUrl}}"></image>
+            </view>
+            <view class="_p data-v-4dd85af2 title">{{item.title}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-4dd85af2 official-component" wx:if="{{mpvuePlatform === 'wx'}}">
+      <official-account class="_official-account data-v-4dd85af2"></official-account>
+    </view>
+    <view wx:if="{{receiveCouponModal}}" class="_div data-v-4dd85af2"><template bindcancelMask="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="c074886a"></template></view>
+  </scroll-view>
+</template>

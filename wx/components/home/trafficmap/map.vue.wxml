@@ -1,0 +1,5 @@
+<template name="3b95e124">
+  <view class="_div data-v-434bec6a">
+    <image src="{{mapSrc}}" style="width:100%;height:50vw" class="_img data-v-434bec6a"></image>
+  </view>
+</template>

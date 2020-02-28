@@ -1,0 +1,53 @@
+@import "../../../common/vendor.wxss";
+
+.mtb_0.data-v-0f100c6a {
+  margin: 0;
+  background: #ffffff;
+}
+.transactioin-detail-content.data-v-0f100c6a {
+  height: 100%;
+  background: #f2f2f2;
+}
+.wallet-body-cell.data-v-0f100c6a {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box.data-v-0f100c6a {
+  height: 126rpx;
+  padding-right: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.wallet-body-cell .box.data-v-0f100c6a:last-child {
+  border-bottom: 0;
+}
+.wallet-body-cell .title.data-v-0f100c6a {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.wallet-body-cell .time.data-v-0f100c6a {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+}
+.wallet-body-cell .box-right.data-v-0f100c6a {
+  display: flex;
+  align-items: center;
+}
+.wallet-body-cell .box-right .state.data-v-0f100c6a {
+  font-size: 36rpx;
+  font-weight: 400;
+  margin-right: 20rpx;
+}
+.wallet-body-cell .box-right .red.data-v-0f100c6a {
+  color: #b60005;
+}
+.wallet-body-cell .box-right .blue.data-v-0f100c6a {
+  color: #4598ff;
+}

@@ -1,0 +1,6 @@
+<template name="170ddfac">
+  <view class="_div data-v-92ca2cb0 blank_content">
+    <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/blank_page.png" class="_image data-v-92ca2cb0 default_page"></image>
+    <view class="_p data-v-92ca2cb0 text">空空如也</view>
+  </view>
+</template>

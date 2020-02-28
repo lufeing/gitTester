@@ -1,0 +1,9 @@
+<template name="c3bbee06">
+  <view class="_div data-v-61e01979 header-content-area">
+    <view class="_div data-v-61e01979 address" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/home/icon_location.png" class="_image data-v-61e01979 location-img"></image>
+      {{cityName}}
+    </view>
+    <view class="_div data-v-61e01979 searchInput" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><input type="text" class="_input data-v-61e01979 searchInput" disabled placeholder="搜索社区名称" /></view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+<template name="90be852e">
+  <view class="_div data-v-661e0e25 wrapper">
+    <view class="_div data-v-661e0e25 handBtn">
+      <view class="_div data-v-661e0e25 slide-wrapper">
+        <image class="_image data-v-661e0e25 slide" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/handwriting/slide.png"></image>
+      </view> <button bindtap="handleProxy" class="_button data-v-661e0e25 delBtn" data-eventid="{{'0'}}" data-comkey="{{$k}}">重写</button> <button bindtap="handleProxy" class="_button data-v-661e0e25 subBtn" data-eventid="{{'1'}}" data-comkey="{{$k}}">完成</button>
+    </view>
+    <view class="_div data-v-661e0e25 handCenter"><canvas class="_canvas data-v-661e0e25 handWriting" disable-scroll="true" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" bindtouchStart="handleProxy" bindtouchMove="handleProxy" bindtouchEnd="handleProxy" canvas-id="handWriting" id="handWriting" data-eventid="{{'2'}}" data-comkey="{{$k}}"></canvas></view>
+    <view class="_div data-v-661e0e25 handRight">
+      <view class="_div data-v-661e0e25 handTitle">手写板</view>
+    </view>
+  </view>
+</template>

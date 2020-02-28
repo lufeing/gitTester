@@ -1,0 +1,30 @@
+<template name="600c3f16">
+  <view class="_div data-v-8017eb44 uploadImage-content">
+    <view class="_div data-v-8017eb44 identity-image-body">
+      <view class="_div data-v-8017eb44 mg10">
+        <view class="_div data-v-8017eb44 flex-align">
+          <view class="_div data-v-8017eb44 identity" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+            <image src="{{imageObj.cardFront ? imageObj.cardFront :'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/cardFront.png'}}" class="_image data-v-8017eb44 identityImage"></image>
+            <view class="_p data-v-8017eb44">上传证件正面照</view>
+          </view>
+          <view class="_div data-v-8017eb44 identity" wx:if="{{IDCardModal}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+            <image src="{{imageObj.cardReverse ? imageObj.cardReverse :'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/cardReverse.png'}}" class="_image data-v-8017eb44 identityImage"></image>
+            <view class="_p data-v-8017eb44">上传证件反面照</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-8017eb44 mg10">
+        <view class="_div data-v-8017eb44 flex-align">
+          <view class="_div data-v-8017eb44 identity" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            <image src="{{imageObj.bankCardFront ? imageObj.bankCardFront :'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/bankCardFront.png'}}" class="_image data-v-8017eb44 identityImage"></image>
+            <view class="_p data-v-8017eb44">上传银行卡</view>
+          </view>
+          <view class="_div data-v-8017eb44 identity" wx:if="{{entrustIModal}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+            <image src="{{imageObj.entrustImage ? imageObj.entrustImage :'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/entrustImage.png'}}" class="_image data-v-8017eb44 identityImage"></image>
+            <view class="_p data-v-8017eb44">上传委托书</view>
+          </view>
+        </view>
+      </view> <canvas class="_canvas data-v-8017eb44 canvas" canvas-id="firstCanvas" style=" {{(  'width:' +  (canvasWidth + 'px') +  ';' +  'height:' +  (canvasHeight + 'px') +  ';')}}"></canvas>
+    </view>
+  </view>
+</template>

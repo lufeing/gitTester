@@ -1,0 +1,40 @@
+<template name="ddcec5ce">
+  <view class="_div data-v-ce5cc2d6 transactioin-detail-content">
+    <view class="_div data-v-ce5cc2d6 transactioin-detail-main">
+      <view class="_div data-v-ce5cc2d6 wallet-body-cell">
+        <view class="_div data-v-ce5cc2d6 box">
+          <view class="_div data-v-ce5cc2d6 box-left">
+            <view class="_p data-v-ce5cc2d6 title">证件类型</view>
+          </view>
+          <view class="_div data-v-ce5cc2d6 box-right">
+            <view class="_p data-v-ce5cc2d6 state">居民身份证</view>
+          </view>
+        </view>
+        <view class="_div data-v-ce5cc2d6 box">
+          <view class="_div data-v-ce5cc2d6 box-left">
+            <view class="_p data-v-ce5cc2d6 title">姓名</view>
+          </view>
+          <view class="_div data-v-ce5cc2d6 box-right">
+            <view class="_p data-v-ce5cc2d6 state">张三</view>
+          </view>
+        </view>
+        <view class="_div data-v-ce5cc2d6 box">
+          <view class="_div data-v-ce5cc2d6 box-left">
+            <view class="_p data-v-ce5cc2d6 title">证件号码</view>
+          </view>
+          <view class="_div data-v-ce5cc2d6 box-right">
+            <view class="_p data-v-ce5cc2d6 state">4****************2</view>
+          </view>
+        </view>
+        <view class="_div data-v-ce5cc2d6 box">
+          <view class="_div data-v-ce5cc2d6 box-left">
+            <view class="_p data-v-ce5cc2d6 title">有效期</view>
+          </view>
+          <view class="_div data-v-ce5cc2d6 box-right">
+            <view class="_p data-v-ce5cc2d6 state">2050.01.01</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

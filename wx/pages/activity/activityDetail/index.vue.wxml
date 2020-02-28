@@ -1,0 +1,97 @@
+<import src="/components/activity/applyActivity.vue.wxml" /><template name="217f6dba">
+  <view class="_div data-v-7475b121 activity_detail">
+    <view class="_header data-v-7475b121 activity_content">
+      <image src="{{detailParam.activityPicUrl}}" class="_image data-v-7475b121 bannerImg"></image>
+      <view class="_div data-v-7475b121 pd15">
+        <view class="_div data-v-7475b121 messageInfo">
+          <view class="_p data-v-7475b121 title">{{detailParam.activityInfoTitle}}</view>
+          <view class="_p data-v-7475b121 free">免费</view>
+        </view>
+        <view class="_p data-v-7475b121 subhead">{{detailParam.activityInfoDescription}}</view>
+        <rich-text class="_rich-text data-v-7475b121 details" nodes="{{detailParam.activityDetailInfo}}"></rich-text>
+      </view>
+    </view>
+    <view class="_div data-v-7475b121 activity_body">
+      <view class="_view data-v-7475b121">
+        <view class="_div data-v-7475b121 title_bar">
+          <image class="_image data-v-7475b121 barImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/notice_of_activity.png"></image>
+          <view style="text-align:center;" class="_div data-v-7475b121">
+            <view class="_p data-v-7475b121 title">活动须知</view>
+            <image class="_image data-v-7475b121 lineImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/wavyLine.png"></image>
+          </view>
+        </view>
+        <view class="_div data-v-7475b121 target_body">
+          <view class="_div data-v-7475b121 mb10">
+            <view class="_div data-v-7475b121 flex_item">
+              <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/registration_time.png"></image>
+              <view class="_p data-v-7475b121">报名时间:</view>
+            </view>
+            <view class="_div data-v-7475b121 ml25">{{detailParam.activityApplyStartDateTime}}至{{detailParam.activityApplyEndDateTime}}</view>
+          </view>
+          <view class="_div data-v-7475b121 mb10">
+            <view class="_div data-v-7475b121 flex_item">
+              <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/activitytime.png"></image>
+              <view class="_p data-v-7475b121">活动时间:</view>
+            </view>
+            <view class="_div data-v-7475b121 ml25">{{detailParam.activityStartDateTime}}至{{detailParam.activityEndDateTime}}</view>
+          </view>
+          <view class="_div data-v-7475b121 flex_box mb10">
+            <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/participants.png"></image>
+            <view class="_div data-v-7475b121 flex_item">
+              <view class="_p data-v-7475b121">参与对象:</view>
+              <view class="_p data-v-7475b121">{{detailParam.activityFaceType === 0 ? '不限' : detailParam.activityFaceType === 1 ? '注册会员' : '入住会员' }}</view>
+            </view>
+          </view>
+          <view class="_div data-v-7475b121 flex_box mb10">
+            <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/money.png"></image>
+            <view class="_div data-v-7475b121 flex_item">
+              <view class="_p data-v-7475b121">费用:</view>
+              <view class="_p data-v-7475b121">{{detailParam.activityPayType === 0 ? '免费' : '付费'}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-7475b121 flex_box mb10">
+            <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/active_address.png"></image>
+            <view class="_div data-v-7475b121 flex_item">
+              <view class="_p data-v-7475b121">活动地址:</view>
+              <view class="_p data-v-7475b121">{{detailParam.activityCommunityAddress}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-7475b121 flex_box mb10">
+            <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/contacts.png"></image>
+            <view class="_div data-v-7475b121 flex_item">
+              <view class="_p data-v-7475b121">联系人:</view>
+              <view class="_p data-v-7475b121">{{detailParam.activityCommunityContractName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-7475b121 flex_box mb10">
+            <image class="_image data-v-7475b121 icon" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/contact_information.png"></image>
+            <view class="_div data-v-7475b121 flex_item">
+              <view class="_p data-v-7475b121">联系方式:</view>
+              <view class="_p data-v-7475b121">{{detailParam.activityCommunityContractPhone}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-7475b121">
+        <view class="_div data-v-7475b121 title_bar">
+          <image class="_image data-v-7475b121 barImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/reminder.png"></image>
+          <view style="text-align:center;" class="_div data-v-7475b121">
+            <view class="_p data-v-7475b121 title">温馨提示</view>
+            <image class="_image data-v-7475b121 lineImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/wavyLine.png"></image>
+          </view>
+        </view>
+        <view class="_p data-v-7475b121 warnText">{{detailParam.activityTips}}</view>
+      </view>
+      <view class="_view data-v-7475b121">
+        <view class="_div data-v-7475b121 title_bar">
+          <image class="_image data-v-7475b121 barImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/activity_review.png"></image>
+          <view style="text-align:center;" class="_div data-v-7475b121">
+            <view class="_p data-v-7475b121 title">立即报名</view>
+            <image class="_image data-v-7475b121 lineImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/wavyLine.png"></image>
+          </view>
+        </view>
+        <view class="_div data-v-7475b121"><template data="{{...$root[$kk+'1'], $root}}" is="ea2cca24"></template></view>
+      </view>
+    </view>
+  </view>
+</template>

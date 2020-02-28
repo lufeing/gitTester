@@ -1,0 +1,41 @@
+<template name="984ecb24">
+  <view class="_div data-v-0f100c6a transactioin-detail-content">
+    <view class="_div data-v-0f100c6a mp-tabs mtb_0">
+      <view class="_div data-v-0f100c6a tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-0f100c6a title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+    </view>
+    <view class="_div data-v-0f100c6a transactioin-detail-main">
+      <view class="_div data-v-0f100c6a wallet-body-cell">
+        <navigator class="_navigator data-v-0f100c6a box" url="/pages/center/expensesDetail/main">
+          <view class="_div data-v-0f100c6a box-left">
+            <view class="_p data-v-0f100c6a title">支出</view>
+            <view class="_p data-v-0f100c6a time">2018-11-11 11:11:11</view>
+          </view>
+          <view class="_div data-v-0f100c6a box-right">
+            <view class="_p data-v-0f100c6a state red">+100</view>
+            <view class="_b data-v-0f100c6a arrow-right"></view>
+          </view>
+        </navigator>
+        <view class="_div data-v-0f100c6a box">
+          <view class="_div data-v-0f100c6a">
+            <view class="_p data-v-0f100c6a title">提现</view>
+            <view class="_p data-v-0f100c6a time">2018-11-11 11:11:11</view>
+          </view>
+          <view class="_div data-v-0f100c6a box-right">
+            <view class="_p data-v-0f100c6a state blue">-100</view>
+            <view class="_b data-v-0f100c6a arrow-right"></view>
+          </view>
+        </view>
+        <view class="_div data-v-0f100c6a box">
+          <view class="_div data-v-0f100c6a">
+            <view class="_p data-v-0f100c6a title">消费-购买会员卡</view>
+            <view class="_p data-v-0f100c6a time">2018-11-11 11:11:11</view>
+          </view>
+          <view class="_div data-v-0f100c6a box-right">
+            <view class="_p data-v-0f100c6a state blue">-100</view>
+            <view class="_b data-v-0f100c6a arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,5 @@
+<template name="713fe3e4">
+  <view class="_div data-v-c81cc93c shareImage-content"><canvas class="_canvas data-v-c81cc93c canvasBox" canvas-id="shareCanvas"></canvas>
+    <view class="_div data-v-c81cc93c"><button wx:if="{{isAuthorization}}" type="primary" bindtap="handleProxy" class="_button data-v-c81cc93c shareToButton" data-eventid="{{'1'}}" data-comkey="{{$k}}">立即分享朋友圈</button><button wx:else type="primary" open-type="openSetting" bindopensetting="handleProxy" class="_button data-v-c81cc93c shareToButton" data-eventid="{{'0'}}" data-comkey="{{$k}}">去授权</button></view>
+  </view>
+</template>

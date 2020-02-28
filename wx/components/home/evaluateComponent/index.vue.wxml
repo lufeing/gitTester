@@ -1,0 +1,20 @@
+<template name="4cc1c4bb">
+  <view class="_div data-v-d23e320e evaluate-content" wx:if="{{firstData.memberName}}">
+    <view class="_div data-v-d23e320e evaluate-body" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-d23e320e evalute-header">
+        <view class="_p data-v-d23e320e title">评论区</view>
+        <view class="_p data-v-d23e320e more">查看更多</view>
+      </view>
+      <view class="_div data-v-d23e320e evaluate-box">
+        <view class="_div data-v-d23e320e evaluate-title">
+          <view class="_p data-v-d23e320e evaluate-name">{{firstData.memberName}}</view>
+          <view class="_p data-v-d23e320e"><label wx:key="idx" key="{{idx}}" class="_span data-v-d23e320e evaluate-light {{[idx + 1 > 3 ? 'evaluateGray' : '']}}" wx:for="{{5}}" wx:for-index="idx" wx:for-item="itm"></label></view>
+          <view class="_p data-v-d23e320e createTime">{{firstData.createTime}}</view>
+        </view>
+        <view class="_div data-v-d23e320e evaluate-details">
+          {{firstData.commentDetails || '这个家伙很懒，什么都没有留下...'}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

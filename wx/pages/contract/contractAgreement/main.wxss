@@ -1,0 +1,5 @@
+@import "../../../common/vendor.wxss";
+
+.webView-content.data-v-563e2230 {
+  padding: 30rpx;
+}

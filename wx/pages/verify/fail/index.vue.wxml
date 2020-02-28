@@ -1,0 +1,9 @@
+<template name="1cf07c17">
+  <view class="_div data-v-9f288656 flex-box-content">
+    <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/error.png" class="_img data-v-9f288656 success-image"></image>
+    <view class="_div data-v-9f288656 success-text">审核失败</view>
+    <view class="_div data-v-9f288656 success-description">审核失败，请重新提交</view>
+    <view bindtap="handleProxy" class="_div data-v-9f288656 commit" data-eventid="{{'0'}}" data-comkey="{{$k}}">重新提交</view>
+    <view class="_div data-v-9f288656 empty-bottom"></view>
+  </view>
+</template>

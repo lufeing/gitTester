@@ -1,0 +1,11 @@
+@import "../../../common/vendor.wxss";
+
+.swiperPage.data-v-2e02bb70 {
+  position: relative;
+  width: 100%;
+}
+.landingPage.data-v-2e02bb70 {
+  position: relative;
+  margin: 0;
+  width: 750rpx;
+}

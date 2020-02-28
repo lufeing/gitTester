@@ -1,0 +1,6 @@
+<template name="6729b836">
+  <view class="_div data-v-3b476049 null-content">
+    <image mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/common/null.png" class="_image data-v-3b476049 nullImg"></image>
+    <view class="_p data-v-3b476049 state">这里什么都没有~</view>
+  </view>
+</template>

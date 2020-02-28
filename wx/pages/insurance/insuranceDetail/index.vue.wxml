@@ -1,0 +1,75 @@
+<template name="2b15a382">
+  <view class="_div data-v-214e1377 transactioin-detail-content">
+    <view class="_div data-v-214e1377 transactioin-detail-main">
+      <view class="_div data-v-214e1377 wallet-body-cell">
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">保险单号:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.plcNo}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">承保公司:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.companyName}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">被保险人:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.isrdName}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">被保险房间:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.communityName}} | {{params.houseName}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">保障额度:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.plcSumInsured}}元</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">保障期限:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">{{params.efficientDate}}至{{params.terminationDate}}</view>
+          </view>
+        </view>
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">支付状态:</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state">已支付</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-214e1377 wallet-body-cell mt_10" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-214e1377 box">
+          <view class="_div data-v-214e1377 box-left">
+            <view class="_p data-v-214e1377 title">保单协议</view>
+          </view>
+          <view class="_div data-v-214e1377 box-right">
+            <view class="_p data-v-214e1377 state blue">查看详情</view>
+            <view class="_b data-v-214e1377 arrow-right"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

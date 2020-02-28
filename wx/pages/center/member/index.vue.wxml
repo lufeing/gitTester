@@ -1,0 +1,58 @@
+<template name="cc0c3512">
+  <view class="_div data-v-b60dc416 myselef-detail-content">
+    <view class="_div data-v-b60dc416 scroll_box" wx:if="{{levellist.length}}">
+      <scroll-view upper-threshold="100" scroll-left="{{initScroll}}" lower-threshold="100" bindscrollToUpper="handleProxy" bindscrollToLower="handleProxy" bindscrolltoupper="handleProxy" bindscrolltolower="handleProxy" class="_scroll-view data-v-b60dc416 scroll-view_x" scroll-x style="width: 100%;" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-b60dc416 v1-container">
+          <image class="_image data-v-b60dc416 v1-bannerImage" src="https://wowquwxmgmqcloudcos.plateno.cc/V1Image.png"></image>
+        </view>
+        <view class="_div data-v-b60dc416 v2-container">
+          <image class="_image data-v-b60dc416 v2-bannerImage" src="https://wowquwxmgmqcloudcos.plateno.cc/hy690260.png"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="_div data-v-b60dc416 power-title"><label class="_span data-v-b60dc416 power-name">{{level.respectName}}</label> <label class="_span data-v-b60dc416 power-num">{{level.description1}}</label></view>
+    <view class="_div data-v-b60dc416 myselef-detail-body">
+      <view class="_div data-v-b60dc416 myselef-detail-tabbar">
+        <navigator class="_navigator data-v-b60dc416 tabber-box" wx:key="index" key="{{index}}" url="{{item.naviUrl}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-b60dc416 tabber-border">
+            <image class="_image data-v-b60dc416 imgUrl" src="{{item.imgUrl}}"></image>
+          </view>
+          <view class="_p data-v-b60dc416 title">{{item.title}}</view>
+        </navigator>
+      </view>
+    </view>
+    <view class="_div data-v-b60dc416 buy-container">
+      <view class="_div data-v-b60dc416 reading-content" wx:if="{{memberLevel != 2}}">
+        <image class="_image data-v-b60dc416 checked" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/member/check.png"></image>
+        <view class="_p data-v-b60dc416 state">我已阅读<text class="_text data-v-b60dc416 needKonw" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">购买须知</text></view>
+      </view>
+      <view class="_div data-v-b60dc416 buy-button" bindtap="handleProxy" wx:if="{{memberLevel != 2}}" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-b60dc416 buyImage" src="https://wowquwxmgmqcloudcos.plateno.cc/hy690130.png"></image>
+      </view>
+    </view>
+    <view class="_view data-v-b60dc416 mask" wx:if="{{maskModal}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-b60dc416 modal-content" style="height:55%">
+        <view class="_div data-v-b60dc416 main-content">
+          <view class="_p data-v-b60dc416 title">购买须知</view>
+          <view class="_div data-v-b60dc416 main-body">
+            <view class="_p data-v-b60dc416">1、会员卡的办理：会员卡凭身份证或其他有效证件办理，会员资料填写必须真实有效，一张身份证只能办理一张会员卡。</view>
+            <view class="_p data-v-b60dc416">2、会员卡的使用：会员卡只限本人使用，不得出租、转借他人。</view>
+            <view class="_p data-v-b60dc416">3、会员卡的优惠：租价享会员价格商品、不定期举办会员活动等。具体活动规则详情请咨询具体门店。</view>
+            <view class="_p data-v-b60dc416">4、会员卡办理时所留存的联系电话、地址，如有变更须第一时间至门店进行更正，如因个人原因未及时更正，导致无法享有会员优惠， 本公司概不负责。窝趣会员卡为虚拟产品，为赋予会员享受相关会员权利的资格证明，一旦购买开通，将无法取消退款。</view>
+          </view>
+        </view>
+        <view class="_view data-v-b60dc416 modal-btn-wrapper">
+          <view class="_view data-v-b60dc416 cancel-btn" style="color:(51,51,51,1)" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">关闭</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-b60dc416 navigate-content">
+      <view class="_div data-v-b60dc416 align-center" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-b60dc416 returnImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/member/home.png"></image> <text class="_text data-v-b60dc416">返回首页</text>
+      </view>
+      <view class="_div data-v-b60dc416 align-center">
+        <image class="_image data-v-b60dc416 shareImg" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/member/share.png"></image> <button plain size="mini" class="_button data-v-b60dc416 share-button" open-type="share">分享给好友</button>
+      </view>
+    </view>
+  </view>
+</template>

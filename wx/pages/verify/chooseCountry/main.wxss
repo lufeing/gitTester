@@ -1,0 +1,54 @@
+@import "../../../common/vendor.wxss";
+
+.current-location.data-v-6537ad84,
+.hot-location.data-v-6537ad84 {
+  margin: 20rpx 0;
+  padding: 0 30rpx;
+}
+.current-location .title.data-v-6537ad84,
+.hot-location .title.data-v-6537ad84 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+  margin: 20rpx 0;
+}
+.current-location .city-item.data-v-6537ad84,
+.hot-location .city-item.data-v-6537ad84 {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.current-location .city-cell.data-v-6537ad84,
+.hot-location .city-cell.data-v-6537ad84 {
+  width: 190rpx;
+  margin: 10rpx 0;
+  margin-right: 20rpx;
+  padding: 10rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #ccc;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.label-city-area.data-v-6537ad84 {
+  margin: 20rpx 0;
+}
+.label-city-area .list-label.data-v-6537ad84 {
+  height: 48rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+  background: #f2f2f2;
+  line-height: 48rpx;
+}
+.label-city-area .list-cell.data-v-6537ad84 {
+  padding: 20rpx 0;
+  margin-left: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}

@@ -1,0 +1,12 @@
+<template name="43a70e51">
+  <view class="_div data-v-9d376166 info-content">
+    <view class="_div data-v-9d376166 info-header">
+      <image class="_image data-v-9d376166 uploadSuccess" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/feedback/tijiaochenggong2x.png"></image>
+      <view class="_p data-v-9d376166 title">提交成功</view>
+    </view>
+    <view class="_div data-v-9d376166 info-body">
+      <view class="_p data-v-9d376166">非常抱歉给您的生活带来不便，我们已收到您的投诉，预计将在<label class="_span data-v-9d376166 time">3到5个工作日内</label>前受理您提交的投诉单，请您关注最新反馈！</view>
+      <view class="_div data-v-9d376166 see-my-complaint"><button class="_button data-v-9d376166 see-button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">查看我的投诉</button></view>
+    </view>
+  </view>
+</template>

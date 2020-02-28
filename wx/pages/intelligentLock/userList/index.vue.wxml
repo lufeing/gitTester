@@ -1,0 +1,16 @@
+<template name="59d195ee">
+  <view class="_div data-v-5c19c3cb lock-detail-content">
+    <view class="_div data-v-5c19c3cb lock-body-area user-list" wx:key="index" key="{{index}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-5c19c3cb lock-box h_62">
+        <view class="_div data-v-5c19c3cb state-box">
+          <view class="_p data-v-5c19c3cb name">刘泳超</view>
+          <view class="_p data-v-5c19c3cb times">2018-06-08 15：45-2018-12-08 15：45</view>
+        </view>
+        <view class="_div data-v-5c19c3cb resetPass">
+          <view class="_p data-v-5c19c3cb">重置密码</view>
+          <view class="_b data-v-5c19c3cb small-arrow-right"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

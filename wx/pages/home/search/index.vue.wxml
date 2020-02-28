@@ -1,0 +1,36 @@
+<template name="0694adbb">
+  <view class="_div data-v-37c595b9 choose-city-content">
+    <form bindsubmit="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_form data-v-37c595b9">
+      <view class="_div data-v-37c595b9 current-location"><input type="text" name="searchVaule" confirm-type="search" value="{{paramsObj.searchValue}}" bindinput="handleProxy" bindconfirm="handleProxy" class="_input data-v-37c595b9 searchInput" placeholder="搜索社区名称" focus data-eventid="{{'0'}}" data-comkey="{{$k}}" /> <button wx:if="{{!paramsObj.searchModal}}" plain formType="submit" class="_button data-v-37c595b9 form-button-style">搜索</button>
+        <view wx:else bindtap="handleProxy" class="_div data-v-37c595b9 city-cell" data-eventid="{{'1'}}" data-comkey="{{$k}}">取消</view>
+      </view>
+    </form>
+    <view class="_div data-v-37c595b9 search-list-content" wx:if="{{paramsObj.searchModal}}">
+      <view wx:if="{{searchList.length}}" class="_div data-v-37c595b9">
+        <view class="_div data-v-37c595b9 search-list-cells" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}" wx:for="{{searchList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_p data-v-37c595b9">{{item.communityName}}</view>
+        </view>
+      </view>
+      <view wx:else class="_div data-v-37c595b9">
+        <view class="_p data-v-37c595b9 emptyNotice">对不起，暂无资源</view>
+      </view>
+    </view>
+    <view wx:else class="_div data-v-37c595b9">
+      <view class="_div data-v-37c595b9 hot-location">
+        <view class="_p data-v-37c595b9 title">附近推荐</view>
+        <view class="_div data-v-37c595b9 city-item">
+          <view class="_div data-v-37c595b9 city-cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}" wx:for="{{vicinageList}}" wx:for-index="index" wx:for-item="item">
+            {{item.communityName + '(' + item.distance + '公里)'}}
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-37c595b9 search-history">
+        <view class="_div data-v-37c595b9 history-content">
+          <view class="_p data-v-37c595b9 title">搜索历史</view>
+          <view class="_p data-v-37c595b9 clear" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">清空</view>
+        </view>
+        <view class="_div data-v-37c595b9 history-cells" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{historyList}}" wx:for-index="index" wx:for-item="item">{{item.communityName}}</view>
+      </view>
+    </view>
+  </view>
+</template>

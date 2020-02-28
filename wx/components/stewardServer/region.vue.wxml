@@ -1,0 +1,10 @@
+<template name="5c30664b">
+  <view class="_div data-v-8d88227c section">
+    <picker mode="multiSelector" bindchange="handleProxy" bindcolumnchange="handleProxy" value="{{multiIndex}}" range="{{multiArray}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-8d88227c">
+      <view class="_div data-v-8d88227c picker" wx:if="{{multiIndex.length}}">
+        {{multiArray[0][multiIndex[0]]}},{{multiArray[1][multiIndex[1]]}}
+      </view>
+      <view class="_div data-v-8d88227c please" wx:else> 请选择省市 </view>
+    </picker>
+  </view>
+</template>

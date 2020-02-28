@@ -1,0 +1,9 @@
+<template name="38101a2a">
+  <view class="_div data-v-7130c9a3 lock-detail-content">
+    <view class="_div data-v-7130c9a3 ttt">
+      <view class="_div data-v-7130c9a3 test" wx:key="index" key="{{index}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-7130c9a3 www">www</view>
+      </view>
+    </view>
+  </view>
+</template>

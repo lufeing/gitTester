@@ -1,0 +1,30 @@
+<template name="1f9309fb">
+  <view class="_div data-v-1ba6461a lock-detail-content">
+    <view class="_div data-v-1ba6461a lock-body-area">
+      <view class="_div data-v-1ba6461a lock-box">
+        <view class="_p data-v-1ba6461a">用户身份</view>
+        <picker class="_picker data-v-1ba6461a right-box" bindchange="handleProxy" value="{{identityVaule}}" range="{{identityRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+          <view wx:if="{{paramsObj.identityVaule == ''}}" class="_p data-v-1ba6461a plTitle">用户身份</view>
+          <view wx:else class="_p data-v-1ba6461a state mr_10">{{identityRange[identityVaule]}}</view>
+        </picker>
+        <view class="_b data-v-1ba6461a arrow-right"></view>
+      </view>
+      <view class="_div data-v-1ba6461a lock-box">
+        <view class="_p data-v-1ba6461a">用户手机号</view>
+        <view class="_p data-v-1ba6461a right-box"><input type="number" value="{{paramsObj.phone}}" bindinput="handleProxy" class="_input data-v-1ba6461a" placeholder="用户手机号" placeholder-class="plClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+      </view>
+      <view class="_div data-v-1ba6461a lock-box">
+        <view class="_p data-v-1ba6461a">密码失效时间</view>
+        <picker mode="date" class="_picker data-v-1ba6461a right-box" bindchange="handleProxy" start="{{dataObj.date}}" end="2022-01-01" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view wx:if="{{paramsObj.failureTime == ''}}" class="_p data-v-1ba6461a plTitle">密码失效时间</view>
+          <view wx:else class="_p data-v-1ba6461a state mr_10">{{paramsObj.failureTime}}</view>
+        </picker>
+        <view class="_b data-v-1ba6461a arrow-right"></view>
+      </view>
+    </view>
+    <view class="_div data-v-1ba6461a order-footer">
+      <view class="_p data-v-1ba6461a"><button class="_button data-v-1ba6461a sure-submit-button {{isDisabled ? 'garyBack' : ''}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">确认发送</button></view>
+    </view>
+    <view class="_div data-v-1ba6461a fixed-area">密码列表</view>
+  </view>
+</template>

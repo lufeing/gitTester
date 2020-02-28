@@ -1,0 +1,1 @@
+<import src="/pages/contract/efficientContract/index.vue.wxml" /><template is="cb4f23a2" data="{{ ...$root['0'], $root }}"/>

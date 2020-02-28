@@ -1,0 +1,8 @@
+<template name="3c2fef56">
+  <view class="_div data-v-0dc12e5e flex-box-content">
+    <image class="_img data-v-0dc12e5e header-logo" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/my/verify/sfrz.png"></image>
+    <navigator class="_navigator data-v-0dc12e5e identitycard" url="/pages/verify/identitycard/main">身份证认证</navigator>
+    <view class="_div data-v-0dc12e5e note-area"><label class="_span data-v-0dc12e5e left-border"></label> <label class="_span data-v-0dc12e5e center-description">非身份证和异常认证</label> <label class="_span data-v-0dc12e5e right-border"></label></view>
+    <view bindtap="handleProxy" class="_div data-v-0dc12e5e protection-container" data-eventid="{{'0'}}" data-comkey="{{$k}}">其他证件认证</view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="/pages/bills/chooseCoupon/index.vue.wxml" /><template is="b974525a" data="{{ ...$root['0'], $root }}"/>

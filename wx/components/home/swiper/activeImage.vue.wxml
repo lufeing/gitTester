@@ -1,0 +1,19 @@
+<template name="7c874580">
+  <view class="_div data-v-f50b2488 swiper-container">
+    <swiper class="_swiper data-v-f50b2488 swiper-box" autoplay="true" interval="3000" duration="1000" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <swiper-item wx:key="index" key="{{index}}" wx:for="{{activeImageList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-f50b2488">
+        <image class="_image data-v-f50b2488 image" src="{{item.thumbnailUrl}}" background-size="cover" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+    <view class="_div data-v-f50b2488 swiper-main">
+      <view class="_div data-v-f50b2488 handle-content">
+        <view class="_div data-v-f50b2488 place-box">
+          <view class="_div data-v-f50b2488 place {{activeItem == index ? 'active' : ''}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{getTypeList}}" wx:for-index="index" wx:for-item="item">
+            <view wx:if="{{index <= 3}}" class="_p data-v-f50b2488"><label class="_span data-v-f50b2488">{{item}}</label></view>
+          </view>
+        </view>
+        <view class="_div data-v-f50b2488 length">{{currentIndex}}/{{activeImageList.length}}</view>
+      </view>
+    </view>
+  </view>
+</template>

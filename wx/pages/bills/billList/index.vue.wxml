@@ -1,0 +1,44 @@
+<template name="46c918fb">
+  <view class="_div data-v-3dad0a3d lock-list-content">
+    <view class="_div data-v-3dad0a3d mp-tabs mtb_0">
+      <view class="_div data-v-3dad0a3d tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-3dad0a3d title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+    </view>
+    <view class="_div data-v-3dad0a3d bill-content" wx:if="{{tabsIndex == 0}}">
+      <view class="_div data-v-3dad0a3d mp-button-tabs">
+        <view class="_div data-v-3dad0a3d button-tabs-item"><button wx:key="index" key="{{index}}" plain bindtap="handleProxy" class="_button data-v-3dad0a3d account-button {{buttonIndex == index ? 'active' : ''}}" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{buttonTabsArr}}" wx:for-index="index" wx:for-item="item">{{item}}</button></view>
+      </view>
+      <view class="_div data-v-3dad0a3d bill-box" wx:key="index" key="{{index}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-3dad0a3d top">
+          <view class="_p data-v-3dad0a3d name">
+            {{item.communityName}}
+            <label wx:if="{{buttonIndex === 1}}" class="_span data-v-3dad0a3d rentRelateName">| {{item.rentRelateName}}</label></view>
+          <view class="_p data-v-3dad0a3d status">未付</view>
+        </view>
+        <view class="_div data-v-3dad0a3d bottom" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">
+          <view class="_p data-v-3dad0a3d">去支付</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-3dad0a3d bill-content" wx:else>
+      <view class="_div data-v-3dad0a3d bill-box" wx:key="index" key="{{index}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="object">
+        <view class="_div data-v-3dad0a3d top">
+          <view class="_p data-v-3dad0a3d name">{{object.communityName}}</view>
+        </view>
+        <view class="_div data-v-3dad0a3d bill-detail">
+          <view class="_div data-v-3dad0a3d detail thead">
+            <view class="_p data-v-3dad0a3d title">账单名称</view>
+            <view class="_p data-v-3dad0a3d price">金额(元)</view>
+            <view class="_p data-v-3dad0a3d billDate">账单日</view>
+          </view>
+          <view wx:key="idx" key="{{idx}}" wx:for="{{object.miniOrderAccountBillList}}" wx:for-index="idx" wx:for-item="test" class="_div data-v-3dad0a3d">
+            <view class="_div data-v-3dad0a3d detail" wx:key="listIndex" key="{{listIndex}}" wx:for="{{test.miniAccountBillInfoRespList}}" wx:for-index="listIndex" wx:for-item="list">
+              <view class="_p data-v-3dad0a3d title">{{list.accountBillName}}</view>
+              <view class="_p data-v-3dad0a3d price">{{list.receivableAmount}}</view>
+              <view class="_p data-v-3dad0a3d billDate">{{list.accountBillDate}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

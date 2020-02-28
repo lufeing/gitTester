@@ -1,0 +1,31 @@
+<template name="618fc7f6">
+  <view class="_div data-v-7db56cc1">
+    <view class="_div data-v-7db56cc1 video-box">
+      <view class="_header data-v-7db56cc1 video_header">
+        <txv-video id="myVideo" class="_txv-video data-v-7db56cc1 myVideo" src="{{params.vedioUrl}}" controls object-fit="cover" vid="{{params.mediaId}}" playerid="txv1"></txv-video>
+      </view>
+      <view class="_div data-v-7db56cc1 target_details">
+        <view class="_div data-v-7db56cc1 target_author">
+          <view class="_p data-v-7db56cc1 author">{{params.vedioTitle}}</view>
+        </view>
+        <view class="_div data-v-7db56cc1 target_operation">
+          <image src="{{checkLike ? 'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/liked.png' : 'https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/like.png'}}" mode="widthFix" class="_image data-v-7db56cc1 operationImg" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+          <view class="_p data-v-7db56cc1 like_number {{checkLike ? 'avtive' : ''}}">{{params.likeNum}}</view> <button open-type="share" plain class="_button data-v-7db56cc1 share_button">
+            <image src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/share.png" mode="widthFix" class="_image data-v-7db56cc1 operationImg" catchtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></image>
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-7db56cc1 video_comment">
+      <view class="_div data-v-7db56cc1 comment_box" wx:key="index" key="{{index}}" wx:for="{{relatedList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-7db56cc1 related_body" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">
+          <image src="{{item.vedioPicUrl}}" class="_image data-v-7db56cc1 headerImg"></image>
+          <view class="_div data-v-7db56cc1 vedio_cell">
+            <view class="_p data-v-7db56cc1 title">{{item.vedioTitle}}</view>
+            <view class="_p data-v-7db56cc1 communityName"><text class="_text data-v-7db56cc1">{{item.communityName}}</text> <text class="_text data-v-7db56cc1 ml15" wx:if="{{item.playNum !== 0}}">{{item.playNum}}次播放</text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

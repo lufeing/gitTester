@@ -1,0 +1,9 @@
+<template name="87064b32">
+  <view class="_div data-v-40f59576 swiper-container">
+    <swiper class="_swiper data-v-40f59576 swiper-box" indicator-dots="true" indicator-color="#e0e0e0" indicator-active-color="#ff3300" autoplay="true" interval="3000" duration="1000">
+      <swiper-item wx:key="index" key="{{index}}" wx:for="{{swiperList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-40f59576">
+        <image class="_image data-v-40f59576 image" src="{{item.thumbnailUrl}}" background-size="cover" mode="widthFix" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</template>

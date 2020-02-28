@@ -1,0 +1,22 @@
+<template name="5149e3ef">
+  <view class="_div data-v-3d0776aa transactioin-detail-content">
+    <view class="_div data-v-3d0776aa transactioin-detail-main">
+      <view class="_div data-v-3d0776aa wallet-body-cell">
+        <navigator wx:key="index" key="{{index}}" class="_navigator data-v-3d0776aa box" hover-class="none" url="{{item.naviUrl}}" wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-3d0776aa box-left">
+            <view class="_div data-v-3d0776aa">
+              <view class="_p data-v-3d0776aa title">{{item.title}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-3d0776aa box-right">
+            <view class="_b data-v-3d0776aa arrow-right"></view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="_div data-v-3d0776aa log-out-content"><button plain="true" class="_button data-v-3d0776aa logOut" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">退出登录</button></view>
+    <view class="_div data-v-3d0776aa page-footer">
+      <view class="_p data-v-3d0776aa">©2018 广州窝趣公寓管理有限公司版权所有</view>
+    </view>
+  </view>
+</template>

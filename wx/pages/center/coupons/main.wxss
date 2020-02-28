@@ -1,0 +1,110 @@
+@import "../../../common/vendor.wxss";
+
+.coupons-content.data-v-0abfdb28 {
+  position: relative;
+  min-height: 100%;
+  background: #f9f9f9;
+}
+.coupons-content .cursor.data-v-0abfdb28 {
+  cursor: pointer;
+}
+.tab-content.data-v-0abfdb28 {
+  position: relative;
+  padding: 0 30rpx;
+  width: 690rpx;
+  background: #fff;
+  margin: 0 !important;
+}
+.coupons-body.data-v-0abfdb28 {
+  position: relative;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+}
+.coupons-body .coupons-box.data-v-0abfdb28 {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.coupons-body .coupons-box .coupons-box-detail.data-v-0abfdb28 {
+  height: 220rpx;
+  display: flex;
+  align-items: center;
+}
+.coupons-body .denomination.data-v-0abfdb28 {
+  position: relative;
+  height: 100%;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8rpx 0 0 8rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.coupons-body .denomination_red.data-v-0abfdb28 {
+  background: #bc171c;
+}
+.coupons-body .denomination_equity.data-v-0abfdb28 {
+  background: #f59a23;
+}
+.coupons-body .denomination_disabeled.data-v-0abfdb28 {
+  background: #ccc !important;
+}
+.coupons-body .alignItems.data-v-0abfdb28 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.coupons-body .state-box.data-v-0abfdb28 {
+  flex: 1;
+  position: relative;
+  height: 220rpx;
+}
+.coupons-body .state-box .cells.data-v-0abfdb28 {
+  padding: 10rpx 20rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.coupons-body .state-box .title.data-v-0abfdb28 {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.8;
+}
+.coupons-body .state-box .title-disabeled.data-v-0abfdb28 {
+  color: #666;
+}
+.coupons-body .state-box .state.data-v-0abfdb28 {
+  font-size: 20rpx;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5;
+}
+.coupons-body .state-box .limit.data-v-0abfdb28 {
+  margin-top: 16rpx;
+  flex-flow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.coupons-body .state-box .inline.data-v-0abfdb28 {
+  display: flex;
+  align-items: center;
+}
+.coupons-body .state-box .arrow-top.data-v-0abfdb28 {
+  margin-top: 4rpx;
+}
+.coupons-hidden-state.data-v-0abfdb28 {
+  padding: 20rpx 30rpx;
+  border-radius: 0 0 8rpx 8rpx;
+  background: #f2f2f2;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5;
+}

@@ -1,0 +1,34 @@
+<template name="4c6a9524">
+  <view class="_div data-v-0dd8e726 lock-detail-content">
+    <view class="_div data-v-0dd8e726 lock-body-area">
+      <view class="_div data-v-0dd8e726 lock-box">
+        <view class="_p data-v-0dd8e726">用户身份</view>
+        <picker class="_picker data-v-0dd8e726 right-box" bindchange="handleProxy" value="{{identityVaule}}" range="{{identityRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+          <view wx:if="{{paramsObj.identityVaule == ''}}" class="_p data-v-0dd8e726 plTitle">用户身份</view>
+          <view wx:else class="_p data-v-0dd8e726 state mr_10">{{identityRange[identityVaule]}}</view>
+        </picker>
+        <view class="_b data-v-0dd8e726 arrow-right"></view>
+      </view>
+      <view class="_div data-v-0dd8e726 lock-box">
+        <view class="_p data-v-0dd8e726">用户姓名</view>
+        <view class="_p data-v-0dd8e726 right-box"><input type="text" value="{{paramsObj.name}}" bindinput="handleProxy" class="_input data-v-0dd8e726" placeholder="用户姓名" placeholder-class="plClass" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+      </view>
+      <view class="_div data-v-0dd8e726 lock-box">
+        <view class="_p data-v-0dd8e726">用户手机号</view>
+        <view class="_p data-v-0dd8e726 right-box"><input type="number" value="{{paramsObj.phone}}" bindinput="handleProxy" class="_input data-v-0dd8e726" placeholder="用户手机号" placeholder-class="plClass" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></view>
+      </view>
+      <view class="_div data-v-0dd8e726 lock-box">
+        <view class="_p data-v-0dd8e726">密码失效时间</view>
+        <picker mode="date" class="_picker data-v-0dd8e726 right-box" bindchange="handleProxy" start="{{dataObj.date}}" end="2022-01-01" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+          <view wx:if="{{paramsObj.failureTime == ''}}" class="_p data-v-0dd8e726 plTitle">密码失效时间</view>
+          <view wx:else class="_p data-v-0dd8e726 state mr_10">{{paramsObj.failureTime}}</view>
+        </picker>
+        <view class="_b data-v-0dd8e726 arrow-right"></view>
+      </view>
+    </view>
+    <view class="_div data-v-0dd8e726 order-footer">
+      <view class="_p data-v-0dd8e726"><button class="_button data-v-0dd8e726 sure-submit-button {{isDisabled ? 'garyBack' : ''}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">确认发送</button></view>
+    </view>
+    <navigator class="_navigator data-v-0dd8e726 fixed-area" url="/pages/intelligentLock/userList/main">密码列表</navigator>
+  </view>
+</template>

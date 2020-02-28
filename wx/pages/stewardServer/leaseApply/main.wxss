@@ -1,0 +1,73 @@
+@import "../../../common/vendor.wxss";
+
+.transactioin-detail-content.data-v-16b77c56 {
+  height: 100%;
+  background: #f2f2f2;
+}
+.bank-card-content.data-v-16b77c56 {
+  margin-top: 30rpx;
+}
+.wallet-body-cell.data-v-16b77c56 {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box.data-v-16b77c56 {
+  height: 100rpx;
+  margin: 0 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.wallet-body-cell .title.data-v-16b77c56 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+}
+.wallet-body-cell .box-right.data-v-16b77c56 {
+  display: flex;
+  align-items: center;
+}
+.wallet-body-cell .box-right .state.data-v-16b77c56 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box-right .mr_10.data-v-16b77c56 {
+  margin-right: 20rpx;
+}
+.wallet-body-cell .box-right .plClass.data-v-16b77c56 {
+  font-weight: 400;
+  color: #ccc;
+}
+.footer-content.data-v-16b77c56 {
+  margin: 40rpx 0;
+}
+.space-box.data-v-16b77c56 {
+  display: flex;
+  justify-content: space-between;
+}
+.space-box .inputClass.data-v-16b77c56 {
+  color: #333333;
+  flex-grow: 1;
+}
+.space-box.data-v-3a1e30aa {
+  display: flex;
+  justify-content: space-between;
+}
+.box-right.data-v-3a1e30aa {
+  display: flex;
+  align-items: center;
+}
+.box-right .state.data-v-3a1e30aa {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.please.data-v-8d88227c {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+}

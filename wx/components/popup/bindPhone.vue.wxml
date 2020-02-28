@@ -1,0 +1,12 @@
+<template name="75045313">
+  <view class="_view data-v-54d2bf3c mask" wx:if="{{maskModal}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-54d2bf3c modal-content" style="height:250px" catchtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-54d2bf3c coupon-content">
+        <view class="_div data-v-54d2bf3c main-body">
+          <view class="_div data-v-54d2bf3c code_content"><text class="_text data-v-54d2bf3c title">请输入验证码</text> <input type="number" focus class="_input data-v-54d2bf3c code_input" value="{{verificationCode}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+        </view>
+      </view>
+      <view class="_view data-v-54d2bf3c modal-btn-wrapper"><button type="defalut" size="default" class="_button data-v-54d2bf3c modal_btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">取消</button> <button type="primary" size="default" class="_button data-v-54d2bf3c modal_btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">提交</button></view>
+    </view>
+  </view>
+</template>

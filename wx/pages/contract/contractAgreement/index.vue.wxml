@@ -1,0 +1,3 @@
+<template name="8fa39e98">
+  <web-view wx:if="{{loaded}}" src="{{agreementSrc}}" class="_web-view data-v-563e2230 webView-content" bindload="handleProxy" bindmessage="handleProxy" binderror="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></web-view>
+</template>

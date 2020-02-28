@@ -1,0 +1,10 @@
+<import src="/components/home/search/searchInput.vue.wxml" />
+<import src="/pages/home/index/components/swiper.vue.wxml" />
+<import src="/pages/home/index/components/icon.vue.wxml" />
+<import src="/pages/home/index/components/brand.vue.wxml" />
+<import src="/pages/home/index/components/apartment.vue.wxml" /><template name="d4b5028a">
+  <view class="_div data-v-29f73fb7">
+    <view class="_header data-v-29f73fb7"><template data="{{...$root[$kk+'0'], $root}}" is="c3bbee06"></template> <template data="{{...$root[$kk+'1'], $root}}" is="87064b32"></template></view>
+    <view class="_div data-v-29f73fb7 content-area"><template data="{{...$root[$kk+'2'], $root}}" is="2d5b6fa8"></template> <template data="{{...$root[$kk+'3'], $root}}" is="b6b3bf30"></template> <template data="{{...$root[$kk+'4'], $root}}" is="78235bda"></template></view>
+  </view>
+</template>

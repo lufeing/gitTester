@@ -1,0 +1,117 @@
+<template name="cb4f23a2">
+  <view class="_div data-v-38685fab">
+    <view class="_div data-v-38685fab">
+      <view class="_div data-v-38685fab mp-tabs mg_0 white_bg">
+        <view class="_div data-v-38685fab tabs-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tabsArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-38685fab title {{tabsIndex == index ? 'active' : ''}}">{{item}}</label></view>
+      </view>
+      <view class="_div data-v-38685fab payment-plan-content">
+        <view wx:if="{{tabsIndex == 0}}" class="_div data-v-38685fab">
+          <view class="_div data-v-38685fab payment-plan-main">
+            <view class="_p data-v-38685fab leftB-title">付款计划</view>
+            <view class="_div data-v-38685fab detail-message">
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">合同编号</view>
+                <view class="_p data-v-38685fab">{{detailObj.contractCode}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">社区名称</view>
+                <view class="_p data-v-38685fab">{{detailObj.communityName}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab thin">房间号</view>
+                <view class="_p data-v-38685fab">{{detailObj.rentRelateName}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab thin">押金</view>
+                <view class="_p data-v-38685fab importance">{{detailObj.deposit}}元</view>
+              </view>
+              <view class="_div data-v-38685fab message-box" wx:if="{{detailObj.margin}}">
+                <view class="_p data-v-38685fab thin">定金</view>
+                <view class="_p data-v-38685fab importance">{{detailObj.margin}}元</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab thin">租金</view>
+                <view class="_p data-v-38685fab importance">{{detailObj.rental}}元</view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-38685fab payment-plan-main">
+            <view class="_p data-v-38685fab leftB-title">签约人信息</view>
+            <view class="_div data-v-38685fab detail-message">
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">租用人</view>
+                <view class="_p data-v-38685fab">{{detailObj.renterName}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">证件类型</view>
+                <view class="_p data-v-38685fab" wx:if="{{certificate}}">{{certificate.certificateTypeName}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">证件号码</view>
+                <view class="_p data-v-38685fab">{{detailObj.certificateNo}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">性别</view>
+                <view class="_p data-v-38685fab">{{sexObject[detailObj.renterSex]}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">电话号码</view>
+                <view class="_p data-v-38685fab">{{detailObj.renterPhone}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab time">会员等级</view>
+                <view class="_p data-v-38685fab"> V{{detailObj.renterLevel}} / {{detailObj.renterLevelName}}
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view wx:elif="{{tabsIndex == 1}}" class="_div data-v-38685fab">
+          <view class="_div data-v-38685fab payment-plan-main">
+            <view class="_p data-v-38685fab leftB-title">紧急联系人信息</view>
+            <view class="_div data-v-38685fab detail-message">
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab thin">紧急联系人</view>
+                <view class="_p data-v-38685fab">{{detailObj.contactsName}}</view>
+              </view>
+              <view class="_div data-v-38685fab message-box">
+                <view class="_p data-v-38685fab thin">紧急联系人电话</view>
+                <view class="_p data-v-38685fab">{{detailObj.contactsPhone}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view wx:elif="{{tabsIndex == 2}}" class="_div data-v-38685fab">
+          <view class="_div data-v-38685fab payment-plan-main">
+            <view class="_p data-v-38685fab leftB-title">水电/物业费信息</view>
+            <view class="_div data-v-38685fab detail-message">
+              <view class="_div data-v-38685fab message-box" wx:key="index" key="{{index}}" wx:for="{{detailObj.feeRespList}}" wx:for-index="index" wx:for-item="item">
+                <view class="_p data-v-38685fab thin">{{item.feeTypeName}}</view>
+                <view class="_p data-v-38685fab importance">{{item.price}}{{item.unit}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view wx:else class="_div data-v-38685fab">
+          <view class="_div data-v-38685fab payment-plan-main">
+            <view class="_p data-v-38685fab leftB-title">须知及规定</view>
+            <view class="_div data-v-38685fab detail-message">
+              <view class="_div data-v-38685fab message-box" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+                <view class="_p data-v-38685fab thin">房屋租赁合同</view>
+                <view class="_p data-v-38685fab importance">阅读></view>
+              </view>
+              <navigator class="_navigator data-v-38685fab message-box" url="/pages/contract/agreement/main">
+                <view class="_p data-v-38685fab thin">合同协议须知</view>
+                <view class="_p data-v-38685fab importance">阅读></view>
+              </navigator>
+              <navigator class="_navigator data-v-38685fab message-box" url="/pages/contract/checkInNotice/main">
+                <view class="_p data-v-38685fab thin">入住须知</view>
+                <view class="_p data-v-38685fab importance">阅读></view>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

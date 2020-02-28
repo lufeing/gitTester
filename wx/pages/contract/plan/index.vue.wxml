@@ -1,0 +1,15 @@
+<template name="0b1872ae">
+  <view class="_div data-v-67bd57e7 payment-plan-content">
+    <view class="_div data-v-67bd57e7 payment-plan-main">
+      <view class="_p data-v-67bd57e7 leftB-title">付款计划</view>
+      <view class="_div data-v-67bd57e7 detail-message">
+        <view class="_div data-v-67bd57e7 message-box" wx:key="index" key="{{index}}" wx:for="{{planList}}" wx:for-index="index" wx:for-item="item">
+          <view class="_p data-v-67bd57e7 time">{{item.accountDate}}</view>
+          <view class="_p data-v-67bd57e7 center">{{item.accountName}}</view>
+          <view class="_p data-v-67bd57e7 price">{{item.accountAmount}}元</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-67bd57e7 footer"><button plain class="_button data-v-67bd57e7 retHome" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">返回首页</button> <button plain class="_button data-v-67bd57e7 payCash" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">去支付</button></view>
+  </view>
+</template>

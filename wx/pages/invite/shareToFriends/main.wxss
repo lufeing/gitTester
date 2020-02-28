@@ -1,0 +1,28 @@
+@import "../../../common/vendor.wxss";
+
+.shareImage-content.data-v-c81cc93c {
+  width: 100%;
+  padding-top: 50rpx;
+  min-height: calc(100% - 50rpx);
+  background: #f4f3f3;
+}
+.canvasBox.data-v-c81cc93c {
+  width: 690rpx;
+  height: 920rpx;
+  background: #fff;
+  box-shadow: 2rpx 10rpx 24rpx 2rpx rgba(147,147,147,0.2);
+  border-radius: 40rpx;
+  margin: 0 30rpx;
+}
+.shareToButton.data-v-c81cc93c {
+  width: 690rpx;
+  height: 90rpx;
+  margin-top: 60rpx;
+  background: #fff;
+  border: 2rpx solid #bc171c;
+  border-radius: 44rpx;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #bc171c;
+}

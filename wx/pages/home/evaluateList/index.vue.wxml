@@ -1,0 +1,16 @@
+<template name="6714032c">
+  <view class="_div data-v-4b478da8 evaluate-content">
+    <view class="_div data-v-4b478da8 evaluate-body">
+      <view class="_div data-v-4b478da8 evaluate-box" wx:key="index" key="{{index}}" wx:for="{{qaList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-4b478da8 evaluate-title">
+          <view class="_p data-v-4b478da8 evaluate-name">{{item.memberName}}</view>
+          <view class="_p data-v-4b478da8"><label wx:key="idx" key="{{idx}}" class="_span data-v-4b478da8 evaluate-light {{[idx + 1 > item.commentStar ? 'evaluateGray' : '']}}" wx:for="{{5}}" wx:for-index="idx" wx:for-item="itm"></label></view>
+          <view class="_p data-v-4b478da8 createTime">{{item.createTime}}</view>
+        </view>
+        <view class="_div data-v-4b478da8 evaluate-details">
+          {{item.commentDetails || '这个家伙很懒，什么都没有留下...'}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

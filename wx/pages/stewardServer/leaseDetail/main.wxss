@@ -1,0 +1,126 @@
+@import "../../../common/vendor.wxss";
+
+.transactioin-detail-content.data-v-2ed7dee0 {
+  height: 100%;
+  background: #f2f2f2;
+}
+.wallet-body-cell.data-v-2ed7dee0 {
+  background: #ffffff;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box.data-v-2ed7dee0 {
+  height: 100rpx;
+  margin: 0 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.wallet-body-cell .title.data-v-2ed7dee0 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+}
+.wallet-body-cell .box-right.data-v-2ed7dee0 {
+  display: flex;
+  align-items: center;
+}
+.wallet-body-cell .box-right .state.data-v-2ed7dee0 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+.wallet-body-cell .box-right .mr_10.data-v-2ed7dee0 {
+  margin-right: 20rpx;
+}
+.wallet-body-cell .box-right .plClass.data-v-2ed7dee0 {
+  font-weight: 400;
+  color: #ccc;
+}
+.right-box.data-v-2ed7dee0 {
+  width: 400rpx;
+  text-align: right;
+}
+.right-box .plClass.data-v-2ed7dee0 {
+  font-weight: 400;
+  color: #ccc;
+}
+.footer-content.data-v-2ed7dee0 {
+  margin: 40rpx 0;
+}
+.status-cells.data-v-2ed7dee0 {
+  position: relative;
+  margin: 60rpx 40rpx 0;
+  padding: 0 50rpx 40rpx;
+  border-left: 2rpx solid #4598ff;
+}
+.status-cells.data-v-2ed7dee0:last-child {
+  border-left: 0;
+}
+.status-cells.data-v-2ed7dee0:before {
+  content: "";
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  left: -12rpx;
+  top: 6rpx;
+  background: #4598ff;
+  border-radius: 50%;
+  z-index: 22;
+}
+.status-cells.data-v-2ed7dee0:after {
+  content: "";
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: -18rpx;
+  top: 0;
+  background: #fff;
+  border: 2rpx solid #4598ff;
+  border-radius: 50%;
+  z-index: 11;
+}
+.status-cells .times.data-v-2ed7dee0 {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #4598ff;
+}
+.status-cells .state.data-v-2ed7dee0 {
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: #4598ff;
+}
+.btn-content.data-v-2ed7dee0 {
+  display: flex;
+  align-items: center;
+}
+.btn-content .edit-btn.data-v-2ed7dee0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 324rpx;
+  height: 88rpx;
+  background: #b60005;
+  border: 4rpx solid #b60005;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: 400;
+}
+.btn-content .cancal-btn.data-v-2ed7dee0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 324rpx;
+  height: 88rpx;
+  background: #fff;
+  border: 4rpx solid #b60005;
+  border-radius: 10rpx;
+  color: #b60005;
+  font-size: 34rpx;
+  font-weight: 400;
+}

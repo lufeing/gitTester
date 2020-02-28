@@ -1,0 +1,44 @@
+<template name="18d9e906">
+  <view class="_div data-v-a103be02 lock-list-content">
+    <view class="_div data-v-a103be02 lock-list-area">
+      <view class="_p data-v-a103be02 label-title">密码到期提醒</view>
+      <view class="_div data-v-a103be02 lock-list-main">
+        <view class="_div data-v-a103be02 space-box noBorder">
+          <view class="_p data-v-a103be02">密码到期(3天提醒)</view>
+          <switch class="_switch data-v-a103be02 switchClass" checked bindchange="switch1Change" color="#BC171C" />
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-a103be02 lock-list-area">
+      <view class="_div data-v-a103be02">
+        <view class="_p data-v-a103be02 label-title">锁状态</view>
+        <view class="_div data-v-a103be02 lock-list-main">
+          <view class="_div data-v-a103be02 space-box noBorder">
+            <view class="_p data-v-a103be02">长期开启报警(分钟)</view>
+            <picker class="_picker data-v-a103be02 right-box" bindchange="handleProxy" value="{{minuteVaule}}" range="{{minuteRange}}" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+              <view wx:if="{{paramsObj.minute == ''}}" class="_p data-v-a103be02 plTitle">选择分钟</view>
+              <view wx:else class="_p data-v-a103be02 state mr_10">{{minuteRange[minuteVaule]}}</view>
+            </picker>
+            <view class="_b data-v-a103be02 arrow-right"></view>
+          </view>
+        </view>
+        <view class="_div data-v-a103be02 lock-list-main">
+          <view class="_div data-v-a103be02 space-box noBorder">
+            <view class="_p data-v-a103be02">电池不足报警</view>
+            <switch class="_switch data-v-a103be02 switchClass" bindchange="switch1Change" color="#BC171C" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-a103be02 lock-list-area">
+      <view class="_p data-v-a103be02 label-title">开锁记录</view>
+      <view class="_div data-v-a103be02 lock-list-main">
+        <radio-group class="_radio-group data-v-a103be02 radio-group" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_label data-v-a103be02 radio-box" wx:key="index" key="{{index}}" wx:for="{{radioList}}" wx:for-index="index" wx:for-item="item">
+            <radio class="_radio data-v-a103be02 radio" color="#BC171C" value="{{item.name}}" checked="{{item.checked}}" />
+            {{item.value}}
+          </label></radio-group>
+      </view>
+    </view>
+    <view class="_div data-v-a103be02 footer"><button class="_button data-v-a103be02 sure-submit-button">提交</button></view>
+  </view>
+</template>

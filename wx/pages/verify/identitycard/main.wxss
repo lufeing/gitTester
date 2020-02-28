@@ -1,0 +1,13 @@
+@import "../../../common/vendor.wxss";
+
+.verify-content.data-v-17cdeaf6 {
+  position: relative;
+  padding: 0 30rpx;
+}
+.verify-content .space-box.data-v-17cdeaf6 {
+  display: flex;
+  justify-content: space-between;
+}
+.verify-content .inputClass.data-v-17cdeaf6 {
+  flex-grow: 1;
+}

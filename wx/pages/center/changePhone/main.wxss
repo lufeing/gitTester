@@ -1,0 +1,75 @@
+@import "../../../common/vendor.wxss";
+
+.change-pass-content.data-v-5c06d479 {
+  height: 100%;
+  background: #fff;
+}
+.change-main.data-v-5c06d479 {
+  margin: 0 60rpx;
+  padding: 30rpx 0;
+}
+.change-main .label-title.data-v-5c06d479 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5;
+}
+.change-main .change-cell.data-v-5c06d479 {
+  position: relative;
+  padding: 20rpx 0 20rpx;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  display: flex;
+  align-items: center;
+}
+.change-main .change-cell .getverification.data-v-5c06d479 {
+  flex: 0 0 auto;
+  padding: 0 40rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #e60012;
+  border-left: 2rpx solid #cccccc;
+}
+.change-main .changeInput.data-v-5c06d479 {
+  flex: 1 1 auto;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+}
+.change-main .plClass.data-v-5c06d479 {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #ccc;
+}
+.clear.data-v-5c06d479 {
+  width: 24rpx;
+  height: 24rpx;
+  padding: 20rpx;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+.eye.data-v-5c06d479 {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 20rpx;
+  z-index: 11;
+}
+.log-out-content.data-v-5c06d479 {
+  margin-top: 60rpx;
+}
+.log-out-content .logOut.data-v-5c06d479 {
+  width: 100%;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #e60012;
+  border-radius: 0;
+  border: 0;
+}
+.footer-content.data-v-5c06d479 {
+  margin-top: 60rpx;
+}

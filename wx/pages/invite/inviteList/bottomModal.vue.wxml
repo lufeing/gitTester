@@ -1,0 +1,17 @@
+<template name="5043aa20">
+  <view class="_div data-v-48fb8b9e">
+    <view class="_div data-v-48fb8b9e shadow_content" wx:if="{{shareModal}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_div data-v-48fb8b9e choosen" wx:if="{{shareModal}}" animation="{{animationData}}">
+      <view class="_div data-v-48fb8b9e container-box">
+        <view class="_div data-v-48fb8b9e share-content">
+          <view class="_div data-v-48fb8b9e share-way"><button class="_button data-v-48fb8b9e share-box" type="default" plain="{{true}}" hover-class="none" wx:key="index" key="{{index}}" open-type="{{item.openType}}" bindgetuserinfo="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{iconList}}" wx:for-index="index" wx:for-item="item">
+              <image class="_image data-v-48fb8b9e iconSrc" src="{{item.iconSrc}}"></image>
+              <view class="_p data-v-48fb8b9e title">{{item.title}}</view>
+              <view class="_p data-v-48fb8b9e title mt10">{{item.fbt}}</view>
+            </button></view>
+        </view>
+        <view class="_div data-v-48fb8b9e close-modal" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"> 取消 </view>
+      </view>
+    </view>
+  </view>
+</template>
