@@ -83,10 +83,16 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_wxValidateMixin_js__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_wxValidateMixin_js__ = __webpack_require__(29);
+
+
 
 //
 //
@@ -155,7 +161,7 @@ if (false) {(function () {
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  mixins: [__WEBPACK_IMPORTED_MODULE_2__mixins_wxValidateMixin_js__["a" /* default */]],
+  mixins: [__WEBPACK_IMPORTED_MODULE_4__mixins_wxValidateMixin_js__["a" /* default */]],
   data: function data() {
     return {
       paramsObj: {
@@ -170,7 +176,7 @@ if (false) {(function () {
     };
   },
   onShow: function onShow() {
-    this.historyList = this.handlerList = Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* mpvueGetStorageSync */])('historyList') || [];
+    this.historyList = this.handlerList = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* mpvueGetStorageSync */])('historyList') || [];
     var ruleList = [{ key: 'searchVaule', description: '请输入搜索内容' }];
     this.initValidate(ruleList);
   },
@@ -185,7 +191,7 @@ if (false) {(function () {
       this.searchList = [];
       var search = this.paramsObj.searchValue;
       this.$API.searchCommunity({ search: search }).then(function (_ref) {
-        var _ref2 = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default()(_ref, 2),
+        var _ref2 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray___default()(_ref, 2),
             res = _ref2[0],
             msg = _ref2[1];
 
@@ -195,7 +201,7 @@ if (false) {(function () {
           _this.searchList = res;
         } else {
           _this.paramsObj.searchModal = true;
-          Object(__WEBPACK_IMPORTED_MODULE_1__utils__["s" /* showModal */])({
+          Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* showModal */])({
             content: '未检索到对应内容,请重新搜索'
           });
         }
@@ -205,29 +211,39 @@ if (false) {(function () {
       var _this2 = this;
 
       var distance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 5;
+      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                global.mpvue.getLocation({
+                  success: function success(res) {
+                    var keyword = _this2.paramsObj.searchValue;
+                    var lon = res.longitude,
+                        lat = res.latitude;
 
-      global.mpvue.getLocation({
-        success: function success(res) {
-          var keyword = _this2.paramsObj.searchValue;
-          var lon = res.longitude,
-              lat = res.latitude;
+                    _this2.$API.getNearCommunities({ lon: lon, lat: lat, keyword: keyword, distance: distance }).then(function (_ref3) {
+                      var _ref4 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray___default()(_ref3, 2),
+                          res = _ref4[0],
+                          msg = _ref4[1];
 
-          _this2.$API.getNearCommunities({ lon: lon, lat: lat, keyword: keyword, distance: distance }).then(function (_ref3) {
-            var _ref4 = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default()(_ref3, 2),
-                res = _ref4[0],
-                msg = _ref4[1];
+                      _this2.vicinageList = res.map(function (item, index) {
+                        item.distance = item.distance.toFixed(1);return item;
+                      });
+                    });
+                  },
+                  fail: function fail(err) {
+                    console.log(err);
+                  }
+                });
 
-            res.map(function (item, index) {
-              item.distance = item.distance.toFixed(1);
-              return item;
-            });
-            _this2.vicinageList = res;
-          });
-        },
-        fail: function fail(err) {
-          console.log(err);
-        }
-      });
+              case 1:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, _this2);
+      }))();
     },
     clear: function clear() {
       var _this3 = this;
@@ -235,7 +251,7 @@ if (false) {(function () {
       global.mpvue.removeStorage({
         key: 'historyList',
         success: function success(res) {
-          _this3.historyList = Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* mpvueGetStorageSync */])('historyList') || [];
+          _this3.historyList = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* mpvueGetStorageSync */])('historyList') || [];
         }
       });
     },
@@ -246,7 +262,7 @@ if (false) {(function () {
       // console.log(arr)
       if (arr.length === 0) {
         this.handlerList.push(obj);
-        Object(__WEBPACK_IMPORTED_MODULE_1__utils__["p" /* mpvueSetStorageSync */])('historyList', this.handlerList);
+        Object(__WEBPACK_IMPORTED_MODULE_3__utils__["p" /* mpvueSetStorageSync */])('historyList', this.handlerList);
       }
       global.mpvue.navigateTo({
         url: '/pages/home/apartmentDetail/main?communityId=' + obj.communityId

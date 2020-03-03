@@ -291,16 +291,39 @@ if (false) {(function () {
         }
       });
     },
+    checkIsSubmit: function checkIsSubmit() {
+      var isSubmitForHealth = Boolean(Object(__WEBPACK_IMPORTED_MODULE_5__utils___["l" /* mpvueGetStorageSync */])('isSubmitForHealth'));
+      if (isSubmitForHealth) {
+        Object(__WEBPACK_IMPORTED_MODULE_5__utils___["s" /* showModal */])({
+          content: '亲，问卷每天只能提交一次'
+        });
+      }
+      return isSubmitForHealth;
+    },
     saveFinishedQuestionnaire: function saveFinishedQuestionnaire() {
       var _this5 = this;
 
       return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator___default.a.mark(function _callee2() {
-        var result, _mpvueGetStorageSync2, memberId, _answerReqList$, communityId, communityName, memberName, answerReqList, obj;
+        var isSubmit, result, _mpvueGetStorageSync2, memberId, _answerReqList$, communityId, communityName, memberName, answerReqList, obj;
 
         return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
+                _context2.next = 2;
+                return _this5.checkIsSubmit();
+
+              case 2:
+                isSubmit = _context2.sent;
+
+                if (!isSubmit) {
+                  _context2.next = 5;
+                  break;
+                }
+
+                return _context2.abrupt('return', false);
+
+              case 5:
                 if (_this5.isSure) {
                   result = !_this5.createTime ? _this5.answerReqList.some(function (item) {
                     return item === false;
@@ -334,7 +357,7 @@ if (false) {(function () {
                           res = _ref9[0],
                           msg = _ref9[1];
 
-                      console.log(res);
+                      Object(__WEBPACK_IMPORTED_MODULE_5__utils___["p" /* mpvueSetStorageSync */])('isSubmitForHealth', true);
                       Object(__WEBPACK_IMPORTED_MODULE_5__utils___["t" /* showSuccessToast */])({});
                     });
                   }
@@ -344,7 +367,7 @@ if (false) {(function () {
                   });
                 }
 
-              case 1:
+              case 6:
               case 'end':
                 return _context2.stop();
             }

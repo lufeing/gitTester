@@ -150,9 +150,9 @@
 				},
 				{
 					"id": 13,
-					"name": "pages/contract/efficientContract/main",
-					"pathName": "pages/contract/plan/main",
-					"query": "rentalContractId=1182572373275811841",
+					"name": "coupons",
+					"pathName": "pages/center/coupons/main",
+					"query": "",
 					"scene": null
 				},
 				{

@@ -1,0 +1,29 @@
+<template name="af790a54">
+  <view class="_view data-v-11ea590d mask" wx:if="{{maskModal}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-11ea590d modal-content" style="height:95%" catchtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-11ea590d coupon-content">
+        <view class="_div data-v-11ea590d main-body">
+          <view class="_div data-v-11ea590d package_box">
+            <view class="_div data-v-11ea590d near_content">
+              <view class="_div data-v-11ea590d house_info">
+                <view class="_p data-v-11ea590d title">{{nearParams.communityName}}</view>
+                <image class="_image data-v-11ea590d imageUrl" mode="widthFix" src="{{nearParams.imageUrl}}"></image>
+                <view class="_p data-v-11ea590d">¥{{nearParams.minRentPrice}}-{{nearParams.minMemberPrice}}/月</view>
+                <view class="_div data-v-11ea590d position_message">
+                  <view class="_p data-v-11ea590d detailAddress">{{nearParams.detailAddress}}</view>
+                  <view class="_p data-v-11ea590d distance">距你{{nearParams.distance}}米</view>
+                </view>
+              </view>
+              <view class="_div data-v-11ea590d house_button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+                <image class="_image data-v-11ea590d see" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/null/f7f98fefc08e4d02a345fbc125c1e044.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-11ea590d modal-btn-wrapper" catchtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-11ea590d close" mode="widthFix" src="https://wowquwxmgmqcloudcos.plateno.cc/miniapp/images/activity/close.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

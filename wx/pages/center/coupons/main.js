@@ -149,10 +149,6 @@ if (false) {(function () {
 //
 //
 //
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -301,9 +297,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       class: {
         'denomination_disabeled': _vm.tabsIndex !== 0
       }
-    }, [_c('div', {
-      staticClass: "alignItems"
-    }, [_c('p', [_vm._v("窝趣")]), _vm._v(" "), _c('p', [_vm._v("WOWQU")])], 1)]), _vm._v(" "), _c('div', {
+    }), _vm._v(" "), _c('div', {
       staticClass: "state-box"
     }, [_c('div', {
       staticClass: "cells"

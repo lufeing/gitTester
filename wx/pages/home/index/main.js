@@ -372,6 +372,7 @@ if (false) {(function () {
 
           var result = res && Object(__WEBPACK_IMPORTED_MODULE_11__utils__["k" /* isToday */])(res.createTime);
           if (!res || !result) {
+            Object(__WEBPACK_IMPORTED_MODULE_11__utils__["p" /* mpvueSetStorageSync */])('isSubmitForHealth', false);
             wx.showModal({
               title: '亲爱的窝友',
               content: '为加强疫情防控,保障社区安全,请各位窝友及时填写问卷。',
@@ -385,6 +386,8 @@ if (false) {(function () {
                 }
               }
             });
+          } else {
+            Object(__WEBPACK_IMPORTED_MODULE_11__utils__["p" /* mpvueSetStorageSync */])('isSubmitForHealth', true);
           }
         });
       }
@@ -575,7 +578,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "indicator-color": "#e0e0e0",
       "indicator-active-color": "#ff3300",
       "autoplay": "true",
-      "interval": "3000",
+      "interval": "8000",
       "duration": "1000"
     }
   }, _vm._l((_vm.swiperList), function(item, index) {

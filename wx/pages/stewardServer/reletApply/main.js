@@ -170,7 +170,6 @@ if (false) {(function () {
       this.selectContractById(param.contractChecked);
     },
     getMonthChange: function getMonthChange(event) {
-      // console.log(event)
       this.monthValue = event.mp.detail.value;
       this.monthChoose = Number(event.mp.detail.value) + 1;
       this.getEndDate(this.dateObj.beginDate);
