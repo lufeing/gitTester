@@ -10,7 +10,7 @@
             <view class="_div data-v-0abfdb28 denomination denomination_red {{[tabsIndex !== 0 ? 'denomination_disabeled' : '']}}" wx:if="{{item.couponConsumeType === 1}}">
               {{item.couponType == 2 ? item.valueDescription + '折' : '¥' + item.valueDescription}}
             </view>
-            <view wx:else class="_div data-v-0abfdb28 denomination denomination_equity {{[tabsIndex !== 0 ? 'denomination_disabeled' : '']}}"></view>
+            <view wx:else class="_div data-v-0abfdb28 denomination denomination_equity"></view>
             <view class="_div data-v-0abfdb28 state-box">
               <view class="_div data-v-0abfdb28 cells">
                 <view class="_p data-v-0abfdb28 title {{tabsIndex == 0 ? '' : 'title-disabeled'}}">{{item.couponTemplateName}}</view>

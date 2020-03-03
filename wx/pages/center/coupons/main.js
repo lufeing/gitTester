@@ -148,7 +148,6 @@ if (false) {(function () {
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -293,10 +292,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         'denomination_disabeled': _vm.tabsIndex !== 0
       }
     }, [_vm._v("\n            " + _vm._s(item.couponType == 2 ? item.valueDescription + '折' : '¥' + item.valueDescription) + "\n          ")]) : _c('div', {
-      staticClass: "denomination denomination_equity",
-      class: {
-        'denomination_disabeled': _vm.tabsIndex !== 0
-      }
+      staticClass: "denomination denomination_equity"
     }), _vm._v(" "), _c('div', {
       staticClass: "state-box"
     }, [_c('div', {

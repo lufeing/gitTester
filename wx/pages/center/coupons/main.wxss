@@ -47,7 +47,8 @@
   background: #bc171c;
 }
 .coupons-body .denomination_equity.data-v-0abfdb28 {
-  background: #f59a23;
+  background-image: url("https://wowquwxmgmqcloudcos.plateno.cc/null/1b29dee2f8fc4525abd855cc63466279.jpeg");
+  background-size: 100% 100%;
 }
 .coupons-body .denomination_disabeled.data-v-0abfdb28 {
   background: #ccc !important;
