@@ -2,7 +2,7 @@ require("../../../common/manifest.js")
 require("../../../common/vendor.js")
 global.webpackJsonpMpvue([120],{
 
-/***/ 908:
+/***/ 909:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18,4 +18,4 @@ app.$mount();
 
 /***/ })
 
-},[908]);
+},[909]);

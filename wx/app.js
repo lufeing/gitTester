@@ -11,15 +11,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_updateManager_js__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_updateManager_js__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_updateManager_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils_updateManager_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__api_api_js__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__static_css_style_css__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__api_api_js__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__static_css_style_css__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__static_css_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__static_css_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__static_css_wheel_scss__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__static_css_wheel_scss__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__static_css_wheel_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__static_css_wheel_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_track__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_track__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_null_vue__ = __webpack_require__(90);
 
 // 百度移动统计
@@ -44,39 +44,6 @@ app.$mount();
 
 /***/ }),
 
-/***/ 1066:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
-
-var rootUrl = "https://tapi.wowqu.cn/";
-var wechat = 'wechat/'; // 微信服务接口
-var appid =  true ? 'wxfe3d314d80723f7b' : 'wxf32120c146d8c2c8';
-/* harmony default export */ __webpack_exports__["a"] = ({
-  getWxInfoforLogin: function getWxInfoforLogin(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/login'), data);
-  },
-  getWxUserInfo: function getWxUserInfo(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/info'), data);
-  },
-  createJsapiSignature: function createJsapiSignature(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/createJsapiSignature', data);
-  },
-  getUserInfo: function getUserInfo(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/getUserInfo', data);
-  },
-  getMaQrcodeUriUnlimited: function getMaQrcodeUriUnlimited(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getMaQrcodeUriUnlimited', data);
-  },
-  // 获取自定义二维码详细信息
-  getCustomQrcodeDetailVoById: function getCustomQrcodeDetailVoById(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getCustomQrcodeDetailVoById', data);
-  }
-});
-
-/***/ }),
-
 /***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -89,7 +56,7 @@ var appid =  true ? 'wxfe3d314d80723f7b' : 'wxf32120c146d8c2c8';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_json_stringify__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_json_stringify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__);
@@ -487,7 +454,7 @@ if (false) {(function () {
   onLaunch: function onLaunch(options) {
     console.log(options);
     Object(__WEBPACK_IMPORTED_MODULE_1__utils___["p" /* mpvueSetStorageSync */])('firstOpen', true);
-    var Verify = __webpack_require__(142);
+    var Verify = __webpack_require__(148);
     Verify.init({
       'env': 'release' // 接口环境，正式  环境接口值为 release
     });
@@ -511,28 +478,28 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 142:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
-const regeneratorRuntime=__webpack_require__(84),util=__webpack_require__(143),defaultConfig=__webpack_require__(144).defaultConfig,extend=__webpack_require__(145).extend;var init=function(e){wx.onNetworkStatusChange(function(e){"none"!==e.networkType&&"2g"!==e.networkType||wx.showToast({title:"网络异常",icon:"none"})}),wx.onMemoryWarning(function(){wx.showToast({title:"内存告警，有闪退风险",icon:"none"})}),wx.verifyBaseUrl="https://faceid.qq.com",wx.startVerify=function(e){if(console.log("startVerify start, send data",e.data),e.data&&e.fail&&e.success){if(e.data.endPath){if(!util.validate(e.data.endPath,"end_path")){o={ErrorCode:-100,ErrorMsg:"调用SDK失败，endPath格式错误！"};return void wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})}e.fail=function(o){if(-999!==o.error_code){var i="";i=e.data.endPath.indexOf("?")>=0?e.data.endPath+"&data="+encodeURIComponent(JSON.stringify(o)):e.data.endPath+"?data="+encodeURIComponent(JSON.stringify(o)),console.log(i),wx.navigateTo({url:i,fail:e=>{console.log(e),wx.showModal({title:"提示",content:e.errMsg,showCancel:!1})}})}else wx.navigateBack()},e.success=function(o){var i="";i=e.data.endPath.indexOf("?")>=0?e.data.endPath+"&data="+JSON.stringify(o):e.data.endPath+"?data="+JSON.stringify(o),console.log(i),wx.redirectTo({url:i,fail:e=>{console.log(e),wx.showModal({title:"提示",content:e.errMsg,showCancel:!1})}})}}wx.verifySuccessFunc=e.success,wx.verifyFailureFunc=e.fail,util.validate(e.data.token,"token")?(console.log("data is ok",e.data),wx.showLoading({title:"加载中...",mask:!0}),getCmsConfig(e.data.token,function(o){if(console.log(o),wx.hideLoading(),0===o.ErrorCode){extend(!0,defaultConfig,o.Data.config);var i=defaultConfig;console.log("final cmsConfig"),console.log(i),wx.verifySysInfo=wx.getSystemInfoSync(),console.log(wx.verifySysInfo);var t="ios"===wx.verifySysInfo.platform?i.JustForMp.iOSVerLimit:i.JustForMp.androidVerLimit;if("devtools"!==wx.verifySysInfo.platform&&t&&util.compareVersion(t,wx.verifySysInfo.version)>0)return wx.hideLoading(),void wx.showModal({title:"提示",content:`当前微信版本低于${t}，无法使用该功能，请升级到最新微信版本后重试。`,showCancel:!1});i=reviseCmsConfig("",i),wx.verify_CMSConfig=i,wx.verify_TOKEN=e.data.token,wx.verify_BizData=e.data;if(i.Common.IsWxNative&&!i.Common.Flow.includes("Ocr")&&i.Common.IsHideIndexWhenNative){console.log("直接调用微信原生接口");let o=i.Common.IsWxNativeMod,t=i.Common.WxCheckAliveType;util.startNativeVerify(o,t,wx.verifyBaseUrl,e.data.token,wx.verifyFailureFunc,o=>{let i={BizToken:e.data.token,ErrorCode:o.ErrorCode,ErrorMsg:o.ErrorMsg};0===o.ErrorCode?wx.verifySuccessFunc(i):wx.verifyFailureFunc(i)})}else console.log("进入验证页面"),wx.navigateTo({url:"/static/verify_mpsdk/index/index?isNotice="+!1})}else wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})})):wx.showModal({title:"提示",content:"调用SDK失败,token格式错误！",showCancel:!1})}else{var o={ErrorCode:-100,ErrorMsg:"调用SDK失败，wx.startVerify传入参数缺少！"};wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})}}},getCmsConfig=async function(e,o){try{var i={method:"POST",url:`${wx.verifyBaseUrl}/api/auth/getConfig?BizToken=${e}`},t=await util.requestPromise(i);200===t.statusCode&&t.data.Data&&0===t.data.ErrorCode?o({ErrorCode:0,Data:t.data.Data}):t.data.ErrorCode?o({ErrorCode:t.data.ErrorCode,ErrorMsg:`获取配置失败,${t.data.ErrorMsg}`}):o({ErrorCode:-104,ErrorMsg:"调用失败，获取配置异常！"})}catch(e){console.log("genConfig catch error",e),e.errMsg.indexOf("request:fail Unable to resolve host")>=0||e.errMsg.indexOf("request:fail 似乎已断开与互联网的连接")>=0?o({ErrorCode:101,ErrorMsg:"网络异常，请稍后重试"}):"request:fail url not in domain list"===e.errMsg?o({ErrorCode:-104,ErrorMsg:"接口还未添加到服务器域名，请点击右上角三个点，打开调试模式再试"}):o({ErrorCode:-104,ErrorMsg:"调用失败，获取配置接口异常！"})}},reviseCmsConfig=function(e,o){let i=o.Common.Flow,t=!1,n=!1,r=!1,a=!1,s=0,l=i.indexOf("LiveFour1V1")>=0||i.indexOf("LiveAction1V1")>=0||i.indexOf("LiveSilence1V1")>=0;-1===i.indexOf("Sms")&&(t=!0),-1===i.indexOf("Ocr")&&(n=!0),l&&(s=i.indexOf("LiveFour1V1")>=0?0:i.indexOf("LiveAction1V1")>=0?1:2),l||-1!==i.indexOf("Sms")||(r=!0),l||-1!==i.indexOf("Ocr")||(a=!0);let d={Common:o.Common,protocol:{title:o.Index.ProtocolTitle,content:o.Index.TencentProtocol,clientContent:o.Index.ClientProtocol},page:{index:{clientName:o.Index.ProjectName,businessName:o.Index.BusinessName,certificationCenter:o.Index.CooperationName,nextBtnName:o.Index.NextBtn,isHideTipsLogo:!o.Common.IsShowLogo,isHideTipsAbout:o.Common.IsHideAbout,protocolTitle:o.Index.ProtocolEntrance},ocr:{backend:o.Ocr.Backend,isAddress:o.Ocr.IsAddress,isManualInput:o.Ocr.IsManualInput,isHideTakePhoto:o.Ocr.IsHideManualInputTakePhotoBtn,isCheckIDInfo:o.Ocr.IsCheckIdInfo,allowModifyType:o.Ocr.AllowModifyType},livingbody:{silentRecordTime:o.LiveFour1V1.MaxDuration},success:{successTitle:o.Success.SubTipsName,successTips:o.Success.SuccessTips,isAutoSkip:o.Success.AutoSkip},sms:{},failpage:{isShowExitBtn:o.Fail.IsShowQuitBtn,exitBtnTtile:o.Fail.ExitBtnText}},runEnv:"release",navTitle:{smsTitle:o.Common.NavTitle.SmsTitle,ocrTitle:o.Common.NavTitle.OcrTitle,livingbodyTitle:o.Common.NavTitle.LivingbodyTitle,resultTitle:o.Common.NavTitle.ResultTitle},justForJumpVer:{title:o.Common.Title},about:{title:"关于云智慧眼",content:"云智慧眼由腾讯AI Lab、腾讯优图、腾讯数据平台部提供技术支持"},isGetUserLocation:o.Index.IsGetLocation,isHideSmsPage:t,isHideOcrPage:n,livingbodyType:s,isJustOcr:r,isJustSms:a,failInfo:o.Fail.CustomFailInfo};var c={isHideSmsPage:d.isHideSmsPage,isHideOcrPage:d.isHideOcrPage,isJustSms:d.isJustSms,isJustOcr:d.isJustOcr,navTitle:d.navTitle};if(d.skipConfig=c,0!==d.livingbodyType&&1!==d.livingbodyType){var u=4,f=d.page.livingbody.silentRecordTime;f&&"number"==typeof f&&f>4&&(u=f),d.page.livingbody.silentRecordTime=u}let g=d.page.ocr.allowModifyType.split("");return d.page.ocr.isIdnameAllowEdit="0"===g[0],d.page.ocr.isIdnumberAllowEdit="0"===g[1],d.page.ocr.isIdaddressAllowEdit="0"===g[2],console.log(d.page.ocr),d};module.exports={init:init};
+const regeneratorRuntime=__webpack_require__(84),util=__webpack_require__(149),defaultConfig=__webpack_require__(150).defaultConfig,extend=__webpack_require__(151).extend;var init=function(e){wx.onNetworkStatusChange(function(e){"none"!==e.networkType&&"2g"!==e.networkType||wx.showToast({title:"网络异常",icon:"none"})}),wx.onMemoryWarning(function(){wx.showToast({title:"内存告警，有闪退风险",icon:"none"})}),wx.verifyBaseUrl="https://faceid.qq.com",wx.startVerify=function(e){if(console.log("startVerify start, send data",e.data),e.data&&e.fail&&e.success){if(e.data.endPath){if(!util.validate(e.data.endPath,"end_path")){o={ErrorCode:-100,ErrorMsg:"调用SDK失败，endPath格式错误！"};return void wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})}e.fail=function(o){if(-999!==o.error_code){var i="";i=e.data.endPath.indexOf("?")>=0?e.data.endPath+"&data="+encodeURIComponent(JSON.stringify(o)):e.data.endPath+"?data="+encodeURIComponent(JSON.stringify(o)),console.log(i),wx.navigateTo({url:i,fail:e=>{console.log(e),wx.showModal({title:"提示",content:e.errMsg,showCancel:!1})}})}else wx.navigateBack()},e.success=function(o){var i="";i=e.data.endPath.indexOf("?")>=0?e.data.endPath+"&data="+JSON.stringify(o):e.data.endPath+"?data="+JSON.stringify(o),console.log(i),wx.redirectTo({url:i,fail:e=>{console.log(e),wx.showModal({title:"提示",content:e.errMsg,showCancel:!1})}})}}wx.verifySuccessFunc=e.success,wx.verifyFailureFunc=e.fail,util.validate(e.data.token,"token")?(console.log("data is ok",e.data),wx.showLoading({title:"加载中...",mask:!0}),getCmsConfig(e.data.token,function(o){if(console.log(o),wx.hideLoading(),0===o.ErrorCode){extend(!0,defaultConfig,o.Data.config);var i=defaultConfig;console.log("final cmsConfig"),console.log(i),wx.verifySysInfo=wx.getSystemInfoSync(),console.log(wx.verifySysInfo);var t="ios"===wx.verifySysInfo.platform?i.JustForMp.iOSVerLimit:i.JustForMp.androidVerLimit;if("devtools"!==wx.verifySysInfo.platform&&t&&util.compareVersion(t,wx.verifySysInfo.version)>0)return wx.hideLoading(),void wx.showModal({title:"提示",content:`当前微信版本低于${t}，无法使用该功能，请升级到最新微信版本后重试。`,showCancel:!1});i=reviseCmsConfig("",i),wx.verify_CMSConfig=i,wx.verify_TOKEN=e.data.token,wx.verify_BizData=e.data;if(i.Common.IsWxNative&&!i.Common.Flow.includes("Ocr")&&i.Common.IsHideIndexWhenNative){console.log("直接调用微信原生接口");let o=i.Common.IsWxNativeMod,t=i.Common.WxCheckAliveType;util.startNativeVerify(o,t,wx.verifyBaseUrl,e.data.token,wx.verifyFailureFunc,o=>{let i={BizToken:e.data.token,ErrorCode:o.ErrorCode,ErrorMsg:o.ErrorMsg};0===o.ErrorCode?wx.verifySuccessFunc(i):wx.verifyFailureFunc(i)})}else console.log("进入验证页面"),wx.navigateTo({url:"/static/verify_mpsdk/index/index?isNotice="+!1})}else wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})})):wx.showModal({title:"提示",content:"调用SDK失败,token格式错误！",showCancel:!1})}else{var o={ErrorCode:-100,ErrorMsg:"调用SDK失败，wx.startVerify传入参数缺少！"};wx.showModal({title:"提示",content:o.ErrorMsg,showCancel:!1})}}},getCmsConfig=async function(e,o){try{var i={method:"POST",url:`${wx.verifyBaseUrl}/api/auth/getConfig?BizToken=${e}`},t=await util.requestPromise(i);200===t.statusCode&&t.data.Data&&0===t.data.ErrorCode?o({ErrorCode:0,Data:t.data.Data}):t.data.ErrorCode?o({ErrorCode:t.data.ErrorCode,ErrorMsg:`获取配置失败,${t.data.ErrorMsg}`}):o({ErrorCode:-104,ErrorMsg:"调用失败，获取配置异常！"})}catch(e){console.log("genConfig catch error",e),e.errMsg.indexOf("request:fail Unable to resolve host")>=0||e.errMsg.indexOf("request:fail 似乎已断开与互联网的连接")>=0?o({ErrorCode:101,ErrorMsg:"网络异常，请稍后重试"}):"request:fail url not in domain list"===e.errMsg?o({ErrorCode:-104,ErrorMsg:"接口还未添加到服务器域名，请点击右上角三个点，打开调试模式再试"}):o({ErrorCode:-104,ErrorMsg:"调用失败，获取配置接口异常！"})}},reviseCmsConfig=function(e,o){let i=o.Common.Flow,t=!1,n=!1,r=!1,a=!1,s=0,l=i.indexOf("LiveFour1V1")>=0||i.indexOf("LiveAction1V1")>=0||i.indexOf("LiveSilence1V1")>=0;-1===i.indexOf("Sms")&&(t=!0),-1===i.indexOf("Ocr")&&(n=!0),l&&(s=i.indexOf("LiveFour1V1")>=0?0:i.indexOf("LiveAction1V1")>=0?1:2),l||-1!==i.indexOf("Sms")||(r=!0),l||-1!==i.indexOf("Ocr")||(a=!0);let d={Common:o.Common,protocol:{title:o.Index.ProtocolTitle,content:o.Index.TencentProtocol,clientContent:o.Index.ClientProtocol},page:{index:{clientName:o.Index.ProjectName,businessName:o.Index.BusinessName,certificationCenter:o.Index.CooperationName,nextBtnName:o.Index.NextBtn,isHideTipsLogo:!o.Common.IsShowLogo,isHideTipsAbout:o.Common.IsHideAbout,protocolTitle:o.Index.ProtocolEntrance},ocr:{backend:o.Ocr.Backend,isAddress:o.Ocr.IsAddress,isManualInput:o.Ocr.IsManualInput,isHideTakePhoto:o.Ocr.IsHideManualInputTakePhotoBtn,isCheckIDInfo:o.Ocr.IsCheckIdInfo,allowModifyType:o.Ocr.AllowModifyType},livingbody:{silentRecordTime:o.LiveFour1V1.MaxDuration},success:{successTitle:o.Success.SubTipsName,successTips:o.Success.SuccessTips,isAutoSkip:o.Success.AutoSkip},sms:{},failpage:{isShowExitBtn:o.Fail.IsShowQuitBtn,exitBtnTtile:o.Fail.ExitBtnText}},runEnv:"release",navTitle:{smsTitle:o.Common.NavTitle.SmsTitle,ocrTitle:o.Common.NavTitle.OcrTitle,livingbodyTitle:o.Common.NavTitle.LivingbodyTitle,resultTitle:o.Common.NavTitle.ResultTitle},justForJumpVer:{title:o.Common.Title},about:{title:"关于云智慧眼",content:"云智慧眼由腾讯AI Lab、腾讯优图、腾讯数据平台部提供技术支持"},isGetUserLocation:o.Index.IsGetLocation,isHideSmsPage:t,isHideOcrPage:n,livingbodyType:s,isJustOcr:r,isJustSms:a,failInfo:o.Fail.CustomFailInfo};var c={isHideSmsPage:d.isHideSmsPage,isHideOcrPage:d.isHideOcrPage,isJustSms:d.isJustSms,isJustOcr:d.isJustOcr,navTitle:d.navTitle};if(d.skipConfig=c,0!==d.livingbodyType&&1!==d.livingbodyType){var u=4,f=d.page.livingbody.silentRecordTime;f&&"number"==typeof f&&f>4&&(u=f),d.page.livingbody.silentRecordTime=u}let g=d.page.ocr.allowModifyType.split("");return d.page.ocr.isIdnameAllowEdit="0"===g[0],d.page.ocr.isIdnumberAllowEdit="0"===g[1],d.page.ocr.isIdaddressAllowEdit="0"===g[2],console.log(d.page.ocr),d};module.exports={init:init};
 
 /***/ }),
 
-/***/ 143:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
 const regeneratorRuntime=__webpack_require__(84);function compareVersion(e,r){e=e.split("."),r=r.split(".");for(var o=Math.max(e.length,r.length);e.length<o;)e.push("0");for(;r.length<o;)r.push("0");for(var s=0;s<o;s++){var t=parseInt(e[s]),a=parseInt(r[s]);if(t>a)return 1;if(t<a)return-1}return 0}let requestPromise=function(e){let{url:r,method:o="POST",data:s,header:t={"Content-Type":"application/json"}}=e;return console.log("requestPromise start:",r,s),new Promise((e,a)=>{wx.request({url:r,method:o,data:s,header:t,success(r){console.log("requestPromise success:",r),e(r)},fail(e){console.log("requestPromise error:",e),a(e)}})})},request=function(e,r){let{url:o,method:s="POST",data:t,header:a={"Content-Type":"application/json"}}=e;console.log("requestPromise start:",o,t);try{wx.request({url:o,method:s,data:t,header:a,success(e){console.log("request success:",e),200===e.statusCode&&e.data?0===e.data.ErrorCode?r({ErrorCode:0,Data:e.data.Data}):r({ErrorCode:e.data.ErrorCode,ErrorMsg:e.data.ErrorMsg,Data:e.data}):r({ErrorCode:-107,ErrorMsg:"request请求异常，请稍后重试"})},fail(e){console.log("request error:",e),e.errMsg.indexOf("request:fail Unable to resolve host")>=0||e.errMsg.indexOf("request:fail 似乎已断开与互联网的连接")>=0?r({ErrorCode:101,ErrorMsg:"网络异常，请稍后重试"}):r({ErrorCode:-107,ErrorMsg:"request请求异常，请稍后重试"})}})}catch(e){console.log("request error:",e),r({ErrorCode:-107,ErrorMsg:"request请求异常"})}},uploadFile=function(e,r){console.log(e),wx.uploadFile({url:e.url,filePath:e.filePath,name:"file",formData:e.data,success:e=>{if(console.log("uploadFile| ",e),200===e.statusCode){console.log(e);let o=JSON.parse(e.data);console.log("resTemp"),console.log(o),0===o.ErrorCode?(console.log(this.data),r({ErrorCode:0,Data:o})):r({ErrorCode:o.ErrorCode,ErrorMsg:"上传视频失败，"+o.ErrorMsg})}else r({ErrorCode:101,ErrorMsg:"上传视频失败 "+e.statusCode})},fail:e=>{console.log("upload img fail",e),r({ErrorCode:101,ErrorMsg:"上传视频失败, "+e.errMsg})}}).onProgressUpdate(e=>{this.setData({"livingbody.uploadProcess":e.progress-10<0?0:e.progress-10}),console.log("progress",e.progress),console.log("already upload data",e.totalBytesSent),console.log("all upload data",e.totalBytesExpectedToSend)})},validate=function(e,r){switch(r){case"signature":return/^\S{74}={2}$/.test(e);case"appid":return"string"==typeof e&&/^\d{4}$/.test(e);case"uid":return e;case"sms_phone":return/^(13[0-9]|14[5-9]|15[012356789]|16[6]|17[0135678]|18[0-9]|19[8-9])\d{8}$/.test(e);case"sms_verifyCode":return/^\d{4}$/.test(e);case"idcard":return IDNumberValid(e);case"idname":return/^[\u4e00-\u9fa5]{1,15}[·•]?[\u4e00-\u9fa5]{1,15}$/.test(e);case"idaddress":return!!e;case"end_path":return/^\//.test(e);case"token":return/^[a-zA-Z0-9-]{36}$/.test(e)}},showModal=function(e,r){wx.showModal({title:e,content:r.replace(/(^\s*)|(\s*$)/g,""),showCancel:!1,confirmText:"我知道了",confirmColor:"#2d72f1",success:function(e){e.confirm||e.cancel}})},IDNumberValid=function(e){if(!e||!/^\d{6}(18|19|20)?\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{3}(\d|X)$/i.test(e))return!1;if(!{11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江 ",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北 ",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏 ",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"}[e.substr(0,2)])return!1;if(18===e.length){e=e.split("");const r=[7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2],o=[1,0,"X",9,8,7,6,5,4,3,2];let s=0,t=0,a=0;for(let o=0;o<17;o++)s+=(t=e[o])*(a=r[o]);let l=o[s%11];if("x"===e[17]||"X"===e[17])return l===e[17].toUpperCase();if(l!==parseInt(e[17]))return!1}return!0},startNativeVerify=(e,r,o,s,t,a)=>{getUserIdKey(o,s,t,t=>{console.log("获取userIdKey成功:",t);let l=wx.startFacialRecognitionVerify;1===e&&(l=wx.startFacialRecognitionVerifyAndUploadVideo),l({userIdKey:t,checkAliveType:r,success(e){console.log(e);let r=e.verifyResult;getWxResult(o,s,r,e=>{console.log("拿到结果了，准备传给前端"),console.log(e),a(e)})},fail(e){if(console.log(e),90100===e.errCode);else if(e.verifyResult){let r=e.verifyResult;getWxResult(o,s,r,e=>{console.log("拿到结果了，准备传给前端"),console.log(e),a(e)})}else console.log("验证失败",e.errMsg),wx.showModal({title:"提示",content:`验证失败, ${e.errMsg}`,showCancel:!1})}})})},getUserIdKey=async(e,r,o,s)=>{try{let t={url:`${e}/api/liveness/getWxUserIdKey?BizToken=${r}`};wx.showLoading({title:"加载中...",mask:!0});let a=await getUserIdKeyRequest(t);wx.hideLoading(),s(a)}catch(t){console.log(t),wx.hideLoading(),15===t.ErrorCode||14===t.ErrorCode?(15===t.ErrorCode?t.ErrorMsg="当前BizToken已过期，请重试":14===t.ErrorCode&&(t.ErrorMsg="当前BizToken已验证完成"),o({BizToken:r,ErrorCode:t.ErrorCode,ErrorMsg:t.ErrorMsg})):-1===t.ErrorCode?wx.showModal({title:"提示",content:t.ErrorMsg,showCancel:!1}):wx.showModal({title:"提示",content:t.ErrorMsg,confirmText:"重试",confirmColor:"#2d72f1",success:t=>{t.confirm&&getUserIdKey(e,r,o,s)}})}},getUserIdKeyRequest=e=>(console.log(`请求 ${e.url}`),new Promise((r,o)=>{wx.request({url:e.url,method:"POST",data:{},success(e){console.log("request success:",e.data),0===e.data.ErrorCode?r(e.data.Data.UserIdKey):o(e.data)},fail(e){console.log("requestPromise error:",e),e.errMsg.indexOf("request:fail Unable to resolve host")>=0||e.errMsg.indexOf("request:fail 似乎已断开与互联网的连接")>=0?o({ErrorCode:101,ErrorMsg:"网络异常，请稍后重试"}):"request:fail url not in domain list"===e.errMsg?o({ErrorCode:-1,ErrorMsg:"接口还未添加到服务器域名，请点击右上角三个点，打开调试模式再试"}):o({ErrorCode:101,ErrorMsg:e.errMsg})}})})),getWxResult=async(e,r,o,s)=>{try{wx.showLoading({title:"加载中...",mask:!0});let t=await getWxResultRequest(e,r,o);wx.hideLoading(),s(t)}catch(t){console.log(t),wx.hideLoading(),-1===t.ErrorCode?wx.showModal({title:"提示",content:t.ErrorMsg,showCancel:!1}):wx.showModal({title:"提示",content:t,confirmText:"重试",confirmColor:"#2d72f1",showCancel:!1,success:t=>{t.confirm&&getWxResult(e,r,o,s)}})}},getWxResultRequest=(e,r,o)=>(console.log(`请求 ${e}/api/liveness/getWxResult?BizToken=${r}`),new Promise((s,t)=>{wx.request({url:`${e}/api/liveness/getWxResult?BizToken=${r}`,method:"POST",data:{VerifyResult:o},success(e){console.log("request success:",e.data),e.data.ErrorCode,s(e.data)},fail(e){console.log("requestPromise error:",e),e.errMsg.indexOf("request:fail Unable to resolve host")>=0||e.errMsg.indexOf("request:fail 似乎已断开与互联网的连接")>=0?t({ErrorCode:101,ErrorMsg:"网络异常，请稍后重试"}):"request:fail url not in domain list"===e.errMsg?t({ErrorCode:-1,ErrorMsg:"接口还未添加到服务器域名，请点击右上角三个点，打开调试模式再试"}):t({ErrorCode:101,ErrorMsg:e.errMsg})}})}));module.exports={requestPromise:requestPromise,validate:validate,compareVersion:compareVersion,showModal:showModal,request:request,uploadFile:uploadFile,startNativeVerify:startNativeVerify};
 
 /***/ }),
 
-/***/ 144:
+/***/ 150:
 /***/ (function(module, exports) {
 
 let defaultConfig={Common:{Title:"云智慧眼",IsShowLogo:!0,Flow:["Index","LiveAction1V1"],RedirectUrl:"/clearCookie",NavTitle:{SmsTitle:"短信验证",OcrTitle:"上传身份证",LivingbodyTitle:"录制视频",ResultTitle:"验证结果"},IsWxNative:!1,IsHideIndexWhenNative:!1,WxCheckAliveType:2,IsWxNativeMod:0},JustForMp:{iOSVerLimit:"6.6.7",androidVerLimit:"6.7.2"},Index:{ProtocolTitle:"实名核身用户须知",TencentProtocol:'<p>本服务由腾讯实名核身技术方案"腾讯慧眼"提供技术支持。您在接受服务过程中，需要调用您的手机摄像头，并且根据业务场景的不同，需要读取您的身份证个人信息，包括姓名、性别、民族、出生日期、常住户口所在地住址、公民身份号码、本人相片、证件的有效期和签发机关等信息，或者截取您的脸部图像和认证视频，从而实现身份比对。</p><p>如您使用不成功，请确保您已经按照要求正确使用本服务，或者向为您办理业务的机构咨询其他办理渠道。</p>',ClientProtocol:"客户侧协议内容",ProjectName:"云智慧眼",BusinessName:"实名实人认证",CooperationName:"合作方文案",IsHideAbout:!1,NextBtn:"快速验证",ProtocolEntrance:"全部协议",IsGetLocation:!0},Sms:{},Ocr:{IsManualInput:!0,Backend:!1,AllowModifyType:"100",IsAddress:!1,IsCheckIdInfo:!1,SourceType:2,IsHideManualInputTakePhotoBtn:!1},LiveFour1V1:{MaxDuration:4,DetailType:!1,ForceWatchVideoTime:5,ImportantTips:""},LiveAction1V1:{},LiveSilence1V1:{},Fail:{IsShowQuitBtn:!1,ExitBtnText:"退出实名认证",CustomFailInfo:{}},Success:{SubTipsName:"验证成功",SuccessTips:"请点击下一步继续您的操作",AutoSkip:!1}},sysFailInfo={610:{msg:"脸部未完整露出",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-noface.png",tips1:"建议您调整脸部位置，或录制角度",tips2:""},657:{msg:"脸离屏幕太左",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-tooleft.png",tips1:"建议您调整脸部位置，或录制角度",tips2:""},658:{msg:"脸离屏幕太右",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-tooright.png",tips1:"建议您调整脸部位置，或录制角度",tips2:""},663:{msg:"未能检测到完整人脸",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-tooright.png",tips1:"建议您调整脸部位置，或录制角度",tips2:""},659:{msg:"光线太暗",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-toodark.png",tips1:"建议您调整录制环境，保证光线适中",tips2:""},660:{msg:"光线太强",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-toobright.png",tips1:"建议您调整录制环境，保证光线适中",tips2:""},608:{msg:"视频声音太小",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-nosound.png",tips1:"请用清晰洪亮的普通话，匀速缓慢朗读四个数字",tips2:""},611:{msg:"声音识别失败",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-nosound.png",tips1:"请用清晰洪亮的普通话，匀速缓慢朗读四个数字",tips2:""},612:{msg:"未检测到声音",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-nosound.png",tips1:"请用清晰洪亮的普通话，匀速缓慢朗读四个数字",tips2:""},609:{msg:"嘴唇动作幅度过小",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-openmouse.png",tips1:"朗读时尽量使嘴唇动作明显变化，",tips2:"动作放慢并确保画面清晰"},652:{msg:"未检测到第一个动作",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-lowpixel.png",tips1:"建议您动作频率放慢一些",tips2:""},653:{msg:"未检测到闭眼动作",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-openeye.png",tips1:"建议您闭眼频率放慢一些",tips2:""},654:{msg:"未检测到张嘴动作",img:"http://beta.gtimg.com/GodIdent/huiyan/img/ico-fail-openmouse.png",tips1:"建议您张大嘴，动作放慢一些",tips2:""},1600:{msg:"视频录制时间过短",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},1601:{msg:"实人检测失败",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},1602:{msg:"实人检测未达到通过标准",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},651:{msg:"疑似非真人录制",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},603:{msg:"视频实人比对没通过",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},604:{msg:"比对相似度未达到通过标准",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},602:{msg:"视频实人检测没通过",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},823:{msg:"图像比对没通过",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},824:{msg:"比对相似度未达到通过标准",img:"",tips1:"请更换背景环境录制",tips2:"避免背景中有反光、边框",isTips1Color:!0},655:{msg:"脸离屏幕太近",img:"",tips1:"建议您调整脸部位置，或录制角度",tips2:""},656:{msg:"脸离屏幕太远",img:"",tips1:"建议您调整脸部位置，或录制角度",tips2:""},650:{msg:"活体检测调用失败",img:"",tips1:"给您造成不便深表抱歉，建议您稍后重试",tips2:""},606:{msg:"身份证照片信息拉取失败",img:"",tips1:"如多次出现该错误，请联系相关工作人员，提供身份证号，看证件库是否有您照片",tips2:""},9999:{msg:"服务器返回异常501/504",img:"",tips1:"",tips2:""}};module.exports={sysFailInfo:sysFailInfo,defaultConfig:defaultConfig};
 
 /***/ }),
 
-/***/ 145:
+/***/ 151:
 /***/ (function(module, exports) {
 
 
@@ -649,14 +616,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 146:
+/***/ 152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_globel_js__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_globel_js__ = __webpack_require__(154);
 
 
 
@@ -673,12 +640,12 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 
 /***/ }),
 
-/***/ 148:
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__action_globel__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mutation_globel__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__action_globel__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mutation_globel__ = __webpack_require__(156);
 
 
 
@@ -713,7 +680,7 @@ var globel = {
 
 /***/ }),
 
-/***/ 149:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -764,7 +731,7 @@ var globelAction = {
 
 /***/ }),
 
-/***/ 150:
+/***/ 156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -801,7 +768,7 @@ var globelMutation = (_globelMutation = {}, __WEBPACK_IMPORTED_MODULE_0_babel_ru
 
 /***/ }),
 
-/***/ 153:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var updateManager = global.mpvue.getUpdateManager();
@@ -830,20 +797,20 @@ updateManager.onUpdateFailed(function () {
 
 /***/ }),
 
-/***/ 154:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__serve_house__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__serve_intelligent__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serve_infrastructure__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serve_operation__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__serve_account__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serve_member__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__serve_survey__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__serve_wechat__ = __webpack_require__(1066);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__serve_house__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__serve_intelligent__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serve_infrastructure__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serve_operation__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__serve_account__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serve_member__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__serve_survey__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__serve_wechat__ = __webpack_require__(168);
 
  // 房型api
  // 智能设施api
@@ -857,11 +824,11 @@ updateManager.onUpdateFailed(function () {
 
 /***/ }),
 
-/***/ 155:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var house = 'house/'; // 房型服务
@@ -928,11 +895,11 @@ var jumpTokenHader = {
 
 /***/ }),
 
-/***/ 156:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var intelligent = 'intelligent_image/';
@@ -996,11 +963,11 @@ var electronicContract = 'electronic_contract/'; // 电子合同
 
 /***/ }),
 
-/***/ 157:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var infrastructure = 'infrastructure/'; // 基础服务
@@ -1090,11 +1057,11 @@ var jumpTokenHader = {
 
 /***/ }),
 
-/***/ 158:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var operation = 'operation/'; // 运营服务
@@ -1357,11 +1324,11 @@ var jumpTokenHader = { 'Content-Type': 'application/json' };
 
 /***/ }),
 
-/***/ 159:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var account = 'account/'; // 优惠券服务
@@ -1421,11 +1388,11 @@ var payment = 'payment/'; // 支付服务
 
 /***/ }),
 
-/***/ 160:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var member = 'member/'; // 会员服务
@@ -1480,11 +1447,11 @@ var jumpTokenHader = { 'Content-Type': 'application/json' };
 
 /***/ }),
 
-/***/ 161:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var operation = 'operation/'; // 运营服务
@@ -1508,21 +1475,54 @@ var jumpTokenHader = {
 
 /***/ }),
 
-/***/ 162:
+/***/ 168:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(19);
+
+var rootUrl = "https://tapi.wowqu.cn/";
+var wechat = 'wechat/'; // 微信服务接口
+var appid =  true ? 'wxfe3d314d80723f7b' : 'wxf32120c146d8c2c8';
+/* harmony default export */ __webpack_exports__["a"] = ({
+  getWxInfoforLogin: function getWxInfoforLogin(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/login'), data);
+  },
+  getWxUserInfo: function getWxUserInfo(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/info'), data);
+  },
+  createJsapiSignature: function createJsapiSignature(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/createJsapiSignature', data);
+  },
+  getUserInfo: function getUserInfo(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/getUserInfo', data);
+  },
+  getMaQrcodeUriUnlimited: function getMaQrcodeUriUnlimited(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getMaQrcodeUriUnlimited', data);
+  },
+  // 获取自定义二维码详细信息
+  getCustomQrcodeDetailVoById: function getCustomQrcodeDetailVoById(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getCustomQrcodeDetailVoById', data);
+  }
+});
+
+/***/ }),
+
+/***/ 169:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 163:
+/***/ 170:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 164:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1542,7 +1542,7 @@ var jumpTokenHader = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_helpers_createClass__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_helpers_createClass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__index__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__behavior_js__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__behavior_js__ = __webpack_require__(188);
 
 
 
@@ -1744,7 +1744,7 @@ var Track = function () {
 
 /***/ }),
 
-/***/ 181:
+/***/ 188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1905,14 +1905,14 @@ var eventList = [{
 
 /***/ }),
 
-/***/ 23:
+/***/ 19:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return http; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__);
