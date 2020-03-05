@@ -95,6 +95,7 @@ if (false) {(function () {
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -104,9 +105,20 @@ if (false) {(function () {
     };
   },
   onLoad: function onLoad(options) {
+    console.log(222);
     this.swiperUrl = options && options.relatePath;
     this.bannerType = options && Number(options.bannerType);
     console.log(this.bannerType);
+  },
+
+  methods: {
+    previewImage: function previewImage() {
+      console.log(6666);
+      global.mpvue.previewImage({
+        current: 'https://dev.qcloudcos.plateno.cc/null/9395c33931b44b9aa2ec65616f639123.jpg',
+        urls: ['https://dev.qcloudcos.plateno.cc/null/9395c33931b44b9aa2ec65616f639123.jpg']
+      });
+    }
   }
 });
 
@@ -123,7 +135,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "landingPage",
     attrs: {
       "src": _vm.swiperUrl,
-      "mode": "widthFix"
+      "mode": "widthFix",
+      "eventid": '0'
+    },
+    on: {
+      "click": _vm.previewImage
     }
   })]) : (_vm.bannerType === 4) ? _c('div', [_c('web-view', {
     attrs: {

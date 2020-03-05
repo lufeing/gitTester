@@ -44,6 +44,39 @@ app.$mount();
 
 /***/ }),
 
+/***/ 1066:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http__ = __webpack_require__(23);
+
+var rootUrl = "https://tapi.wowqu.cn/";
+var wechat = 'wechat/'; // 微信服务接口
+var appid =  true ? 'wxfe3d314d80723f7b' : 'wxf32120c146d8c2c8';
+/* harmony default export */ __webpack_exports__["a"] = ({
+  getWxInfoforLogin: function getWxInfoforLogin(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/login'), data);
+  },
+  getWxUserInfo: function getWxUserInfo(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/info'), data);
+  },
+  createJsapiSignature: function createJsapiSignature(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/createJsapiSignature', data);
+  },
+  getUserInfo: function getUserInfo(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/getUserInfo', data);
+  },
+  getMaQrcodeUriUnlimited: function getMaQrcodeUriUnlimited(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getMaQrcodeUriUnlimited', data);
+  },
+  // 获取自定义二维码详细信息
+  getCustomQrcodeDetailVoById: function getCustomQrcodeDetailVoById(data) {
+    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getCustomQrcodeDetailVoById', data);
+  }
+});
+
+/***/ }),
+
 /***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -434,30 +467,46 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils___ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils___ = __webpack_require__(3);
+
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   created: function created() {
-    // 调用API从本地缓存中获取数据
     /*
      * 平台 api 差异的处理方式:  api 方法统一挂载到 mpvue 名称空间, 平台判断通过 mpvuePlatform 特征字符串
      * 微信：mpvue === wx, mpvuePlatform === 'wx'
      * 头条：mpvue === tt, mpvuePlatform === 'tt'
      * 百度：mpvue === swan, mpvuePlatform === 'swan'
      * 支付宝(蚂蚁)：mpvue === my, mpvuePlatform === 'my'
+     * 微信小程序中添加慧眼人脸识别: "static/verify_mpsdk/index/index"
      */
   },
   onLaunch: function onLaunch(options) {
     console.log(options);
-    Object(__WEBPACK_IMPORTED_MODULE_0__utils___["p" /* mpvueSetStorageSync */])('firstOpen', true);
+    Object(__WEBPACK_IMPORTED_MODULE_1__utils___["p" /* mpvueSetStorageSync */])('firstOpen', true);
     var Verify = __webpack_require__(142);
     Verify.init({
       'env': 'release' // 接口环境，正式  环境接口值为 release
     });
-  }
-  // 微信小程序中添加慧眼人脸识别: "static/verify_mpsdk/index/index"
+    this.getCustomQrcodeDetailVoById(options.query.qrcodeId);
+  },
 
+  methods: {
+    getCustomQrcodeDetailVoById: function getCustomQrcodeDetailVoById(qrcodeId) {
+      if (qrcodeId) {
+        this.$API.getCustomQrcodeDetailVoById({ qrcodeId: qrcodeId }).then(function (_ref) {
+          var _ref2 = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default()(_ref, 2),
+              res = _ref2[0],
+              msg = _ref2[1];
+
+          console.log(res);
+        });
+      }
+    }
+  }
 });
 
 /***/ }),
@@ -794,6 +843,7 @@ updateManager.onUpdateFailed(function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__serve_account__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serve_member__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__serve_survey__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__serve_wechat__ = __webpack_require__(1066);
 
  // 房型api
  // 智能设施api
@@ -801,8 +851,9 @@ updateManager.onUpdateFailed(function () {
  // 基础服务api
  // 账单api
  // 账单api
-
-/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, __WEBPACK_IMPORTED_MODULE_1__serve_house__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__serve_operation__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__serve_intelligent__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__serve_infrastructure__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5__serve_account__["a" /* default */], __WEBPACK_IMPORTED_MODULE_6__serve_member__["a" /* default */], __WEBPACK_IMPORTED_MODULE_7__serve_survey__["a" /* default */]));
+ // 问卷api
+ // 微信api
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, __WEBPACK_IMPORTED_MODULE_1__serve_house__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__serve_operation__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__serve_intelligent__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__serve_infrastructure__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5__serve_account__["a" /* default */], __WEBPACK_IMPORTED_MODULE_6__serve_member__["a" /* default */], __WEBPACK_IMPORTED_MODULE_8__serve_wechat__["a" /* default */], __WEBPACK_IMPORTED_MODULE_7__serve_survey__["a" /* default */]));
 
 /***/ }),
 
@@ -1047,8 +1098,6 @@ var jumpTokenHader = {
 
 var rootUrl = "https://tapi.wowqu.cn/";
 var operation = 'operation/'; // 运营服务
-var wechat = 'wechat/'; // 微信服务接口
-var appid =  true ? 'wxfe3d314d80723f7b' : 'wxf32120c146d8c2c8';
 var jumpTokenHader = { 'Content-Type': 'application/json' };
 /* harmony default export */ __webpack_exports__["a"] = ({
   selectStatusList: function selectStatusList(data) {
@@ -1270,21 +1319,6 @@ var jumpTokenHader = { 'Content-Type': 'application/json' };
   },
   selectCheckInContractByMemberId: function selectCheckInContractByMemberId(data) {
     return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + operation + 'memberCheckIn/selectCheckInContractByMemberId', data);
-  },
-  getWxInfoforLogin: function getWxInfoforLogin(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/login'), data);
-  },
-  getWxUserInfo: function getWxUserInfo(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + ('wx/user/' + appid + '/info'), data);
-  },
-  getMaQrcodeUriUnlimited: function getMaQrcodeUriUnlimited(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'qrcode/getMaQrcodeUriUnlimited', data);
-  },
-  createJsapiSignature: function createJsapiSignature(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/createJsapiSignature', data);
-  },
-  getUserInfo: function getUserInfo(data) {
-    return __WEBPACK_IMPORTED_MODULE_0__http__["a" /* http */].get(rootUrl + wechat + 'mp/h5web/getUserInfo', data);
   },
 
   getMiniAppActivityInfoPage: function getMiniAppActivityInfoPage(data) {

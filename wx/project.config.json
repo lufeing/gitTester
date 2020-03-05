@@ -32,8 +32,6 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -167,7 +165,7 @@
 					"name": "个人中心",
 					"pathName": "pages/center/my/main",
 					"query": "channelId=25",
-					"scene": null
+					"scene": 1011
 				},
 				{
 					"id": -1,
@@ -184,10 +182,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 18,
 					"name": "首页",
 					"pathName": "pages/home/index/main",
-					"query": "scene=1005",
+					"query": "qrcodeId=1005",
 					"scene": null
 				},
 				{

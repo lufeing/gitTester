@@ -988,7 +988,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "eventid": '4'
     },
     on: {
-      "click": _vm.surePay
+      "click": _vm.getMemberBingPhone
     }
   }, [_vm._v("确认支付")])], 1)]), _vm._v(" "), (_vm.isBind) ? _c('bind-phone', {
     attrs: {
