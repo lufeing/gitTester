@@ -248,13 +248,11 @@ if (false) {(function () {
           questionType = _ref7.questionType,
           questionAnswerContent = _ref7.questionAnswerContent;
 
-      console.log(questionAnswerId);
       return this.healthParams.questionRespList.find(function (item, i) {
         if (item.questionId === questionId) {
           if (questionType === 1 || questionType === 2) {
             item.answerRespList.find(function (obj, index) {
               if (obj.questionAnswerId === questionAnswerId) {
-                console.log(index);
                 item.value = index;
                 return true;
               }
@@ -268,7 +266,6 @@ if (false) {(function () {
     },
     getChoiceResult: function getChoiceResult(result, paramIdx) {
       this.answerReqList[paramIdx] = result;
-      console.log(result);
     },
     checkQuestionListAndAnswerList: function checkQuestionListAndAnswerList() {
       var _this4 = this;
@@ -277,7 +274,6 @@ if (false) {(function () {
       this.answerReqList && this.answerReqList.map(function (item) {
         return answerMap.set(item.questionId, item);
       });
-      console.log(answerMap);
       var questionRespList = this.healthParams.questionRespList;
 
       questionRespList.find(function (item, index) {
@@ -330,8 +326,8 @@ if (false) {(function () {
                   }) : _this5.answerReqList.some(function (item) {
                     return item.questionAnswerContent == null || item.questionAnswerContent === '';
                   });
+                  // console.log(result)
 
-                  console.log(result);
                   if (result) {
                     Object(__WEBPACK_IMPORTED_MODULE_5__utils___["s" /* showModal */])({
                       content: '请完善健康审查表'

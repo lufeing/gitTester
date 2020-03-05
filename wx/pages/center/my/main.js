@@ -381,21 +381,25 @@ if (false) {(function () {
                 _loginStatusObject = _this2.loginStatusObject = _context.t0;
                 loginStatus = _loginStatusObject.loginStatus;
 
-                if (loginStatus) {
-                  _this2.$API.getMiniMemberUnusedCouponCount().then(function (_ref4) {
-                    var _ref5 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray___default()(_ref4, 2),
-                        res = _ref5[0],
-                        msg = _ref5[1];
-
-                    _this2.numParams.couponNum = res;
-                    _this2.numParams.balance = 0;
-                    _this2.numParams.integral = 0;
-                    _this2.getMemberById();
-                    _this2.saveMemberLocationFinalLogin();
-                  });
+                if (!loginStatus) {
+                  _context.next = 10;
+                  break;
                 }
 
-              case 8:
+                _context.next = 10;
+                return _this2.$API.getMiniMemberUnusedCouponCount().then(function (_ref4) {
+                  var _ref5 = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_slicedToArray___default()(_ref4, 2),
+                      res = _ref5[0],
+                      msg = _ref5[1];
+
+                  _this2.numParams.couponNum = res;
+                  _this2.numParams.balance = 0;
+                  _this2.numParams.integral = 0;
+                  _this2.getMemberById();
+                  _this2.saveMemberLocationFinalLogin();
+                });
+
+              case 10:
               case 'end':
                 return _context.stop();
             }

@@ -1930,34 +1930,42 @@ var http = {
 var httpRequest = function httpRequest(path, data, headerParam, method, isShow) {
   return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
     // mpvue.showLoading()
-    global.mpvue.request(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({
-      url: path,
-      data: data,
-      method: method
-    }, headerParam, {
-      success: function success(res) {
-        // mpvue.hideLoading()
-        if (res.statusCode === 200 || res.status === 200) {
-          var list = res.data.data;
-          if (Object.prototype.toString.call(list) === '[object Array]' && list.length !== 0) {
-            res.data.showNormalPage = true;
-          } else {
-            res.data.showNormalPage = false;
+    if (data && data.hasOwnProperty('memberId') && data.memberId == null) {
+      Object(__WEBPACK_IMPORTED_MODULE_4__utils___["s" /* showModal */])({
+        content: '你暂未注册成为会员，是否前往注册?',
+        showCancel: true,
+        fn: tipsHnadler
+      });
+    } else {
+      global.mpvue.request(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({
+        url: path,
+        data: data,
+        method: method
+      }, headerParam, {
+        success: function success(res) {
+          // mpvue.hideLoading()
+          if (res.statusCode === 200 || res.status === 200) {
+            var list = res.data.data;
+            if (Object.prototype.toString.call(list) === '[object Array]' && list.length !== 0) {
+              res.data.showNormalPage = true;
+            } else {
+              res.data.showNormalPage = false;
+            }
+            return handleSuccess(resolve, res.data, reject, isShow);
+          } else if (res.statusCode === 401 || res.status === 401) {
+            return tokenFailureFun(reject, res);
           }
-          return handleSuccess(resolve, res.data, reject, isShow);
-        } else if (res.statusCode === 401 || res.status === 401) {
-          return tokenFailureFun(reject, res);
+        },
+        fail: function fail(err) {
+          // mpvue.hideLoading()
+          if (err.status === 401) {
+            return tokenFailureFun(reject, err);
+          } else {
+            return reject(reject, err);
+          }
         }
-      },
-      fail: function fail(err) {
-        // mpvue.hideLoading()
-        if (err.status === 401) {
-          return tokenFailureFun(reject, err);
-        } else {
-          return reject(reject, err);
-        }
-      }
-    }));
+      }));
+    }
   });
 };
 

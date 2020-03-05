@@ -227,7 +227,7 @@ if (false) {(function () {
                           res = _ref4[0],
                           msg = _ref4[1];
 
-                      _this2.vicinageList = res.map(function (item, index) {
+                      _this2.vicinageList = res.map(function (item) {
                         item.distance = item.distance.toFixed(1);return item;
                       });
                     });

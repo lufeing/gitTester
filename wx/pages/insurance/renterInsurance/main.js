@@ -235,11 +235,6 @@ if (false) {(function () {
       this.contractObj.rentalContractId = param.contractChecked;
       this.contractObj.communityId = param.communityId;
     },
-    natoUrl: function natoUrl() {
-      global.mpvue.navigateTo({
-        url: '/pages/insurance/agreement/main'
-      });
-    },
     getInsuranceAgreementList: function getInsuranceAgreementList() {
       var _this2 = this;
 

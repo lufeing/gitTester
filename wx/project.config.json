@@ -210,6 +210,13 @@
 					"pathName": "pages/activity/poster/main",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/survey/health/main",
+					"pathName": "pages/survey/health/main",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
