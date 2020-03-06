@@ -83,16 +83,13 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_asyncToGenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(3);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_regenerator__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(2);
 
 
 
@@ -131,10 +128,10 @@ if (false) {(function () {
     jointDraw: function jointDraw() {
       var _this = this;
 
-      return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator___default.a.mark(function _callee() {
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_babel_runtime_regenerator___default.a.mark(function _callee() {
         var ctx, logoImg, bannerImg, MaQrcodeUr, miniAppImg, _mpvueGetStorageSync, avatarUrl, nickName, userImage;
 
-        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
@@ -164,7 +161,7 @@ if (false) {(function () {
 
               case 15:
                 miniAppImg = _context.sent;
-                _mpvueGetStorageSync = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["l" /* mpvueGetStorageSync */])('wxUserInfo'), avatarUrl = _mpvueGetStorageSync.avatarUrl, nickName = _mpvueGetStorageSync.nickName;
+                _mpvueGetStorageSync = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* mpvueGetStorageSync */])('wxUserInfo'), avatarUrl = _mpvueGetStorageSync.avatarUrl, nickName = _mpvueGetStorageSync.nickName;
                 // console.log(avatarUrl)
 
                 _context.next = 19;
@@ -206,7 +203,7 @@ if (false) {(function () {
       }))();
     },
     getDownLoadFile: function getDownLoadFile(url) {
-      return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+      return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
         global.mpvue.downloadFile({
           url: url,
           success: function success(res) {
@@ -237,14 +234,14 @@ if (false) {(function () {
       global.mpvue.saveImageToPhotosAlbum({
         filePath: this.shareThumb,
         success: function success(res) {
-          Object(__WEBPACK_IMPORTED_MODULE_4__utils__["s" /* showModal */])({
+          Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* showModal */])({
             content: '图片已保存到相册，赶紧去朋友圈分享吧~'
           });
         },
 
         fail: function fail(err) {
           console.log(err);
-          Object(__WEBPACK_IMPORTED_MODULE_4__utils__["s" /* showModal */])({
+          Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* showModal */])({
             content: '你关闭了访问相册的权限，请点击下方按钮重新授权'
           });
           _this3.isAuthorization = false;
@@ -252,24 +249,15 @@ if (false) {(function () {
       });
     },
     getMaQrcodeUriUnlimited: function getMaQrcodeUriUnlimited() {
-      var _ref = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["l" /* mpvueGetStorageSync */])('memberObj') || {},
-          memberId = _ref.memberId;
-
-      return this.$API.getMaQrcodeUriUnlimited({ memberId: memberId }).then(function (_ref2) {
-        var _ref3 = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_slicedToArray___default()(_ref2, 2),
-            res = _ref3[0],
-            msg = _ref3[1];
-
-        console.log(res);
-        return res;
-      });
+      // let { memberId } = mpvueGetStorageSync('memberObj') || {}
+      // return this.$API.getMaQrcodeUriUnlimited({ memberId }).then(([res, msg]) => res)
     },
     getSetting: function getSetting(event) {
       var _this4 = this;
 
       console.log(event);
       if (!event.mp.detail.authSetting['scope.writePhotosAlbum']) {
-        Object(__WEBPACK_IMPORTED_MODULE_4__utils__["s" /* showModal */])({
+        Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* showModal */])({
           content: '你关闭了访问相册的权限，无法保存，请允许访问相册'
         });
       } else {

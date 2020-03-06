@@ -4,14 +4,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("https://dev.qcloudcos.plateno.cc/null/2b594491c89740c5a7b1a249a0345e52.png") no-repeat;
+  background: url("https://dev.qcloudcos.plateno.cc/null/3ee57889646a440493fd0efe32b34de5.png") no-repeat;
   background-size: 100% 100%;
 }
 .getCoupons_class.data-v-f5bb1024 {
   position: fixed;
-  bottom: 60rpx;
+  bottom: 20rpx;
   margin: 0 80rpx;
   width: calc(100% - 160rpx);
   height: 130rpx;
-  z-index: 11;
+  z-index: 3;
 }
